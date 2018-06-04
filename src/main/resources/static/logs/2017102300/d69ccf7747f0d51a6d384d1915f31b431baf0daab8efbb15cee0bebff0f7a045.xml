@@ -1,0 +1,18 @@
+<acceptance-test-run title="C06-F01-S001-01 Check SM integration ponit status" name="C06-F01-S001-01 Check SM integration ponit status" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7976" timestamp="2017-10-22T16:20:27.153Z">
+  <user-story id="c06_f01_s001_check_integrationpoint_status" name="C06 f01 s001 check integrationpoint status" path="stories/c06_cmdb/c06_f01_s001_check_integrationpoint_status.story"/>
+  <issues>
+    <issue>C06-F01-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="cmdb" type="Test Type"/>
+    <tag name="C06 cmdb" type="capability"/>
+    <tag name="2017-10" type="relase"/>
+    <tag name="C06 cmdb/C06 f01 s001 check integrationpoint status" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="7829">
+    <description>Given Get UCMDB Integration points</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="142">
+    <description>Then Check Integration ponits &quot;ServiceManagerIntegrationPoint&quot; status</description>
+  </test-step>
+</acceptance-test-run>

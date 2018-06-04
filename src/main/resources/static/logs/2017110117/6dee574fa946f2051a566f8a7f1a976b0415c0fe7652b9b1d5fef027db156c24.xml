@@ -1,0 +1,24 @@
+<acceptance-test-run title="C01-F02-S001-01 With correct old password and new passord, password should be changed successfully" name="C01-F02-S001-01 With correct old password and new passord, password should be changed successfully" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="26064" timestamp="2017-11-01T04:44:01.486Z">
+  <user-story id="c01_f02_s001_change_admin_password" name="C01 f02 s001 change admin password" path="stories/c01_configapp/c01_f02_change_admin_password/c01_f02_s001_change_admin_password.story"/>
+  <issues>
+    <issue>C01-F02-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="ConfigAPP-API" type="Test Type"/>
+    <tag name="C01 configapp" type="capability"/>
+    <tag name="C01 configapp/C01 f02 change admin password" type="feature"/>
+    <tag name="2017-04" type="relase"/>
+    <tag name="C01 f02 change admin password/C01 f02 s001 change admin password" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="7">
+    <description>Given old password and new password</description>
+  </test-step>
+  <test-group name="When do save" result="SUCCESS">
+    <test-step result="SUCCESS" duration="6051">
+      <description>Do post: {&quot;idm&quot;:{&quot;original_password&quot;:&quot;Admin_1234&quot;,&quot;password&quot;:&quot;Admin_12345&quot;},&quot;sm&quot;:{&quot;Operator&quot;:{&quot;Name&quot;:&quot;sysadmin&quot;,&quot;Password&quot;:&quot;Admin_12345&quot;}}}</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="20002">
+    <description>Then simple change password successfully</description>
+  </test-step>
+</acceptance-test-run>

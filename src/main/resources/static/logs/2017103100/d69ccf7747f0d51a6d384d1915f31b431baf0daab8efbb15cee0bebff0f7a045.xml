@@ -1,0 +1,21 @@
+<acceptance-test-run title="C06-F01-S001-01 Check SM integration ponit status" name="C06-F01-S001-01 Check SM integration ponit status" steps="2" successful="0" failures="0" errors="1" skipped="1" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="127273" timestamp="2017-10-30T16:14:20.470Z">
+  <user-story id="c06_f01_s001_check_integrationpoint_status" name="C06 f01 s001 check integrationpoint status" path="stories/c06_cmdb/c06_f01_s001_check_integrationpoint_status.story"/>
+  <issues>
+    <issue>C06-F01-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="cmdb" type="Test Type"/>
+    <tag name="C06 cmdb" type="capability"/>
+    <tag name="2017-10" type="relase"/>
+    <tag name="C06 cmdb/C06 f01 s001 check integrationpoint status" type="story"/>
+  </tags>
+  <test-step result="ERROR" duration="127262">
+    <description>Given Get UCMDB Integration points</description>
+    <error>java.net.ConnectException: Connection timed out (Connection timed out)</error>
+    <exception>java.net.ConnectException:Connection timed out (Connection timed out)
+[org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120), org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179), org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328), org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612), org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447), org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884), org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82), org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55), io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349), io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1269), groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810), io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy), io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30), io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72), io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56), io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72), io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1722), groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810), io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy), io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1728), groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810), io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy), io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:172), io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy), com.hpe.itsma.steps.cmdb.LoginSteps.loginUCMDB(LoginSteps.java:42), com.hpe.itsma.steps.cmdb.IntegrationSteps.getIntegrationPoints(IntegrationSteps.java:30)]</exception>
+  </test-step>
+  <test-step result="SKIPPED" duration="1">
+    <description>Then Check Integration ponits &quot;ServiceManagerIntegrationPoint&quot; status</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,25 @@
+<acceptance-test-run title="C04-F00-S01-01 internal oldap user with valid login credential should get valid LWSSO_COOKIE_KEY" name="C04-F00-S01-01 internal oldap user with valid login credential should get valid LWSSO_COOKIE_KEY" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="1299" timestamp="2017-10-22T16:12:36.246Z">
+  <user-story id="c04_f00_s01_authentication_internal_user" name="C04 f00 s01 authentication internal user" path="stories/c04_idm/c04_f00_authentication/c04_f00_s01_authentication_internal_user.story"/>
+  <issues>
+    <issue>C04-F00-S01-01</issue>
+  </issues>
+  <tags>
+    <tag name="IDM" type="Test Type"/>
+    <tag name="C04 idm" type="capability"/>
+    <tag name="C04 idm/C04 f00 authentication" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C04 f00 authentication/C04 f00 s01 authentication internal user" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="1008">
+    <description>Given post request to login with: falcon, {123456}</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="3">
+    <description>Then response status = {200}</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="85">
+    <description>And response should get {LWSSO_COOKIE_KEY}</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="117">
+    <description>And keyset in entry {token} = {id, issued_at, expires, tenant}</description>
+  </test-step>
+</acceptance-test-run>

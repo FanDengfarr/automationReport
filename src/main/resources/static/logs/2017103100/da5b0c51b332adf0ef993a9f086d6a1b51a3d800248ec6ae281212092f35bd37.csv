@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C08 f01 s007 get article list","C08-F01-S007-01 Test get article","FAILURE","2017-10-30T16:48:10.998Z","0.0","2.2"
+"C10 f02 s002 check deploy controller status","C10-F02-S002-01 check deply controller pod status","FAILURE","2017-10-30T16:11:06.216Z","0.0","0.3"

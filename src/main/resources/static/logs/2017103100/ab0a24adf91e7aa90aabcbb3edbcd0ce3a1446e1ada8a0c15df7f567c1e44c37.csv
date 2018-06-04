@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C10 f01 s001 check k8s version","C10-F01-S001-01 check API version","SUCCESS","2017-10-30T16:10:08.208Z","0.0","0.1"
+"C10 f01 s001 check k8s version","C10-F01-S001-02 check TLS version","SUCCESS","2017-10-30T16:10:08.386Z","0.0","0.02"
+"C10 f02 s001 check svc status","C10-F02-S001-01 check one deploy Status auth and others","SUCCESS","2017-10-30T16:10:08.483Z","0.0","57.72"
+"C10 f02 s002 check deploy controller status","C10-F02-S002-01 check deply controller pod status","FAILURE","2017-10-30T16:11:06.216Z","0.0","0.3"
+"C10 f02 s003 check all pod status","C10-F02-S003-01 check all pod status","SUCCESS","2017-10-30T16:11:06.523Z","0.0","0.58"
+"C10 f03 s001 check configmap","C10-F03-S001-01 check configmap is created","SUCCESS","2017-10-30T16:11:07.105Z","0.0","2.22"
+"C10 f03 s001 check configmap","C10-F03-S001-02 check configmap has detail value","SUCCESS","2017-10-30T16:11:09.331Z","0.0","19.89"

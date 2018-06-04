@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C08 f04 s001 auto suggested search","C08-F04-S001-01 Test auto suggested search only article and news","SUCCESS","2017-10-30T16:09:11.296Z","0.0","2.86"
+"C08 f04 s001 auto suggested search","C08-F04-S001-02 Test auto suggested search only service offering","SUCCESS","2017-10-30T16:09:14.161Z","0.0","0.83"
+"C08 f04 s001 auto suggested search","C08-F04-S001-03 Test auto suggested search only support offering","SUCCESS","2017-10-30T16:09:14.997Z","0.0","1.22"
+"C08 f04 s002 search","C08-F04-S002-01 Test search","SUCCESS","2017-10-30T16:09:16.227Z","0.0","1.73"
+"C08 f04 s003 search view article","C08-F04-S003-01 Test view article in search result","SUCCESS","2017-10-30T16:09:17.965Z","0.0","4.02"

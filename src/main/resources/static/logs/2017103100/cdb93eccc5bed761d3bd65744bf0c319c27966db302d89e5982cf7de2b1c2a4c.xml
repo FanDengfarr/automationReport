@@ -1,0 +1,23 @@
+<acceptance-test-run title="C02-F02-S002-01 provider PG server for service with right info" name="C02-F02-S002-01 provider PG server for service with right info" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="890" timestamp="2017-10-30T15:02:38.864Z">
+  <user-story id="c02_f02_s002_test_connection_db" name="C02 f02 s002 test connection db" path="stories/c02_installer/c02_f02_s002_test_connection_db.story"/>
+  <issues>
+    <issue>C02-F02-S002-01</issue>
+  </issues>
+  <tags>
+    <tag name="Installer-API" type="Test Type"/>
+    <tag name="C02 installer" type="capability"/>
+    <tag name="2017-10" type="relase"/>
+    <tag name="C02 installer/C02 f02 s002 test connection db" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="7">
+    <description>Given a PG server for service=&lt;sp&gt; with detault info</description>
+  </test-step>
+  <test-group name="When test db connection" result="SUCCESS">
+    <test-step result="SUCCESS" duration="838">
+      <description>Do post: {&quot;database&quot;:[{&quot;product_name&quot;:&quot;sp&quot;,&quot;internal&quot;:false,&quot;db_engine&quot;:&quot;Postgres&quot;,&quot;db_server&quot;:&quot;shc-am-qa01.hpeswlab.net&quot;,&quot;db_port&quot;:&quot;5432&quot;,&quot;db_inst&quot;:&quot;&quot;,&quot;db_login&quot;:&quot;postgres&quot;,&quot;db_password&quot;:&quot;postgres&quot;,&quot;itom_suite_install_type&quot;:&quot;new_install&quot;}]}</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="34">
+    <description>Then DB test connection is successful for service &lt;sp&gt;</description>
+  </test-step>
+</acceptance-test-run>

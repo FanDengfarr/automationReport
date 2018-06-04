@@ -1,0 +1,48 @@
+<acceptance-test-run title="C07-F01-S001-01 Check Propel integration status with SM" name="C07-F01-S001-01 Check Propel integration status with SM" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11980" timestamp="2017-10-30T16:11:55.404Z">
+  <user-story id="c07_f01_s001_integration_status_check" name="C07 f01 s001 integration status check" path="stories/c07_propel/c07_f01_integration_with_SM/c07_f01_s001_integration_status_check.story"/>
+  <issues>
+    <issue>C07-F01-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="Propel API" type="Test Type"/>
+    <tag name="C07 propel" type="capability"/>
+    <tag name="C07 propel/C07 f01 integration with sm" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C07 f01 integration with sm/C07 f01 s001 integration status check" type="story"/>
+  </tags>
+  <test-group name="Given user login Propel as {user.username} with {user.password} using {itsma.tenantName}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4884">
+      <description>Login: falcon, 123456, ITSMA</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check supplier SM health status" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1593">
+      <description>Get supplier health: eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUxOSwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkxOSwianRpIjoiNThiNzJiZmItZGVlOS00NjUyLWI2N2ItNmVlMmJlOGMwOTgxIn0.qgwoNWTQPCieranzaMI6S5nbLtwAijAv-dbF9DqX_0k</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check supplier SM configuration status" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1999">
+      <description>Get supplier configuration health: 9be205e5-sm-sm-rte-integration-svc-itsma1-svc-cluster-local, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUxOSwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkxOSwianRpIjoiNThiNzJiZmItZGVlOS00NjUyLWI2N2ItNmVlMmJlOGMwOTgxIn0.qgwoNWTQPCieranzaMI6S5nbLtwAijAv-dbF9DqX_0k</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check aggregration health status" result="SUCCESS">
+    <test-step result="SUCCESS" duration="301">
+      <description>Get aggregation health: eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUxOSwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkxOSwianRpIjoiNThiNzJiZmItZGVlOS00NjUyLWI2N2ItNmVlMmJlOGMwOTgxIn0.qgwoNWTQPCieranzaMI6S5nbLtwAijAv-dbF9DqX_0k</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then Check Shop return service catalog items" result="SUCCESS">
+    <test-step result="SUCCESS" duration="825">
+      <description>Search items: service, *, relevancy:desc, , eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUxOSwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkxOSwianRpIjoiNThiNzJiZmItZGVlOS00NjUyLWI2N2ItNmVlMmJlOGMwOTgxIn0.qgwoNWTQPCieranzaMI6S5nbLtwAijAv-dbF9DqX_0k</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then Check Knowledge return articles" result="SUCCESS">
+    <test-step result="SUCCESS" duration="345">
+      <description>Search items: article, *, relevancy:desc, , eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUxOSwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkxOSwianRpIjoiNThiNzJiZmItZGVlOS00NjUyLWI2N2ItNmVlMmJlOGMwOTgxIn0.qgwoNWTQPCieranzaMI6S5nbLtwAijAv-dbF9DqX_0k</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then Check Request Support return support catalog items" result="SUCCESS">
+    <test-step result="SUCCESS" duration="303">
+      <description>Search items: support, *, relevancy:desc, , eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUxOSwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkxOSwianRpIjoiNThiNzJiZmItZGVlOS00NjUyLWI2N2ItNmVlMmJlOGMwOTgxIn0.qgwoNWTQPCieranzaMI6S5nbLtwAijAv-dbF9DqX_0k</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

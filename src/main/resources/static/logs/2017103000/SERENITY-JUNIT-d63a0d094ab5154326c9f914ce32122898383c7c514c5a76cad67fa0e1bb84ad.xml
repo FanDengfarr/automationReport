@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="C10 f02 s002 check deploy controller status" skipped="0" tests="1" time="0.38" timestamp="2017-10-303 03:13:02"><testcase name="C10-F02-S002-01 check deply controller pod status"><failure message="&#10;Expecting empty but was:&lt;&quot;itom-cmdb-deploy-controller-pod:Running &#10;&quot;&gt;" type="java.lang.AssertionError">
+Expecting empty but was:&lt;"itom-cmdb-deploy-controller-pod:Running 
+"&gt;</failure><system-err>
+Expecting empty but was:&lt;"itom-cmdb-deploy-controller-pod:Running 
+"&gt;
+com.hpe.itsma.stepdifinitions.TestConnectionStepDefinition.GetDeployControllerPodStatus(TestConnectionStepDefinition.java:294)
+</system-err></testcase></testsuite>

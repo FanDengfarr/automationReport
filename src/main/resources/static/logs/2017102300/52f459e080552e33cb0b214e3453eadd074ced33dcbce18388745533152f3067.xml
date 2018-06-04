@@ -1,0 +1,43 @@
+<acceptance-test-run title="c02-F02-S005-01-The service send manifest content to itsma deploy-controller" name="c02-F02-S005-01-The service send manifest content to itsma deploy-controller" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="3985" timestamp="2017-10-22T15:07:51.873Z">
+  <user-story id="c02_f02_s005_send_manifest" name="C02 f02 s005 send manifest" path="stories/c02_installer/c02_f02_s005_send_manifest.story"/>
+  <issues>
+    <issue>F02-S005-01</issue>
+  </issues>
+  <tags>
+    <tag name="Installer-API" type="Test Type"/>
+    <tag name="C02 installer" type="capability"/>
+    <tag name="2017-10" type="relase"/>
+    <tag name="C02 installer/C02 f02 s005 send manifest" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>serviceName</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>itom-auth</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {serviceName=itom-auth, INSTAlL_ACC=, installer=, suite=, tags=relase:2017-10, Test Type: Installer-API}" result="SUCCESS">
+    <test-group name="When services={itom-auth} send request to post manifest content in file=&quot;c02_f02_s005_02_manifest.txt&quot;" result="SUCCESS">
+      <test-step result="SUCCESS" duration="198">
+        <description>Do get request: /itsma/itsma_services/itom-auth</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then receive manifest yaml successful in env and {itom-auth} status changed to ready" result="SUCCESS">
+      <test-step result="SUCCESS" duration="121">
+        <description>Do get request: /itsma/itsma_services/itom-auth</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="2600">
+        <description>Do put request: /itsma/itsma_services/itom-auth, {status=SUCCESS}</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="299">
+        <description>Do get request: /itsma/itsma_services/itom-auth</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

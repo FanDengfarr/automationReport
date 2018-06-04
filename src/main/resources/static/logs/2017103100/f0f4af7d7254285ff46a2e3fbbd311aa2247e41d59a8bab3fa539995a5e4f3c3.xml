@@ -1,0 +1,51 @@
+<acceptance-test-run title="c02-F02-S004-01-get pod&apos;s status" name="c02-F02-S004-01-get pod&apos;s status" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="2079" timestamp="2017-10-30T15:02:45.613Z">
+  <user-story id="c02_f02_s004_get_pod_status" name="C02 f02 s004 get pod status" path="stories/c02_installer/c02_f02_s004_get_pod_status.story"/>
+  <issues>
+    <issue>F02-S004-01</issue>
+  </issues>
+  <tags>
+    <tag name="Installer-API" type="Test Type"/>
+    <tag name="C02 installer" type="capability"/>
+    <tag name="2017-10" type="relase"/>
+    <tag name="C02 installer/C02 f02 s004 get pod status" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>pod_name</header>
+      <header>status</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>itom-ingress-deploy-controller-pod</value>
+        <value>Succeeded</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-sm-XXXX</value>
+        <value>Pending</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {pod_name=itom-ingress-deploy-controller-pod, status=Succeeded, INSTAlL_ACC=, installer=, suite=, tags=relase:2017-10, Test Type: Installer-API}" result="SUCCESS">
+    <test-group name="When I sent get status&apos; request to &quot;itsma/kube_pods/{itom-ingress-deploy-controller-pod}&quot;" result="SUCCESS">
+      <test-step result="SUCCESS" duration="663">
+        <description>Do get request: itsma/kube_pods/itom-ingress-deploy-controller-pod</description>
+      </test-step>
+    </test-group>
+    <test-step result="SUCCESS" duration="127">
+      <description>Then I get the response with podname and the status in  list &quot;{Succeeded}&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[2] {pod_name=itom-sm-XXXX, status=Pending, INSTAlL_ACC=, installer=, suite=, tags=relase:2017-10, Test Type: Installer-API}" result="SUCCESS">
+    <test-group name="When I sent get status&apos; request to &quot;itsma/kube_pods/{itom-sm-XXXX}&quot;" result="SUCCESS">
+      <test-step result="SUCCESS" duration="453">
+        <description>Do get request: itsma/kube_pods/itom-sm-XXXX</description>
+      </test-step>
+    </test-group>
+    <test-step result="SUCCESS" duration="546">
+      <description>Then I get the response with podname and the status in  list &quot;{Pending}&quot;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

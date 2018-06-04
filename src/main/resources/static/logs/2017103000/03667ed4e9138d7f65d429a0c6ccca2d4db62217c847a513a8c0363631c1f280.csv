@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C03 f01 s001 backup test","C03-F01-s001-01 post a backup","SUCCESS","2017-10-30T03:19:14.103Z","0.0","0.15"
+"C03 f01 s001 backup test","C03-F01-s001-02 get backup status","SUCCESS","2017-10-30T03:19:14.252Z","0.0","2.35"
+"C03 f01 s001 backup test","C03-F01-s001-03 post a backup secondly","SUCCESS","2017-10-30T03:19:16.607Z","0.0","0.2"
+"C03 f01 s001 backup test","C03-F01-s001-04 get backup status until Suceesful","SUCCESS","2017-10-30T03:19:16.808Z","0.0","21.83"

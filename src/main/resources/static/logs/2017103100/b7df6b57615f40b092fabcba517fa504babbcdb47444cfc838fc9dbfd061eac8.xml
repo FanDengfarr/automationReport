@@ -1,0 +1,1074 @@
+<acceptance-test-run title="C10-F02-S001-01 check one deploy Status auth and others" name="C10-F02-S001-01 check one deploy Status auth and others" steps="210" successful="210" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="57720" timestamp="2017-10-30T16:10:08.483Z">
+  <user-story id="c10_f02_s001_check_svc_status" name="C10 f02 s001 check svc status" path="stories/c10_k8s/c10_f02_Kubernetes_pod_status/c10_f02_s001_check_svc_status.story"/>
+  <issues>
+    <issue>C10-F02-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="Kube-API" type="Test Type"/>
+    <tag name="C10 k8s" type="capability"/>
+    <tag name="C10 k8s/C10 f02 kubernetes pod status" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C10 f02 kubernetes pod status/C10 f02 s001 check svc status" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>deploy_name</header>
+      <header>namespace</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>auth</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm-postgresql</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-xservices-chat-ui</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-xservices-mobile-gateway</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-xservices-platform</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-xservices-postgres</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-xservices-rabbitmq</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-xservices-redis</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-xservices-xmpp</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-config-deployment</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-landing-page</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>nginx-ingress-controller-back</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>openldap-rc</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>postgresql-ucmdb</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-autopass</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-bpm</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-bpm-ui</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-catalog</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-catalog-ui</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-diagnostics</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-idm-admin</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-launchpad</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-notification</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-postgresql</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-propeltool</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-rabbitmq</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-search</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-subscription-ui</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-survey</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-sx</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-sx-ui</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-chat</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-mobility</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-postgres</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-emailout</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-gossip</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-integration</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-integration-cit</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-irque</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-report-export</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-scheduler</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-webtier</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-admin-ui-backend</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-idolfarm-config</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-installer</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-nginx</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-search</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-smsp-con-1a</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-smsp-con-1b</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-smsp-dah</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-smsp-dih</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-smsp-qms</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-ss-agent</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-ss-cfs</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-ss-con-1a</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-ss-con-1b</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-ss-con-2a</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-ss-con-2b</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-ss-dah1</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-ss-dih</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-ss-imgsvr</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-st-con-1</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-st-con-2</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smarta-st-proxy</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-browser</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-probe</value>
+        <value>itsma1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-solr</value>
+        <value>itsma1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {deploy_name=auth, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="5">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7987">
+      <description>When I check the status of deploy {auth} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[2] {deploy_name=idm, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="86">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2410">
+      <description>When I check the status of deploy {idm} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[3] {deploy_name=idm-postgresql, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="97">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2688">
+      <description>When I check the status of deploy {idm-postgresql} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[4] {deploy_name=itom-xservices-chat-ui, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="5">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1899">
+      <description>When I check the status of deploy {itom-xservices-chat-ui} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[5] {deploy_name=itom-xservices-mobile-gateway, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1806">
+      <description>When I check the status of deploy {itom-xservices-mobile-gateway} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="73">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[6] {deploy_name=itom-xservices-platform, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="5">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1202">
+      <description>When I check the status of deploy {itom-xservices-platform} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[7] {deploy_name=itom-xservices-postgres, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1198">
+      <description>When I check the status of deploy {itom-xservices-postgres} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[8] {deploy_name=itom-xservices-rabbitmq, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1103">
+      <description>When I check the status of deploy {itom-xservices-rabbitmq} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[9] {deploy_name=itom-xservices-redis, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="657">
+      <description>When I check the status of deploy {itom-xservices-redis} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[10] {deploy_name=itom-xservices-xmpp, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="640">
+      <description>When I check the status of deploy {itom-xservices-xmpp} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[11] {deploy_name=itsma-config-deployment, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="491">
+      <description>When I check the status of deploy {itsma-config-deployment} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[12] {deploy_name=itsma-landing-page, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="530">
+      <description>When I check the status of deploy {itsma-landing-page} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[13] {deploy_name=nginx-ingress-controller-back, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="505">
+      <description>When I check the status of deploy {nginx-ingress-controller-back} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[14] {deploy_name=openldap-rc, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="57">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="529">
+      <description>When I check the status of deploy {openldap-rc} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[15] {deploy_name=postgresql-ucmdb, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="760">
+      <description>When I check the status of deploy {postgresql-ucmdb} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[16] {deploy_name=propel-autopass, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="521">
+      <description>When I check the status of deploy {propel-autopass} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[17] {deploy_name=propel-bpm, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="676">
+      <description>When I check the status of deploy {propel-bpm} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[18] {deploy_name=propel-bpm-ui, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="516">
+      <description>When I check the status of deploy {propel-bpm-ui} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[19] {deploy_name=propel-catalog, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="488">
+      <description>When I check the status of deploy {propel-catalog} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[20] {deploy_name=propel-catalog-ui, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="490">
+      <description>When I check the status of deploy {propel-catalog-ui} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[21] {deploy_name=propel-diagnostics, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="772">
+      <description>When I check the status of deploy {propel-diagnostics} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[22] {deploy_name=propel-idm-admin, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="406">
+      <description>When I check the status of deploy {propel-idm-admin} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[23] {deploy_name=propel-launchpad, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="404">
+      <description>When I check the status of deploy {propel-launchpad} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[24] {deploy_name=propel-notification, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="492">
+      <description>When I check the status of deploy {propel-notification} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[25] {deploy_name=propel-postgresql, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="617">
+      <description>When I check the status of deploy {propel-postgresql} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[26] {deploy_name=propel-propeltool, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="40">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="667">
+      <description>When I check the status of deploy {propel-propeltool} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[27] {deploy_name=propel-rabbitmq, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="27">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="527">
+      <description>When I check the status of deploy {propel-rabbitmq} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[28] {deploy_name=propel-search, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="5">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="820">
+      <description>When I check the status of deploy {propel-search} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[29] {deploy_name=propel-subscription-ui, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="42">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="519">
+      <description>When I check the status of deploy {propel-subscription-ui} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[30] {deploy_name=propel-survey, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="593">
+      <description>When I check the status of deploy {propel-survey} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[31] {deploy_name=propel-sx, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="842">
+      <description>When I check the status of deploy {propel-sx} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="51">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[32] {deploy_name=propel-sx-ui, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="521">
+      <description>When I check the status of deploy {propel-sx-ui} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[33] {deploy_name=sm-chat, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="513">
+      <description>When I check the status of deploy {sm-chat} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[34] {deploy_name=sm-mobility, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="52">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="737">
+      <description>When I check the status of deploy {sm-mobility} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[35] {deploy_name=sm-postgres, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="567">
+      <description>When I check the status of deploy {sm-postgres} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[36] {deploy_name=sm-rte, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="607">
+      <description>When I check the status of deploy {sm-rte} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[37] {deploy_name=sm-rte-emailout, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="67">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="735">
+      <description>When I check the status of deploy {sm-rte-emailout} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[38] {deploy_name=sm-rte-gossip, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="529">
+      <description>When I check the status of deploy {sm-rte-gossip} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[39] {deploy_name=sm-rte-integration, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="802">
+      <description>When I check the status of deploy {sm-rte-integration} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[40] {deploy_name=sm-rte-integration-cit, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="760">
+      <description>When I check the status of deploy {sm-rte-integration-cit} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[41] {deploy_name=sm-rte-irque, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="532">
+      <description>When I check the status of deploy {sm-rte-irque} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[42] {deploy_name=sm-rte-report-export, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="483">
+      <description>When I check the status of deploy {sm-rte-report-export} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[43] {deploy_name=sm-rte-scheduler, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="499">
+      <description>When I check the status of deploy {sm-rte-scheduler} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="13">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[44] {deploy_name=sm-webtier, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="571">
+      <description>When I check the status of deploy {sm-webtier} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[45] {deploy_name=smarta-admin-ui-backend, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="474">
+      <description>When I check the status of deploy {smarta-admin-ui-backend} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[46] {deploy_name=smarta-idolfarm-config, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="800">
+      <description>When I check the status of deploy {smarta-idolfarm-config} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[47] {deploy_name=smarta-installer, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="428">
+      <description>When I check the status of deploy {smarta-installer} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[48] {deploy_name=smarta-nginx, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="477">
+      <description>When I check the status of deploy {smarta-nginx} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[49] {deploy_name=smarta-search, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="693">
+      <description>When I check the status of deploy {smarta-search} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[50] {deploy_name=smarta-smsp-con-1a, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="603">
+      <description>When I check the status of deploy {smarta-smsp-con-1a} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[51] {deploy_name=smarta-smsp-con-1b, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="62">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="444">
+      <description>When I check the status of deploy {smarta-smsp-con-1b} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[52] {deploy_name=smarta-smsp-dah, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="487">
+      <description>When I check the status of deploy {smarta-smsp-dah} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[53] {deploy_name=smarta-smsp-dih, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="863">
+      <description>When I check the status of deploy {smarta-smsp-dih} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[54] {deploy_name=smarta-smsp-qms, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="418">
+      <description>When I check the status of deploy {smarta-smsp-qms} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[55] {deploy_name=smarta-ss-agent, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="473">
+      <description>When I check the status of deploy {smarta-ss-agent} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[56] {deploy_name=smarta-ss-cfs, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="483">
+      <description>When I check the status of deploy {smarta-ss-cfs} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[57] {deploy_name=smarta-ss-con-1a, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="408">
+      <description>When I check the status of deploy {smarta-ss-con-1a} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[58] {deploy_name=smarta-ss-con-1b, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="429">
+      <description>When I check the status of deploy {smarta-ss-con-1b} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[59] {deploy_name=smarta-ss-con-2a, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="696">
+      <description>When I check the status of deploy {smarta-ss-con-2a} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[60] {deploy_name=smarta-ss-con-2b, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="758">
+      <description>When I check the status of deploy {smarta-ss-con-2b} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[61] {deploy_name=smarta-ss-dah1, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="584">
+      <description>When I check the status of deploy {smarta-ss-dah1} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[62] {deploy_name=smarta-ss-dih, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="627">
+      <description>When I check the status of deploy {smarta-ss-dih} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[63] {deploy_name=smarta-ss-imgsvr, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="471">
+      <description>When I check the status of deploy {smarta-ss-imgsvr} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[64] {deploy_name=smarta-st-con-1, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="407">
+      <description>When I check the status of deploy {smarta-st-con-1} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[65] {deploy_name=smarta-st-con-2, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1084">
+      <description>When I check the status of deploy {smarta-st-con-2} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[66] {deploy_name=smarta-st-proxy, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="886">
+      <description>When I check the status of deploy {smarta-st-proxy} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[67] {deploy_name=ucmdb, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="405">
+      <description>When I check the status of deploy {ucmdb} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[68] {deploy_name=ucmdb-browser, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="406">
+      <description>When I check the status of deploy {ucmdb-browser} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[69] {deploy_name=ucmdb-probe, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="466">
+      <description>When I check the status of deploy {ucmdb-probe} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[70] {deploy_name=ucmdb-solr, namespace=itsma1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="402">
+      <description>When I check the status of deploy {ucmdb-solr} under namespace {itsma1}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the status is &quot;Running&quot;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

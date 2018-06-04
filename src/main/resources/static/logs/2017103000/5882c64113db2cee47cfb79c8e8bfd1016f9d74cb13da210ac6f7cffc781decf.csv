@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C07 f04 s003 policy admin operations","C07-F04-S003-01 Add Policy and update catalog item","SUCCESS","2017-10-30T03:15:37.673Z","0.0","2.78"
+"C07 f04 s003 policy admin operations","C07-F04-S003-02 Order catalog item which has policy approval and approve it","SUCCESS","2017-10-30T03:15:40.453Z","0.0","18.5"
+"C07 f04 s003 policy admin operations","C07-F04-S003-03 Delete Policy","SUCCESS","2017-10-30T03:15:58.960Z","0.0","0.63"

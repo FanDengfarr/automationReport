@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell","C04-F00-CR22722-01 prepare test data","SUCCESS","2017-10-30T16:07:05.396Z","0.0","0.39"
+"C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell","C04-F00-CR22722-02 check authentication with idmUsr2","SUCCESS","2017-10-30T16:07:34.794Z","0.0","1.2"
+"C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell","C04-F00-CR22722-02 check user authentication with idmUsr1","SUCCESS","2017-10-30T16:07:06.988Z","0.0","27.8"
+"C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell","C04-F00-CR22722-03 cleanup","SUCCESS","2017-10-30T16:07:35.993Z","0.0","0.3"
+"C04 f00 s01 authentication internal user","C04-F00-S01-01 internal oldap user with valid login credential should get valid LWSSO_COOKIE_KEY","SUCCESS","2017-10-30T16:07:36.484Z","0.0","1.61"
+"C04 f00 s01 authentication internal user","C04-F00-S01-03 internal sysadmin with valid login credential should get valid LWSSO_COOKIE_KEY","SUCCESS","2017-10-30T16:07:38.185Z","0.0","0.9"
+"C04 f00 s01 authentication internal user","C04-F00-S01-05 internal oldap user with valid credential can access idm service","SUCCESS","2017-10-30T16:07:39.095Z","0.0","2.6"

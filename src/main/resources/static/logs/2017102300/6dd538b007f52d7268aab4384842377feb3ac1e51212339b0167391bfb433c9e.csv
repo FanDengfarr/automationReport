@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell","C04-F00-CR22722-01 prepare test data","SUCCESS","2017-10-22T16:12:06.759Z","0.0","0.69"
+"C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell","C04-F00-CR22722-02 check authentication with idmUsr2","SUCCESS","2017-10-22T16:12:34.758Z","0.0","1.19"
+"C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell","C04-F00-CR22722-02 check user authentication with idmUsr1","SUCCESS","2017-10-22T16:12:08.752Z","0.0","26.0"
+"C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell","C04-F00-CR22722-03 cleanup","SUCCESS","2017-10-22T16:12:35.951Z","0.0","0.11"

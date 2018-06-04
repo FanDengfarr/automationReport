@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="C08 f02 s002 submit support request" skipped="0" tests="1" time="1.81" timestamp="2017-10-295 04:40:34"><testcase name="C08-F02-S002-01 Test submit a generic support request"><error type="java.lang.RuntimeException"/><system-err>null
+com.hpe.itsma.steps.saw.RequestSteps.parseSupportJsonObject(RequestSteps.java:112)
+com.hpe.itsma.steps.saw.RequestSteps.submitSupportRequest(RequestSteps.java:40)
+com.hpe.itsma.stepdifinitions.saw.RequestStepDefinition.submitSupportRequest(RequestStepDefinition.java:46)
+</system-err></testcase></testsuite>

@@ -1,0 +1,22 @@
+<acceptance-test-run title="C01-F04-S001-01 Connect propel tool with a random value" name="C01-F04-S001-01 Connect propel tool with a random value" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="709" timestamp="2017-10-30T03:21:46.717Z">
+  <user-story id="c01_f014_s001_update_propel_tool_status" name="C01 f014 s001 update propel tool status" path="stories/c01_configapp/c01_f04_propel_tool/c01_f014_s001_update_propel_tool_status.story"/>
+  <issues>
+    <issue>C01-F04-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="ConfigAPP-API" type="Test Type"/>
+    <tag name="C01 configapp" type="capability"/>
+    <tag name="C01 configapp/C01 f04 propel tool" type="feature"/>
+    <tag name="2017-04" type="relase"/>
+    <tag name="C01 f04 propel tool/C01 f014 s001 update propel tool status" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="8">
+    <description>Given a propel_tool_satus</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="698">
+    <description>When I connect propel tool with default settings</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="1">
+    <description>Then test connection should return {200}</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="C10 f01 s001 check k8s version" skipped="0" tests="2" time="0.29" timestamp="2017-10-303 03:11:57"><testcase name="C10-F01-S001-01 check API version"/><testcase name="C10-F01-S001-02 check TLS version"/></testsuite>

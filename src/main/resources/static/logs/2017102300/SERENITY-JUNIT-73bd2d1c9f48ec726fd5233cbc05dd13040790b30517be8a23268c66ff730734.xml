@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="C08 f02 s003 submit cart order" skipped="0" tests="1" time="0.42" timestamp="2017-10-295 04:40:36"><testcase name="C08-F02-S003-01 Test submit a cart order"><error message="Failed to parse the JSON document" type="io.restassured.path.json.exception.JsonPathException">Failed to parse the JSON document</error><system-err>Failed to parse the JSON document
+io.restassured.path.json.JsonPath.get(JsonPath.java:201)
+com.hpe.itsma.steps.saw.CatalogSteps.getCatalogId(CatalogSteps.java:57)
+com.hpe.itsma.stepdifinitions.saw.CatalogStepDefinition.selectCatalog(CatalogStepDefinition.java:50)
+</system-err></testcase></testsuite>

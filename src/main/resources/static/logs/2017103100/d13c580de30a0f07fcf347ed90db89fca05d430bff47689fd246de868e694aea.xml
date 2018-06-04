@@ -1,0 +1,19 @@
+<acceptance-test-run title="C01-F05-S001-01 get idm token" name="C01-F05-S001-01 get idm token" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="277" timestamp="2017-10-30T16:19:02.722Z">
+  <user-story id="c01_f05_s001_get_idm_token" name="C01 f05 s001 get idm token" path="stories/c01_configapp/c01_f05_get_idm_token/c01_f05_s001_get_idm_token.story"/>
+  <issues>
+    <issue>C01-F05-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="ConfigAPP-API" type="Test Type"/>
+    <tag name="C01 configapp" type="capability"/>
+    <tag name="C01 configapp/C01 f05 get idm token" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C01 f05 get idm token/C01 f05 s001 get idm token" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="195">
+    <description>When send get request to &quot;/configuration/idmtoken&quot;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="80">
+    <description>Then I get the response &quot;errorCode&quot; = &quot;0&quot;</description>
+  </test-step>
+</acceptance-test-run>

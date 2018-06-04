@@ -1,0 +1,29 @@
+<acceptance-test-run title="C10-F02-S003-01 check all pod status" name="C10-F02-S003-01 check all pod status" steps="3" successful="2" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="800" timestamp="2017-10-22T16:16:11.856Z">
+  <user-story id="c10_f02_s003_check_all_pod_status" name="C10 f02 s003 check all pod status" path="stories/c10_k8s/c10_f02_Kubernetes_pod_status/c10_f02_s003_check_all_pod_status.story"/>
+  <issues>
+    <issue>C10-F02-S003-01</issue>
+  </issues>
+  <tags>
+    <tag name="Kube-API" type="Test Type"/>
+    <tag name="C10 k8s" type="capability"/>
+    <tag name="C10 k8s/C10 f02 kubernetes pod status" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C10 f02 kubernetes pod status/C10 f02 s003 check all pod status" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="86">
+    <description>Given a CD system is up</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="701">
+    <description>When I get podList under namespace &quot;itsma1&quot;</description>
+  </test-step>
+  <test-step result="FAILURE" duration="5">
+    <description>Then I get the all pod status is &quot;Succeeded&quot; or &quot;Running&quot;</description>
+    <error>java.lang.AssertionError: 
+Expecting empty but was:&lt;&quot;itom-xservices-lcm-prepare:Failed
+&quot;&gt;</error>
+    <exception>java.lang.AssertionError:
+Expecting empty but was:&lt;&quot;itom-xservices-lcm-prepare:Failed
+&quot;&gt;
+[com.hpe.itsma.stepdifinitions.TestConnectionStepDefinition.GetAllPodStatus(TestConnectionStepDefinition.java:305)]</exception>
+  </test-step>
+</acceptance-test-run>

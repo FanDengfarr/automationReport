@@ -1,0 +1,36 @@
+<acceptance-test-run title="C08-F01-S008-01 Test get offering price" name="C08-F01-S008-01 Test get offering price" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="1221" timestamp="2017-10-30T16:48:13.885Z">
+  <user-story id="c08_f01_s008_getOfferingPrice" name="C08 f01 s008 get offering price" path="stories/c08_saw/c08_f01_catalog/c08_f01_s008_getOfferingPrice.story"/>
+  <issues>
+    <issue>C08-F01-S008-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f01 catalog" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f01 catalog/C08 f01 s008 get offering price" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="406">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user select catalog {catalog.item}" result="SUCCESS">
+    <test-group name="Get catalog id: Business and Department Services, _kmaDeYRSKBLvBnvk9cZmulIkEzylss-Q9duzWKqJBzF_XNByADNoTMTbIEcqMoyGGzdu2i9kEVpCkaJ_15vXTjhsAsof36mreFHljeKlIDPVWe0nmMHcHHc-fccFcG0L2NlddT0-0DLZWV7CA7szxhbkLhUBK0R_NwM-f8Z8m4wEFNqmagHlqAYdQq8s4Ta-i8nzAm9f8TzNbbWXDStcJBoMGDGN1-C6m9d6HRuUxykladDwTtJOncarS8ddAxzKFZpIpMMrwRUvM8E5Nh6bF2nFUnTRuz7gGCkj9rUbxJUHIv0xKwqdbdl9m4k5ly0QPQh9TlBfUgv8VLTlgGM9lqM6V3UgiWqIbAwn_HlWILfDgFZMWXKUU5jspc93tYKWm8-UxsaS7Q3uujTJGPacpg-BPwSAmd4Mxcvt973RtZQUWRsUbsi-eLiftD7JDL_t8gCh0eX1Onw5801g96igGx2W_9PZSEoelUXZ2vvYlpmcqhFQeb3fDLBhkzNUQgbuqIjx12tTsrxaqpoNphfIEl1-4XiR47PPW5FKQ_I-MAb1EFG78BuStg0ehY-5B4IqyRTgeNN-ZIGKpx3OlvCKUX_UWe6rAJOXnswA7HQtMQlr0jB5mJ2p-GEfQ11dR2t7yzJ3GiwujKuMeLcfZGMIevHWWLiNLzbioiwctcRik_gtvCQY1-KIF6_vZICbak_LFA8zizr-Y2Tf1jJwmlfdRLMih-uKDELrNDLKuWuBYrF6B-eCigZ0IZvEW5aP6-9ovXrJKrU8ThHsxMrjoBwwcJf22SP-hTCwE5SnTVDPUE6ZShcKnqhHCxlLGoHbEcnwMRkChvN5fuXB-rAtJKWcFWp1mCccK48QaKWDygXo-giPzOcf9vprB72mXZagTc8TdtOtGmis5nmAXsa_UODsSs5rrSIZk4xE6N7yimBnGFllPwDIdrpzo4ZwQxlbhVMCaIZ8KAi_cG-hXhWETyCBcZ6MSBkXR2E39nU7EqdIsO_qf_ZFo624EUtftvzoHoQzleRUUw94-z0UHBPwn78L8VITCGxVOeYA8wraq4dmPyZYjWBuK8j2HTDPcJmuBIpLzeSU0nK0sWFpnSJELb4zR_AkK6Ee14Lyf-7Rx_6Hyvp2cs6v40bjMtnmIv1yHgC" result="SUCCESS">
+      <test-step result="SUCCESS" duration="313">
+        <description>Get catalogs: _kmaDeYRSKBLvBnvk9cZmulIkEzylss-Q9duzWKqJBzF_XNByADNoTMTbIEcqMoyGGzdu2i9kEVpCkaJ_15vXTjhsAsof36mreFHljeKlIDPVWe0nmMHcHHc-fccFcG0L2NlddT0-0DLZWV7CA7szxhbkLhUBK0R_NwM-f8Z8m4wEFNqmagHlqAYdQq8s4Ta-i8nzAm9f8TzNbbWXDStcJBoMGDGN1-C6m9d6HRuUxykladDwTtJOncarS8ddAxzKFZpIpMMrwRUvM8E5Nh6bF2nFUnTRuz7gGCkj9rUbxJUHIv0xKwqdbdl9m4k5ly0QPQh9TlBfUgv8VLTlgGM9lqM6V3UgiWqIbAwn_HlWILfDgFZMWXKUU5jspc93tYKWm8-UxsaS7Q3uujTJGPacpg-BPwSAmd4Mxcvt973RtZQUWRsUbsi-eLiftD7JDL_t8gCh0eX1Onw5801g96igGx2W_9PZSEoelUXZ2vvYlpmcqhFQeb3fDLBhkzNUQgbuqIjx12tTsrxaqpoNphfIEl1-4XiR47PPW5FKQ_I-MAb1EFG78BuStg0ehY-5B4IqyRTgeNN-ZIGKpx3OlvCKUX_UWe6rAJOXnswA7HQtMQlr0jB5mJ2p-GEfQ11dR2t7yzJ3GiwujKuMeLcfZGMIevHWWLiNLzbioiwctcRik_gtvCQY1-KIF6_vZICbak_LFA8zizr-Y2Tf1jJwmlfdRLMih-uKDELrNDLKuWuBYrF6B-eCigZ0IZvEW5aP6-9ovXrJKrU8ThHsxMrjoBwwcJf22SP-hTCwE5SnTVDPUE6ZShcKnqhHCxlLGoHbEcnwMRkChvN5fuXB-rAtJKWcFWp1mCccK48QaKWDygXo-giPzOcf9vprB72mXZagTc8TdtOtGmis5nmAXsa_UODsSs5rrSIZk4xE6N7yimBnGFllPwDIdrpzo4ZwQxlbhVMCaIZ8KAi_cG-hXhWETyCBcZ6MSBkXR2E39nU7EqdIsO_qf_ZFo624EUtftvzoHoQzleRUUw94-z0UHBPwn78L8VITCGxVOeYA8wraq4dmPyZYjWBuK8j2HTDPcJmuBIpLzeSU0nK0sWFpnSJELb4zR_AkK6Ee14Lyf-7Rx_6Hyvp2cs6v40bjMtnmIv1yHgC</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="When user select offering {service.offering.item}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="251">
+      <description>Get offerings: a00043ad-beba-4340-866d-0fc6c8f5731b, _kmaDeYRSKBLvBnvk9cZmulIkEzylss-Q9duzWKqJBzF_XNByADNoTMTbIEcqMoyGGzdu2i9kEVpCkaJ_15vXTjhsAsof36mreFHljeKlIDPVWe0nmMHcHHc-fccFcG0L2NlddT0-0DLZWV7CA7szxhbkLhUBK0R_NwM-f8Z8m4wEFNqmagHlqAYdQq8s4Ta-i8nzAm9f8TzNbbWXDStcJBoMGDGN1-C6m9d6HRuUxykladDwTtJOncarS8ddAxzKFZpIpMMrwRUvM8E5Nh6bF2nFUnTRuz7gGCkj9rUbxJUHIv0xKwqdbdl9m4k5ly0QPQh9TlBfUgv8VLTlgGM9lqM6V3UgiWqIbAwn_HlWILfDgFZMWXKUU5jspc93tYKWm8-UxsaS7Q3uujTJGPacpg-BPwSAmd4Mxcvt973RtZQUWRsUbsi-eLiftD7JDL_t8gCh0eX1Onw5801g96igGx2W_9PZSEoelUXZ2vvYlpmcqhFQeb3fDLBhkzNUQgbuqIjx12tTsrxaqpoNphfIEl1-4XiR47PPW5FKQ_I-MAb1EFG78BuStg0ehY-5B4IqyRTgeNN-ZIGKpx3OlvCKUX_UWe6rAJOXnswA7HQtMQlr0jB5mJ2p-GEfQ11dR2t7yzJ3GiwujKuMeLcfZGMIevHWWLiNLzbioiwctcRik_gtvCQY1-KIF6_vZICbak_LFA8zizr-Y2Tf1jJwmlfdRLMih-uKDELrNDLKuWuBYrF6B-eCigZ0IZvEW5aP6-9ovXrJKrU8ThHsxMrjoBwwcJf22SP-hTCwE5SnTVDPUE6ZShcKnqhHCxlLGoHbEcnwMRkChvN5fuXB-rAtJKWcFWp1mCccK48QaKWDygXo-giPzOcf9vprB72mXZagTc8TdtOtGmis5nmAXsa_UODsSs5rrSIZk4xE6N7yimBnGFllPwDIdrpzo4ZwQxlbhVMCaIZ8KAi_cG-hXhWETyCBcZ6MSBkXR2E39nU7EqdIsO_qf_ZFo624EUtftvzoHoQzleRUUw94-z0UHBPwn78L8VITCGxVOeYA8wraq4dmPyZYjWBuK8j2HTDPcJmuBIpLzeSU0nK0sWFpnSJELb4zR_AkK6Ee14Lyf-7Rx_6Hyvp2cs6v40bjMtnmIv1yHgC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="52">
+      <description>Get offering id: Project Management, io.restassured.internal.RestAssuredResponseImpl@71730213</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="2">
+    <description>Then user will get offering price</description>
+  </test-step>
+</acceptance-test-run>

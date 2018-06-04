@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C07 f01 s001 integration status check","C07-F01-S001-01 Check Propel integration status with SM","SUCCESS","2017-11-01T04:36:53.618Z","0.0","14.39"
+"C07 f01 s003 request support catalog item","C07-F01-S003-01 Request Support Catalog Item","SUCCESS","2017-11-01T04:38:26.199Z","0.0","25.41"
+"C07 f01 s004 view knowledge article","C07-F01-S004-01 View Knowledge Article","SUCCESS","2017-11-01T04:38:51.617Z","0.0","0.69"

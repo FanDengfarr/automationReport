@@ -1,0 +1,31 @@
+<acceptance-test-run title="C08-F01-S003-01 Test get offering detail information" name="C08-F01-S003-01 Test get offering detail information" steps="4" successful="2" failures="0" skipped="2" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="1008" timestamp="2017-10-22T16:40:25.654Z">
+  <user-story id="c08_f01_s003_getOfferingDetail" name="C08 f01 s003 get offering detail" path="stories/c08_saw/c08_f01_catalog/c08_f01_s003_getOfferingDetail.story"/>
+  <issues>
+    <issue>C08-F01-S003-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f01 catalog" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f01 catalog/C08 f01 s003 get offering detail" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="702">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user select catalog ｟catalog.item｠" result="ERROR">
+    <test-group name="Get catalog id: Business and Department Services, e3uy4gCOh8pNAkunUiDtZkqcUmwZf--ApJ3Ussf1DGPG1nWqhsm8dw3KlUpNnBa4O_ym6otJRNFA44_n7sGRVDF7N1zbRoiIzakl44aD0PLGbRf0-5Cto8TsLerolfMeVgERFrt5gf7Ju8SxPxstpjYU9lYicuJCU8OwFp330s64sqEuP_KoYKBfTH9k8gfxP_J-x7xZfP3xVtOAK8WIvNQTn9sO0Yz-azi1tH8XGUo1hhurWKv42j6gRhPu4jcpUYP_Ut3oAlm73cjy1ia3AWGu4mdPuYzkQhEdON1ZjnQ0B4Y6bM_gZXWrmg4yIVAetpapPkz7-dbu2_vCQVl4vt5_axvjTpTjKBY65DSh7A8TVhJTCxCagYWNq9LDfTZSWzyOfyD_ZKdfOopQuSDVggSUZkD26CrKC5K9_RsOnrvYH3cIu93nNEYx7MW22gRHLdi_Njdi_qYF7U9phEgkcQa530ZspWe3LoUZdRyopALoIvhc0A2L04Y1ZxuS8-FohTgoLocN2Nxab3zVN6XplJmoV1JqIHO61wqlpRBF6GxqvCtsjf6c9PNU2MADykLYHDoIN50r749evGqq9_AVTLeXw6l1HI8vz37aZFZVCRfFn15jF0GFma5kaYt6n_-RXz7FbBCGuf4klHOM769XveYBXkViDvqijcnJYdkxPorWHlCaFZ8LQV4MFTdEpnm9QtWJMpE2syLScu5mMDFCRmkMMOKyIPKaCbV4nmJM8I-n-AjOCKKfL_-C0Z3neytPQsK-BQNzIZpissknPcBXLwVLw_LCSH1CpTe-RiXDWcQazIU6TQhLSX7XW8us01jLpayHwhpObfhG6JbUgPpD9AfkVBjAg3LM8MDoSgTCKGqghwgwBlET8GhRg95t6Xw9l6ujVHnRnFFl4NFfqOTdMJAa4ivqQlAG6tcN624lgWnsLfeYn7z5KgXNB349kZOYtwxQ26nKkd9snUPkeyBFvkTp33M8EezZ4MKlkp090HeAprXR3Yx4Ly8okIHPCGK6vRkjqkZvvu7JxGJCU3Jrvyt43TcuXjnOYDSsqNayfuXcHUiXgfqPlxr8Q8U2t-lMdyH6Tb1vMMXWt3nHum_vdfBIzdgh-06k6Q19cItz6oTd7B8yTvUMlNj6ZHbtZ76A" result="ERROR">
+      <test-step result="SUCCESS" duration="184">
+        <description>Get catalogs: e3uy4gCOh8pNAkunUiDtZkqcUmwZf--ApJ3Ussf1DGPG1nWqhsm8dw3KlUpNnBa4O_ym6otJRNFA44_n7sGRVDF7N1zbRoiIzakl44aD0PLGbRf0-5Cto8TsLerolfMeVgERFrt5gf7Ju8SxPxstpjYU9lYicuJCU8OwFp330s64sqEuP_KoYKBfTH9k8gfxP_J-x7xZfP3xVtOAK8WIvNQTn9sO0Yz-azi1tH8XGUo1hhurWKv42j6gRhPu4jcpUYP_Ut3oAlm73cjy1ia3AWGu4mdPuYzkQhEdON1ZjnQ0B4Y6bM_gZXWrmg4yIVAetpapPkz7-dbu2_vCQVl4vt5_axvjTpTjKBY65DSh7A8TVhJTCxCagYWNq9LDfTZSWzyOfyD_ZKdfOopQuSDVggSUZkD26CrKC5K9_RsOnrvYH3cIu93nNEYx7MW22gRHLdi_Njdi_qYF7U9phEgkcQa530ZspWe3LoUZdRyopALoIvhc0A2L04Y1ZxuS8-FohTgoLocN2Nxab3zVN6XplJmoV1JqIHO61wqlpRBF6GxqvCtsjf6c9PNU2MADykLYHDoIN50r749evGqq9_AVTLeXw6l1HI8vz37aZFZVCRfFn15jF0GFma5kaYt6n_-RXz7FbBCGuf4klHOM769XveYBXkViDvqijcnJYdkxPorWHlCaFZ8LQV4MFTdEpnm9QtWJMpE2syLScu5mMDFCRmkMMOKyIPKaCbV4nmJM8I-n-AjOCKKfL_-C0Z3neytPQsK-BQNzIZpissknPcBXLwVLw_LCSH1CpTe-RiXDWcQazIU6TQhLSX7XW8us01jLpayHwhpObfhG6JbUgPpD9AfkVBjAg3LM8MDoSgTCKGqghwgwBlET8GhRg95t6Xw9l6ujVHnRnFFl4NFfqOTdMJAa4ivqQlAG6tcN624lgWnsLfeYn7z5KgXNB349kZOYtwxQ26nKkd9snUPkeyBFvkTp33M8EezZ4MKlkp090HeAprXR3Yx4Ly8okIHPCGK6vRkjqkZvvu7JxGJCU3Jrvyt43TcuXjnOYDSsqNayfuXcHUiXgfqPlxr8Q8U2t-lMdyH6Tb1vMMXWt3nHum_vdfBIzdgh-06k6Q19cItz6oTd7B8yTvUMlNj6ZHbtZ76A</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-step result="SKIPPED" duration="0">
+    <description>When user select offering {service.offering.item}</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="0">
+    <description>Then user will get offering detail</description>
+  </test-step>
+</acceptance-test-run>

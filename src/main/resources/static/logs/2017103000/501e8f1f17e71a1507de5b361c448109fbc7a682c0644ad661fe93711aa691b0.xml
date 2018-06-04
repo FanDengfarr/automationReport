@@ -1,0 +1,28 @@
+<acceptance-test-run title="C07-F01-S004-01 View Knowledge Article" name="C07-F01-S004-01 View Knowledge Article" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="1095" timestamp="2017-10-30T03:15:19.755Z">
+  <user-story id="c07_f01_s004_view_knowledge_article" name="C07 f01 s004 view knowledge article" path="stories/c07_propel/c07_f01_integration_with_SM/c07_f01_s004_view_knowledge_article.story"/>
+  <issues>
+    <issue>C07-F01-S004-01</issue>
+  </issues>
+  <tags>
+    <tag name="Propel API" type="Test Type"/>
+    <tag name="C07 propel" type="capability"/>
+    <tag name="C07 propel/C07 f01 integration with sm" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C07 f01 integration with sm/C07 f01 s004 view knowledge article" type="story"/>
+  </tags>
+  <test-group name="Given user login Propel as {user.username} with {user.password} using {itsma.tenantName}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="393">
+      <description>Login: falcon, 123456, ITSMA</description>
+    </test-step>
+  </test-group>
+  <test-group name="When search knowledge article {knowledge.article}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="287">
+      <description>Search items: article, Schedule a Lync Online Meeting, relevancy:desc, , eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYjQ4NTVmNmIwM2YwMDE1ZjZiMDRkNDVlMDE3MiIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTMzNjkyMCwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RiNDg1NWY2YjAzZjAwMTVmNmIwNDU4OWIwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTMzMzMyMCwianRpIjoiOWRhZDIyYzItMGM0NS00NzcwLTllZDQtZjcyODQyOWRjNDZhIn0.Gycgv5sD6aeZfGugGiMojOGGKvt5q3Kn4vvlocInmQs</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then Check the user can view the knowledge article" result="SUCCESS">
+    <test-step result="SUCCESS" duration="194">
+      <description>Wiew singel knowledge article: KM0609, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYjQ4NTVmNmIwM2YwMDE1ZjZiMDRkNDVlMDE3MiIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTMzNjkyMCwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RiNDg1NWY2YjAzZjAwMTVmNmIwNDU4OWIwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTMzMzMyMCwianRpIjoiOWRhZDIyYzItMGM0NS00NzcwLTllZDQtZjcyODQyOWRjNDZhIn0.Gycgv5sD6aeZfGugGiMojOGGKvt5q3Kn4vvlocInmQs</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

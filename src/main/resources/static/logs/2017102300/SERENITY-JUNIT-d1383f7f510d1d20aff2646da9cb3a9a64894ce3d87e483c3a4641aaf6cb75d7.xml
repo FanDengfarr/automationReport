@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="C08 f01 s004 get service list" skipped="0" tests="1" time="0.9" timestamp="2017-10-295 04:40:26"><testcase name="C08-F01-S004-01 Test get service list belongs to catalog"><error message="Failed to parse the JSON document" type="io.restassured.path.json.exception.JsonPathException">Failed to parse the JSON document</error><system-err>Failed to parse the JSON document
+io.restassured.path.json.JsonPath.get(JsonPath.java:201)
+com.hpe.itsma.steps.saw.CatalogSteps.getCatalogId(CatalogSteps.java:57)
+com.hpe.itsma.steps.saw.CatalogSteps.getServices(CatalogSteps.java:159)
+com.hpe.itsma.stepdifinitions.saw.CatalogStepDefinition.getServices(CatalogStepDefinition.java:96)
+</system-err></testcase></testsuite>

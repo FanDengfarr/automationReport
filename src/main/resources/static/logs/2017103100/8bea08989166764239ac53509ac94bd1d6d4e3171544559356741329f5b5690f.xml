@@ -1,0 +1,18 @@
+<acceptance-test-run title="C02-F01-s001-01 Connect Oracle database in installer with default settings" name="C02-F01-s001-01 Connect Oracle database in installer with default settings" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="19596" timestamp="2017-10-30T15:00:30.001Z">
+  <user-story id="c02_f01_s001_installer_oracle" name="C02 f01 s001 installer oracle" path="stories/c02_installer/c02_f01_s001_installer_oracle.story"/>
+  <tags>
+    <tag name="Installer-API" type="Test Type"/>
+    <tag name="C02 installer" type="capability"/>
+    <tag name="2017-10" type="relase"/>
+    <tag name="C02 installer/C02 f01 s001 installer oracle" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="229">
+    <description>Given a Oracle Server in installer</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="18465">
+    <description>When connect database with default settings</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="696">
+    <description>Then test should return {successfully}</description>
+  </test-step>
+</acceptance-test-run>

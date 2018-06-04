@@ -1,0 +1,28 @@
+<acceptance-test-run title="C08-F01-S009-01 Test get full category structure" name="C08-F01-S009-01 Test get full category structure" steps="3" successful="2" failures="0" skipped="1" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="919" timestamp="2017-10-22T16:40:31.149Z">
+  <user-story id="c08_f01_s009_getFullCategory" name="C08 f01 s009 get full category" path="stories/c08_saw/c08_f01_catalog/c08_f01_s009_getFullCategory.story"/>
+  <issues>
+    <issue>C08-F01-S009-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f01 catalog" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f01 catalog/C08 f01 s009 get full category" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="501">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user select catalog ｟catalog.item｠" result="ERROR">
+    <test-group name="Get catalog id: Business and Department Services, e3uy4gCOh8pNAkunUiDtZotDGtIxRZEJf-CACOP5yakE3rooKUhmcBveCaQNxSig70TXY0Yz2Pr285CpVbcZ7IUSVgl-zEgSkAqtldDsINgOGBJKphIUjTh4MnwwlX7aXrwh3rad3-bCK34pZGqYfhVFxF3pFD8g0KXi1m7645evFrNnLLsHwkXH3dflRlgoMVHcdOgcxjrxFcDMrWuSW_DlTEUvhO6LUW1-rq5Fz8Ym4ANb6k6Mx5J4vSiAljB2bnwETWUp_pgKqa9e3VDijufh4eR8TDPJ7z0gxi85-C5uB9r2Rs6H7voTB7D8MYEelYdFyFEQLXeKPgVlwA82NAazj6Utm2y_1lXEPYwtP4IrJBnx-p_q_XKk3orpH_iwaeLYH8cSeDO2jsgbBsv2R878HlSOPbu8HBUQkkI1gPGXF5UrjFG-l2r4kz-DZtsNg5d03S_btY8al7RU4ihFZf2Q4VVi_pEiob0sTrdM5McXFx0fSedXRWMPABriz5IAdpT0P4oWSnnffZKVsGD8iP54ECjyPZt1qkG_K3oSWHw97zgVeLw_fM_1_YG8ddpTbqdHpjjDV8OUtb3IU12_WeGbQiIDbXrAQ8syxNhggP80oFMdapwFew_L1Rv0Qm8D4ziDQhX77lGPL8ue2QcQtT_cHFrA_809AhBiQETUIh7l_fc2uUoAvOlTRTHrtvXi6gzBpwTf_ByIHlQSZel0Nt9twwt8qtwq2VuDnIpVi2o1OWRqdS1_f4Vsk5cHfY5U_ClB1QmBCOWNQHIJBbff1nD-3m-zExp-TxNpgQ2ZEbOhCyjqal8Mz__TJvhGAspjCQmP9G-u5ZgnlpYEjM4OXnOeaV0tdxwEoz9Jb6qC_3crix_cJ0v_q8u-c0Pea05_JYfvWpN78EHh2qp3QtSsaE103huz38VApyW0NLcTcPNceAvIkzIvyWfcyFHi0hms1n4_TCLyZvykCyCfApB70pK1qJFNR8vS63ai3s-zlC6fYQtA6z9CTmFLyithmO3yeA-bfhx0qJqfFWN6wuTSwNLqke-Ev7J6uAoXffa4JKsnIBJplLZeHL8tsmzesMVx3YcFP84s0Eyk2Eg_5IOa7rbKutanAo0VOsPD9KUFUIGb4Wbh4CiF1HniTxJK1qWB" result="ERROR">
+      <test-step result="SUCCESS" duration="303">
+        <description>Get catalogs: e3uy4gCOh8pNAkunUiDtZotDGtIxRZEJf-CACOP5yakE3rooKUhmcBveCaQNxSig70TXY0Yz2Pr285CpVbcZ7IUSVgl-zEgSkAqtldDsINgOGBJKphIUjTh4MnwwlX7aXrwh3rad3-bCK34pZGqYfhVFxF3pFD8g0KXi1m7645evFrNnLLsHwkXH3dflRlgoMVHcdOgcxjrxFcDMrWuSW_DlTEUvhO6LUW1-rq5Fz8Ym4ANb6k6Mx5J4vSiAljB2bnwETWUp_pgKqa9e3VDijufh4eR8TDPJ7z0gxi85-C5uB9r2Rs6H7voTB7D8MYEelYdFyFEQLXeKPgVlwA82NAazj6Utm2y_1lXEPYwtP4IrJBnx-p_q_XKk3orpH_iwaeLYH8cSeDO2jsgbBsv2R878HlSOPbu8HBUQkkI1gPGXF5UrjFG-l2r4kz-DZtsNg5d03S_btY8al7RU4ihFZf2Q4VVi_pEiob0sTrdM5McXFx0fSedXRWMPABriz5IAdpT0P4oWSnnffZKVsGD8iP54ECjyPZt1qkG_K3oSWHw97zgVeLw_fM_1_YG8ddpTbqdHpjjDV8OUtb3IU12_WeGbQiIDbXrAQ8syxNhggP80oFMdapwFew_L1Rv0Qm8D4ziDQhX77lGPL8ue2QcQtT_cHFrA_809AhBiQETUIh7l_fc2uUoAvOlTRTHrtvXi6gzBpwTf_ByIHlQSZel0Nt9twwt8qtwq2VuDnIpVi2o1OWRqdS1_f4Vsk5cHfY5U_ClB1QmBCOWNQHIJBbff1nD-3m-zExp-TxNpgQ2ZEbOhCyjqal8Mz__TJvhGAspjCQmP9G-u5ZgnlpYEjM4OXnOeaV0tdxwEoz9Jb6qC_3crix_cJ0v_q8u-c0Pea05_JYfvWpN78EHh2qp3QtSsaE103huz38VApyW0NLcTcPNceAvIkzIvyWfcyFHi0hms1n4_TCLyZvykCyCfApB70pK1qJFNR8vS63ai3s-zlC6fYQtA6z9CTmFLyithmO3yeA-bfhx0qJqfFWN6wuTSwNLqke-Ev7J6uAoXffa4JKsnIBJplLZeHL8tsmzesMVx3YcFP84s0Eyk2Eg_5IOa7rbKutanAo0VOsPD9KUFUIGb4Wbh4CiF1HniTxJK1qWB</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-step result="SKIPPED" duration="0">
+    <description>Then user will get category structure</description>
+  </test-step>
+</acceptance-test-run>

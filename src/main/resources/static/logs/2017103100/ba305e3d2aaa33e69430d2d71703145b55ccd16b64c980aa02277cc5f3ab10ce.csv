@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C01 f01 s001 test connection ldap","C01-F01-S001-01 Test LDAP connection via SSL","SUCCESS","2017-10-30T16:17:08.900Z","0.0","29.22"
+"C01 f01 s001 test connection ldap","C01-F01-S001-02 Test LDAP connection via non-SSL","SUCCESS","2017-10-30T16:17:38.125Z","0.0","29.86"

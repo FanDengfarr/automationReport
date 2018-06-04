@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script>
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+        // Results table
+        $('#tag-list-table').DataTable( {
+            "order": [
+                [ 1, "asc" ]
+            ],
+            "pageLength": 25
+        } );
+
+        $("test-list").tabs();
+    });
+    </script>
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">ITSMA NG API Test Result</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs"><a href="index.html">Home</a>  > C08 Saw
+                > Stories
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-10-2017 16:42</span>
+    <br style="clear:left"/>
+</div>
+
+
+
+   <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+                <table>
+                 <tr>
+                   <td>
+                    <div id="test-list">
+                        <ul>
+                            <li><a href="test-list-1">Stories</a></li>
+                        </ul>
+                    </div>
+                    <div id="test-list-1" class="table">
+                        <div class="test-results">
+                            <table id="tag-list-table">
+                                <thead>
+                                    <tr>
+                                        <th width="30" class="test-results-heading">&nbsp;</th>
+                                        <th width="750" class="test-results-heading">Story</th>
+                                        <th width="70" class="test-results-heading">Tests</th>
+                                        <th width="70" class="test-results-heading">Steps</th>
+                                        <th width="65" class="test-results-heading">Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Api test   check get catalogs from propel</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="ba5683b1e9049e0dc63bf9bcb012963b4a2d20aa38ca56e5e3257b71dc4d44c7.html">Api Test   Check Get Catalogs From Propel</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">4</td>
+
+                                        <td class="lightgreentext">7.888</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s002 get offering list</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="cd4f4777f535d1d8ccc7cde38a45e69c0b4fe02636f17d6912cf6a14bbc7f229.html">C08 F01 S002 Get Offering List</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">6</td>
+
+                                        <td class="lightgreentext">21.305</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s003 get offering detail</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="3fa40a55e1f62b93cf5423ab628fe3129d0f34fabf560c75da8a50d7696954d2.html">C08 F01 S003 Get Offering Detail</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">7</td>
+
+                                        <td class="lightgreentext">1.008</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s004 get service list</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="7ac60310573682a460a797c15c7052786109a0a8a7e283d8001b2622d0aef9b3.html">C08 F01 S004 Get Service List</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">6</td>
+
+                                        <td class="lightgreentext">0.896</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s005 get featured offerings</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="99b1df112bf87cf0ed3eaadb9f92cce05fff1c3ebe964d65d414d3bcc9901797.html">C08 F01 S005 Get Featured Offerings</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">6</td>
+
+                                        <td class="lightgreentext">0.521</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s006 get catalog detail</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="288dcd68cb533193ebd7c406a87e6a938d69bdc29be8dfc563c7f5bb6cfb311e.html">C08 F01 S006 Get Catalog Detail</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">6</td>
+
+                                        <td class="lightgreentext">0.805</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s007 get article list</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="cc0e1a36413e9c490766d0a5e07ed0d7d110eda92f9fc2db8e3faf673eca3284.html">C08 F01 S007 Get Article List</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">6</td>
+
+                                        <td class="lightgreentext">0.71</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s008 get offering price</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="96b93f782f34b0a58cc5e611f1d647efbe75e1c8fef8c900a246a64b9905b3f9.html">C08 F01 S008 Get Offering Price</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">7</td>
+
+                                        <td class="lightgreentext">0.79</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s009 get full category</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="0b0e4498a28dff4e7219d1b4fb31db5a1024dd92d768435a30d8dce08b3f02fc.html">C08 F01 S009 Get Full Category</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">6</td>
+
+                                        <td class="lightgreentext">0.919</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s010 add to cart</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="2b68fd62f646eff145011d04b09934c9e0efb7d401e6b2fc03e6ef9001870523.html">C08 F01 S010 Add To Cart</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">8</td>
+
+                                        <td class="lightgreentext">0.81</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s011 update cart item quantity</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="1ece414edd9a06f9b4fea0999db55ad0fa0dee293841475ab9ce8c37bca8d6a2.html">C08 F01 S011 Update Cart Item Quantity</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">8</td>
+
+                                        <td class="lightgreentext">0.887</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f01 s001 get catalog list</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="68be190b6fbc3837676591b7fc87a743f3220e802c0a6b5fab6c47fcd8ab0116.html">C08 F01 S001 Get Catalog List</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">4</td>
+
+                                        <td class="lightgreentext">7.888</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f02 s001 submit service request</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="694c1284b3abd9724b7f864cd31a56ee2199263fafcc6d154f5868a11b4a367e.html">C08 F02 S001 Submit Service Request</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">7</td>
+
+                                        <td class="lightgreentext">0.707</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f02 s002 submit support request</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="8a866cbdd965838fd13e609844707b6c4e91dc3aba397e13ab90beb202463b2b.html">C08 F02 S002 Submit Support Request</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">6</td>
+
+                                        <td class="lightgreentext">1.806</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f02 s003 submit cart order</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="bbdfd3cfb3117cf51ba64edc8d5b605e4be36139a0e41279ff17d041499085ae.html">C08 F02 S003 Submit Cart Order</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">11</td>
+
+                                        <td class="lightgreentext">0.416</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Api test   check create request</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="fb95e2e142f80b50f8a9f62688e106b931153dd58623316f2e43a9490051a15b.html">Api Test   Check Create Request</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">4</td>
+
+                                        <td class="lightgreentext">0.602</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f03 s001 get chat status</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="4a1c70eb0e42be4cce0f7fe0bf49554aca20e86b6d1bd0ff166993024e060694.html">C08 F03 S001 Get Chat Status</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">4</td>
+
+                                        <td class="lightgreentext">0.602</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f04 s001 auto suggested search</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="79f7bf9fd204316bd42d88b1aade4e1fb24109daf8eace9a3dbcff4240591a97.html">C08 F04 S001 Auto Suggested Search</a></td>
+
+                                        <td class="lightgreentext">3</td>
+                                        <td class="lightgreentext">12</td>
+
+                                        <td class="lightgreentext">1.451</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f04 s002 search</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="7cda79d28a0bbb1e1526a0799ea1c8a84b0ce022d46388249a7917aa6b849033.html">C08 F04 S002 Search</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">4</td>
+
+                                        <td class="lightgreentext">0.391</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>C08 f04 s003 search view article</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="011d4a730f9e76f1e66b48bb25d6a90cfffe563302b0d8ed56a6828e74e4e871.html">C08 F04 S003 Search View Article</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">5</td>
+
+                                        <td class="lightgreentext">0.373</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Api test   check auto search</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="760b6051db728b246789ca7f9f16fdd5aad6c7e54ff494042168235a1ee5c3f2.html">Api Test   Check Auto Search</a></td>
+
+                                        <td class="lightgreentext">3</td>
+                                        <td class="lightgreentext">12</td>
+
+                                        <td class="lightgreentext">1.451</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Api test   check search</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="8e4719aff0d7424d057610df2f63d0eae03f8e3343bc0c33f409a009296c430d.html">Api Test   Check Search</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">4</td>
+
+                                        <td class="lightgreentext">0.391</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Api test   check search and view article</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="4f0a471cf31ff501b73af3cb6c406b3c5cfa765a3abec24cb3338e6e028c8209.html">Api Test   Check Search And View Article</a></td>
+
+                                        <td class="lightgreentext">1</td>
+                                        <td class="lightgreentext">5</td>
+
+                                        <td class="lightgreentext">0.373</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                   </td>
+                  </tr>
+                 </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter"></div>
+
+</body>
+</html>

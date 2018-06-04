@@ -1,0 +1,27 @@
+<acceptance-test-run title="C08-F01-S004-01 Test get service list belongs to catalog" name="C08-F01-S004-01 Test get service list belongs to catalog" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="1800" timestamp="2017-10-30T16:48:03.888Z">
+  <user-story id="c08_f01_s004_getServiceList" name="C08 f01 s004 get service list" path="stories/c08_saw/c08_f01_catalog/c08_f01_s004_getServiceList.story"/>
+  <issues>
+    <issue>C08-F01-S004-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f01 catalog" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f01 catalog/C08 f01 s004 get service list" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="738">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then user get service items under {catalog.item}" result="SUCCESS">
+    <test-group name="Get services: Business and Department Services, _kmaDeYRSKBLvBnvk9cZmtkpupn8N-Id2cenlr9k6T59ooDD1Q2EA5klP-jzgevEIj_nKBOVH6IRjcptjIO4ARPMihk48_cYqlNw8xtOkOBMMDbi-ezABN-veqpaWTQbRP89g4b7htBsEfoOkA8H5oCPG7iY3ONRDsT53rQ71Or6jCOiUx2-aFTDPPjWw7SaOdJX4ZmfpD3l6IKLQYpe0RcBan1FCEyStq79NU5BMEzPyFOs1ID7UkHQQ1g_0HECWr0E5meMOJuOFUNR6usEtmnWV85YkajOz6GdWcH7NMBCJwUC4lh56DfJbSK0pc84jYCbTde5dUgfWFz_DNNOpIvQx9vA-Y_vVam6PfBsBqwnt42Kz1HBWuA3HQRWakKoHgYoWICm2DI3PIAvDGiU_cFyx_JU0Heb23Uhz-fJ_DTP6_jW_mACvPAwO84HD2xUaI6nsLZMb4VVdx3F6ECVZkvckRHNPpbpKg9Ehu96BCc60TU821EfFiU7k03pOSz8S7Y-1x64oPor7dGKzL0EjdJ1vF8yjyJI9bXKYdQdjPiYuAW7A8mdD9W3jXMzImsu4yHAdBcE08gaCINGr6CT2Wl3aMgV89SW8h0Sx309RowBD8hcNaKuxxUOMEUb3Z-weUrX3VXx3M1pp5SBi2XjmvTxgIJ6rZfwgQmVSX3OfKpqDWiEg4dMqc9tNZ-t7QuAtleryv0N46XRcQcwWyxq4QGvPK2_-igZYDDrramAdimPz0PF5tl9-ojiY9KChMa-JwewjMn06IbtCeTxDRFAkzWX8X35xb6vzmSEqCTCUFCrUt1QLk5_24uFMb5eUYfIigonWyzQiZPaqgZXs1S0jBJ_mekdU2scXPp_eXUGdhs_dP6SyueVLbElVm2LI9WPSQJJfeWIIxm-97TVHXCiyNbgTkrIcorTxaNZ1iygHQgwp1hMM4jiPZGNvyo8-qtUHKz0wHSKsna34ydVOHsz-M9JGPGgjiLI5WGT_VaOBjfIWVEpDoWe_Np84zyAePyJ--h-ozirSTay-w0xR0zfyUf_8K__Qv9MPTb2VpMkRY5FYHwP91mNidCGmmg3JIlyNa8FBtv51fiuU_H7TXaQzjDdAtlgCPekzZr9VLHHffH84dav7jfB5tPEhVoOMLAU" result="SUCCESS">
+      <test-group name="Get catalog id: Business and Department Services, _kmaDeYRSKBLvBnvk9cZmtkpupn8N-Id2cenlr9k6T59ooDD1Q2EA5klP-jzgevEIj_nKBOVH6IRjcptjIO4ARPMihk48_cYqlNw8xtOkOBMMDbi-ezABN-veqpaWTQbRP89g4b7htBsEfoOkA8H5oCPG7iY3ONRDsT53rQ71Or6jCOiUx2-aFTDPPjWw7SaOdJX4ZmfpD3l6IKLQYpe0RcBan1FCEyStq79NU5BMEzPyFOs1ID7UkHQQ1g_0HECWr0E5meMOJuOFUNR6usEtmnWV85YkajOz6GdWcH7NMBCJwUC4lh56DfJbSK0pc84jYCbTde5dUgfWFz_DNNOpIvQx9vA-Y_vVam6PfBsBqwnt42Kz1HBWuA3HQRWakKoHgYoWICm2DI3PIAvDGiU_cFyx_JU0Heb23Uhz-fJ_DTP6_jW_mACvPAwO84HD2xUaI6nsLZMb4VVdx3F6ECVZkvckRHNPpbpKg9Ehu96BCc60TU821EfFiU7k03pOSz8S7Y-1x64oPor7dGKzL0EjdJ1vF8yjyJI9bXKYdQdjPiYuAW7A8mdD9W3jXMzImsu4yHAdBcE08gaCINGr6CT2Wl3aMgV89SW8h0Sx309RowBD8hcNaKuxxUOMEUb3Z-weUrX3VXx3M1pp5SBi2XjmvTxgIJ6rZfwgQmVSX3OfKpqDWiEg4dMqc9tNZ-t7QuAtleryv0N46XRcQcwWyxq4QGvPK2_-igZYDDrramAdimPz0PF5tl9-ojiY9KChMa-JwewjMn06IbtCeTxDRFAkzWX8X35xb6vzmSEqCTCUFCrUt1QLk5_24uFMb5eUYfIigonWyzQiZPaqgZXs1S0jBJ_mekdU2scXPp_eXUGdhs_dP6SyueVLbElVm2LI9WPSQJJfeWIIxm-97TVHXCiyNbgTkrIcorTxaNZ1iygHQgwp1hMM4jiPZGNvyo8-qtUHKz0wHSKsna34ydVOHsz-M9JGPGgjiLI5WGT_VaOBjfIWVEpDoWe_Np84zyAePyJ--h-ozirSTay-w0xR0zfyUf_8K__Qv9MPTb2VpMkRY5FYHwP91mNidCGmmg3JIlyNa8FBtv51fiuU_H7TXaQzjDdAtlgCPekzZr9VLHHffH84dav7jfB5tPEhVoOMLAU" result="SUCCESS">
+        <test-step result="SUCCESS" duration="301">
+          <description>Get catalogs: _kmaDeYRSKBLvBnvk9cZmtkpupn8N-Id2cenlr9k6T59ooDD1Q2EA5klP-jzgevEIj_nKBOVH6IRjcptjIO4ARPMihk48_cYqlNw8xtOkOBMMDbi-ezABN-veqpaWTQbRP89g4b7htBsEfoOkA8H5oCPG7iY3ONRDsT53rQ71Or6jCOiUx2-aFTDPPjWw7SaOdJX4ZmfpD3l6IKLQYpe0RcBan1FCEyStq79NU5BMEzPyFOs1ID7UkHQQ1g_0HECWr0E5meMOJuOFUNR6usEtmnWV85YkajOz6GdWcH7NMBCJwUC4lh56DfJbSK0pc84jYCbTde5dUgfWFz_DNNOpIvQx9vA-Y_vVam6PfBsBqwnt42Kz1HBWuA3HQRWakKoHgYoWICm2DI3PIAvDGiU_cFyx_JU0Heb23Uhz-fJ_DTP6_jW_mACvPAwO84HD2xUaI6nsLZMb4VVdx3F6ECVZkvckRHNPpbpKg9Ehu96BCc60TU821EfFiU7k03pOSz8S7Y-1x64oPor7dGKzL0EjdJ1vF8yjyJI9bXKYdQdjPiYuAW7A8mdD9W3jXMzImsu4yHAdBcE08gaCINGr6CT2Wl3aMgV89SW8h0Sx309RowBD8hcNaKuxxUOMEUb3Z-weUrX3VXx3M1pp5SBi2XjmvTxgIJ6rZfwgQmVSX3OfKpqDWiEg4dMqc9tNZ-t7QuAtleryv0N46XRcQcwWyxq4QGvPK2_-igZYDDrramAdimPz0PF5tl9-ojiY9KChMa-JwewjMn06IbtCeTxDRFAkzWX8X35xb6vzmSEqCTCUFCrUt1QLk5_24uFMb5eUYfIigonWyzQiZPaqgZXs1S0jBJ_mekdU2scXPp_eXUGdhs_dP6SyueVLbElVm2LI9WPSQJJfeWIIxm-97TVHXCiyNbgTkrIcorTxaNZ1iygHQgwp1hMM4jiPZGNvyo8-qtUHKz0wHSKsna34ydVOHsz-M9JGPGgjiLI5WGT_VaOBjfIWVEpDoWe_Np84zyAePyJ--h-ozirSTay-w0xR0zfyUf_8K__Qv9MPTb2VpMkRY5FYHwP91mNidCGmmg3JIlyNa8FBtv51fiuU_H7TXaQzjDdAtlgCPekzZr9VLHHffH84dav7jfB5tPEhVoOMLAU</description>
+        </test-step>
+      </test-group>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

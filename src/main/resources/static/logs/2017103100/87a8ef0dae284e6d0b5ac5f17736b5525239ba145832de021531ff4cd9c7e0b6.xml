@@ -1,0 +1,22 @@
+<acceptance-test-run title="C04-F00-S01-03 internal sysadmin with valid login credential should get valid LWSSO_COOKIE_KEY" name="C04-F00-S01-03 internal sysadmin with valid login credential should get valid LWSSO_COOKIE_KEY" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="904" timestamp="2017-10-30T16:07:38.185Z">
+  <user-story id="c04_f00_s01_authentication_internal_user" name="C04 f00 s01 authentication internal user" path="stories/c04_idm/c04_f00_authentication/c04_f00_s01_authentication_internal_user.story"/>
+  <issues>
+    <issue>C04-F00-S01-03</issue>
+  </issues>
+  <tags>
+    <tag name="IDM" type="Test Type"/>
+    <tag name="C04 idm" type="capability"/>
+    <tag name="C04 idm/C04 f00 authentication" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C04 f00 authentication/C04 f00 s01 authentication internal user" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="808">
+    <description>Given post request to login with: sysadmin, {Admin_1234}</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="83">
+    <description>Then response status = {200}</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="3">
+    <description>And response should get {LWSSO_COOKIE_KEY}</description>
+  </test-step>
+</acceptance-test-run>

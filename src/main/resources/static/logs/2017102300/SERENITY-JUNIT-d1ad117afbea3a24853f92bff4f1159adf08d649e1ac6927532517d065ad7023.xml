@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="C10 f02 s003 check all pod status" skipped="0" tests="1" time="0.8" timestamp="2017-10-295 04:16:11"><testcase name="C10-F02-S003-01 check all pod status"><failure message="&#10;Expecting empty but was:&lt;&quot;itom-xservices-lcm-prepare:Failed&#10;&quot;&gt;" type="java.lang.AssertionError">
+Expecting empty but was:&lt;"itom-xservices-lcm-prepare:Failed
+"&gt;</failure><system-err>
+Expecting empty but was:&lt;"itom-xservices-lcm-prepare:Failed
+"&gt;
+com.hpe.itsma.stepdifinitions.TestConnectionStepDefinition.GetAllPodStatus(TestConnectionStepDefinition.java:305)
+</system-err></testcase></testsuite>

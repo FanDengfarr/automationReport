@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C01 f01 s001 test connection ldap","C01-F01-S001-01 Test LDAP connection via SSL","SUCCESS","2017-10-22T16:21:52.759Z","0.0","36.8"
+"C01 f01 s001 test connection ldap","C01-F01-S001-02 Test LDAP connection via non-SSL","SUCCESS","2017-10-22T16:22:29.562Z","0.0","35.76"
+"C01 f01 s002 test connection db","C01-F01-S002-01 Connect Oracle database with default settings","SUCCESS","2017-10-22T16:23:05.327Z","0.0","13.8"
+"C01 f01 s003 test connection smtpserver","C01-F01-S003-01 Connect Smtpserver with default settings","SUCCESS","2017-10-22T16:23:19.135Z","0.0","6.74"

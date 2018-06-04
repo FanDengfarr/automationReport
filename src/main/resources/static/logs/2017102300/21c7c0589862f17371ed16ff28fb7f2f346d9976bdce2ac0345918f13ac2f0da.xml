@@ -1,0 +1,24 @@
+<acceptance-test-run title="C08-F04-S002-01 Test search" name="C08-F04-S002-01 Test search" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="391" timestamp="2017-10-22T16:14:30.451Z">
+  <user-story id="c08_f04_s002_search" name="C08 f04 s002 search" path="stories/c08_saw/c08_f04_search/c08_f04_s002_search.story"/>
+  <issues>
+    <issue>C08-F04-S002-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f04 search" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f04 s002 search" type="story"/>
+    <tag name="C08 f04 search/Api test   check search" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="313">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then user search ｟search.keyword｠ in search box" result="FAILURE">
+    <test-step result="SUCCESS" duration="63">
+      <description>Get search: outlook, dzT-C5ymeKYM_0ltIbVgqbNtU5JBoVFjL4kTl7AVePjlWb9jxqXikZ02YoISO6RGOpbIYbBRuEHaJcTmxD6wyOX4DdSFUcAU_r--X4E3-a-kn_214yOR74Iz6taCQmVDiv46lStY4kmvClPlxbvLh0u0dtAmwkjeyemjl4CEdnkRolXXeXfS7LPoKFL8hVF6DtbSm5LFfUWYfvZeIcM1nukZeUZoLPmu9HvkWlAdeLBwJR5aQ5aPbkFEBlK828Ls3vHBdmDbmNOYsIgwvcMUb9ktItyha1PmTQfSAjj8yLFb2Sxjupuw6FLUI37MXpLogqe9lVAamWtHGrvwJt0PhMnYZDlRCM7uF0ijc1COxIzbacoaiN5Ta4aFfkYXVXhYMBLhBbIuSLK3E1vwzXwEkORfz5RiKW6T2oWuMzYSFl4LZ8qqZorOFJKq3CNuVEXRQSz4vUGWyvxY5-HuwAH_kg0rufSe-Z7fGyHv2Jno8FKDAPCiGCUlOiLsc0TJ2s9prufGm4CNQjWwAIUVn5p1sCAbBELISJCGzR4iIlqxjZuzcCbMnmpju4UdRB3vhV3KRchWAdIFmUk9rjKjmx7SU3OXj4hOMsd2P7D2yexqkQ0RVDVvhiGQdewZcVPB4jR-aoQLAKYZw8pzULCmlG6gqN5mEFlziuD3voY3fFu-hP9Wfa8xcBfQoayC3MGylf9kulWsGEC1k0wqd1lwjWp0njgOaMbwFd-GirY0n7O0W74eDEi22HqEgHrIym_buK5J6SDQzPHNZ46bKujPDs3pW1Bficnu6ttFG3YwZKV0DNeZWy-LpTH1l31LpuyzlsoyEriOnMYcCkTofL6RttizKD3ae1VnxnoKqUxSh2ZV9UxhyBNL_B1zeb9ukpNYUGubX0e3ssnvulVBmWNl8kTvZSpSfIWkN0BXUikt0DAw5mzElM2hi8fItbSPK9pufxiSax2-PdeXeHcOGVsPopq_CnLK76R677MepIyhl4dkmhsNJFTYmETiPCUWE4OA3v3EfRLu5FFjKrKIBFat3vfVpsZ6sFAEL5zeSPIh1U3Ojn94epX3CpiJrmDLDFW_Sim3kC9BjaEJLpEBVzIFbYUvrNmNUea5bFb862l_RQqIj6oMUjZSqt-rhokXsA8Wed3a</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

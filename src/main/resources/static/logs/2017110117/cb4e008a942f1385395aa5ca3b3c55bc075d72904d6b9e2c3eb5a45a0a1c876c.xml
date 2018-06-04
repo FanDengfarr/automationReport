@@ -1,0 +1,16 @@
+<acceptance-test-run title="C03-F01-s001-02 get backup status" name="C03-F01-s001-02 get backup status" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="2244" timestamp="2017-11-01T04:42:23.762Z">
+  <user-story id="c03_f01_s001_backup_test" name="C03 f01 s001 backup test" path="stories/c03_upgrade/c03_f001_backup/c03_f01_s001_backup_test.story"/>
+  <tags>
+    <tag name="Installer-API" type="Test Type"/>
+    <tag name="C03 upgrade" type="capability"/>
+    <tag name="C03 upgrade/C03 f001 backup" type="feature"/>
+    <tag name="2017-10" type="relase"/>
+    <tag name="C03 f001 backup/C03 f01 s001 backup test" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="2241">
+    <description>When get backup status</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>Then test backup should return {BACKUPING}</description>
+  </test-step>
+</acceptance-test-run>

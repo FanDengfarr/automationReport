@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C01 f01 s001 test connection ldap","C01-F01-S001-01 Test LDAP connection via SSL","SUCCESS","2017-10-30T16:17:08.900Z","0.0","29.22"
+"C01 f01 s001 test connection ldap","C01-F01-S001-02 Test LDAP connection via non-SSL","SUCCESS","2017-10-30T16:17:38.125Z","0.0","29.86"
+"C01 f01 s002 test connection db","C01-F01-S002-01 Connect Oracle database with default settings","SUCCESS","2017-10-30T16:18:07.992Z","0.0","4.38"
+"C01 f01 s003 test connection smtpserver","C01-F01-S003-01 Connect Smtpserver with default settings","SUCCESS","2017-10-30T16:18:12.381Z","0.0","1.39"
+"C01 f02 s001 change admin password","C01-F02-S001-01 With correct old password and new passord, password should be changed successfully","SUCCESS","2017-10-30T16:18:13.775Z","0.0","26.14"
+"C01 f02 s001 change admin password","C01-F02-S001-10 With correct old password and new passord, password should be changed successfully - change back","SUCCESS","2017-10-30T16:18:39.912Z","0.0","21.6"
+"C01 f014 s001 update propel tool status","C01-F04-S001-01 Connect propel tool with a random value","SUCCESS","2017-10-30T16:19:02.345Z","0.0","0.37"

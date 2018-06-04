@@ -1,0 +1,34 @@
+<acceptance-test-run title="C08-F01-S010-01 Test add offering to cart" name="C08-F01-S010-01 Test add offering to cart" steps="5" successful="2" failures="0" skipped="3" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="810" timestamp="2017-10-22T16:40:32.154Z">
+  <user-story id="c08_f01_s010_addToCart" name="C08 f01 s010 add to cart" path="stories/c08_saw/c08_f01_catalog/c08_f01_s010_addToCart.story"/>
+  <issues>
+    <issue>C08-F01-S010-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f01 catalog" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f01 catalog/C08 f01 s010 add to cart" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="588">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user select catalog ｟catalog.item｠" result="ERROR">
+    <test-group name="Get catalog id: Business and Department Services, e3uy4gCOh8pNAkunUiDtZo_NMlsjXBtwxKASF27RL87MuCFkNQw8VPWFqIxvgAL2KnDTwgivMT7TtcI9q0zORA5Q958s3qvuyQ2Q-dI0vsZqX0h-wyc_Bt6yMQxDmGd0FCV4fQoa_durc5QbVw7xnSbMjjwzgRaOSwXTwbCZfHwUIuVfkaF3LC3S56mjHnzC_7uQ0hU8aq8nMLADDgnu9A1ZnojXWv6o0XJEi3qG-qcG3xx56FvdmXmg0IdeEf2OoGuLy2KhYFoTMtqTzzlRGaD8ykwodKV_grfpqBy_yXu6yp2kKT1221Fz3L6A5ZQCE5UpJLxwVJOORrVcNP_wiZPk8qvJ9lD9V8Im5DW46X8A_uGLrox8ih6P8VrXpREgLqiPSOFrO7cFBCvYyDlfP0i97-YEnE1sQx7GVJDacDu-prdcefF8JVuqetSoiO0iAqhR-LmuIlVDF3ZnWfglD7rPeYYQogpDnFwz38jWf_g5ePqOumVpYfS3mrZukWwR-vYSgg8J-vvVjnK1M7nLgB_nM0v7Ovjd7gsOSDtdpBYcsj4RbIat5P61jXtLkmiDdwqfSXVDgl8OYa6iWZl2wQTXYVXqFI61j-1EQwL2mWP6oToD6myEDnT63kjhsQnhJLTetTjztQQHPsf0CmEtysFQ8JxWW_Z2Aa8c4KJKcR5pgMcNi4xGk157rG6lJC2VuPcjpqIigM4QHRDCRtCsBowi7BbNnh4P4K4c5Ru-AzEQ6Sf904TmWeUoclY63GvWI_GV9ykHlR4boYep5UEw53krl3J3u_64bdFm0ZB1DZ6uFp-9BRjycA0KmDGVV1lDMXqKK4fKvPmf_BBHccYOR3PlA3gCS4ZSd1AdhVIPNurk2RIMCnh4Wh_69-SJCndYE_fnwOmYd4n9JGjUa5Kc7s5Y1S1Ncq8Ub4rbAWO6hAuo5lLHcopvRqS_QjGx2sJ68PclYSeB0NHQZv1Pzx4wivBGg4XBxeN6PiD7vKleOa-k5Gg_seDhtWn1hNRuln7cN-ItRXqwoyO51VcEvYL1Ija9R6k9HAhbPZlVkDuluSTfS0KYZWqNApCyWIJQAx1KX-UUDkcyXTIBOo05uvrLaT7re-EnY7dJRaUkIZ2axeDVLp1_iF_QpqBEwLHKiT-g" result="ERROR">
+      <test-step result="SUCCESS" duration="194">
+        <description>Get catalogs: e3uy4gCOh8pNAkunUiDtZo_NMlsjXBtwxKASF27RL87MuCFkNQw8VPWFqIxvgAL2KnDTwgivMT7TtcI9q0zORA5Q958s3qvuyQ2Q-dI0vsZqX0h-wyc_Bt6yMQxDmGd0FCV4fQoa_durc5QbVw7xnSbMjjwzgRaOSwXTwbCZfHwUIuVfkaF3LC3S56mjHnzC_7uQ0hU8aq8nMLADDgnu9A1ZnojXWv6o0XJEi3qG-qcG3xx56FvdmXmg0IdeEf2OoGuLy2KhYFoTMtqTzzlRGaD8ykwodKV_grfpqBy_yXu6yp2kKT1221Fz3L6A5ZQCE5UpJLxwVJOORrVcNP_wiZPk8qvJ9lD9V8Im5DW46X8A_uGLrox8ih6P8VrXpREgLqiPSOFrO7cFBCvYyDlfP0i97-YEnE1sQx7GVJDacDu-prdcefF8JVuqetSoiO0iAqhR-LmuIlVDF3ZnWfglD7rPeYYQogpDnFwz38jWf_g5ePqOumVpYfS3mrZukWwR-vYSgg8J-vvVjnK1M7nLgB_nM0v7Ovjd7gsOSDtdpBYcsj4RbIat5P61jXtLkmiDdwqfSXVDgl8OYa6iWZl2wQTXYVXqFI61j-1EQwL2mWP6oToD6myEDnT63kjhsQnhJLTetTjztQQHPsf0CmEtysFQ8JxWW_Z2Aa8c4KJKcR5pgMcNi4xGk157rG6lJC2VuPcjpqIigM4QHRDCRtCsBowi7BbNnh4P4K4c5Ru-AzEQ6Sf904TmWeUoclY63GvWI_GV9ykHlR4boYep5UEw53krl3J3u_64bdFm0ZB1DZ6uFp-9BRjycA0KmDGVV1lDMXqKK4fKvPmf_BBHccYOR3PlA3gCS4ZSd1AdhVIPNurk2RIMCnh4Wh_69-SJCndYE_fnwOmYd4n9JGjUa5Kc7s5Y1S1Ncq8Ub4rbAWO6hAuo5lLHcopvRqS_QjGx2sJ68PclYSeB0NHQZv1Pzx4wivBGg4XBxeN6PiD7vKleOa-k5Gg_seDhtWn1hNRuln7cN-ItRXqwoyO51VcEvYL1Ija9R6k9HAhbPZlVkDuluSTfS0KYZWqNApCyWIJQAx1KX-UUDkcyXTIBOo05uvrLaT7re-EnY7dJRaUkIZ2axeDVLp1_iF_QpqBEwLHKiT-g</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-step result="SKIPPED" duration="0">
+    <description>When user select offering {service.offering.item}</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="0">
+    <description>Then user add offering item to cart</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="0">
+    <description>Then user remove offering item in cart</description>
+  </test-step>
+</acceptance-test-run>

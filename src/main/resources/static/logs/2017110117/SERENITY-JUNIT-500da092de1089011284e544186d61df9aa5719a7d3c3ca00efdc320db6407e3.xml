@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="C10 f03 s001 check configmap" skipped="0" tests="169" time="20.94" timestamp="2017-11-305 04:36:10"><testcase name="C10-F03-S001-01 check configmap is created"/><testcase name="C10-F03-S001-02 check configmap has detail value"/></testsuite>

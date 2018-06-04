@@ -1,0 +1,29 @@
+<acceptance-test-run title="C10-F02-S002-01 check deply controller pod status" name="C10-F02-S002-01 check deply controller pod status" steps="3" successful="2" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="383" timestamp="2017-11-01T04:36:09.720Z">
+  <user-story id="c10_f02_s002_check_deploy_controller_status" name="C10 f02 s002 check deploy controller status" path="stories/c10_k8s/c10_f02_Kubernetes_pod_status/c10_f02_s002_check_deploy_controller_status.story"/>
+  <issues>
+    <issue>C10-F02-S002-01</issue>
+  </issues>
+  <tags>
+    <tag name="Kube-API" type="Test Type"/>
+    <tag name="C10 k8s" type="capability"/>
+    <tag name="C10 k8s/C10 f02 kubernetes pod status" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C10 f02 kubernetes pod status/C10 f02 s002 check deploy controller status" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="7">
+    <description>Given a CD system is up</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="302">
+    <description>When I get podList under namespace &quot;itsma1&quot;</description>
+  </test-step>
+  <test-step result="FAILURE" duration="68">
+    <description>Then I get the all deploy controller pod status is &quot;Succeeded&quot;</description>
+    <error>java.lang.AssertionError: 
+Expecting empty but was:&lt;&quot;itom-cmdb-deploy-controller-pod:Running 
+&quot;&gt;</error>
+    <exception>java.lang.AssertionError:
+Expecting empty but was:&lt;&quot;itom-cmdb-deploy-controller-pod:Running 
+&quot;&gt;
+[com.hpe.itsma.stepdifinitions.TestConnectionStepDefinition.GetDeployControllerPodStatus(TestConnectionStepDefinition.java:294)]</exception>
+  </test-step>
+</acceptance-test-run>

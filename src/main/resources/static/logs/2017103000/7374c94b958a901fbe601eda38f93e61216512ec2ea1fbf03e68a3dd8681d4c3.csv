@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C10 f02 s001 check svc status","C10-F02-S001-01 check one deploy Status auth and others","SUCCESS","2017-10-30T03:11:58.260Z","0.0","63.9"
+"C10 f02 s003 check all pod status","C10-F02-S003-01 check all pod status","SUCCESS","2017-10-30T03:13:02.565Z","0.0","0.39"

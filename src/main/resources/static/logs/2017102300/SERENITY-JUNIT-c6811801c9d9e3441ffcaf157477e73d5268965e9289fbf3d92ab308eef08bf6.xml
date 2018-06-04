@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="C08 f03 s001 get chat status" skipped="0" tests="1" time="0.6" timestamp="2017-10-295 04:14:28"><testcase name="C08-F03-S001-01 Test chat functionality is enabled"><failure message="Get user information successfully expected:&lt;200&gt; but was:&lt;500&gt;" type="java.lang.AssertionError">Get user information successfully expected:&lt;200&gt; but was:&lt;500&gt;</failure><system-err>Get user information successfully expected:&lt;200&gt; but was:&lt;500&gt;
+com.hpe.itsma.stepdifinitions.saw.ChatStepDefinition.chatGetLoginUser(ChatStepDefinition.java:28)
+</system-err></testcase></testsuite>

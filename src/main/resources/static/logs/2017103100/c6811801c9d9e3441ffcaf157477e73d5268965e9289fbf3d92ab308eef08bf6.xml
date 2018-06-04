@@ -1,0 +1,24 @@
+<acceptance-test-run title="C08-F03-S001-01 Test chat functionality is enabled" name="C08-F03-S001-01 Test chat functionality is enabled" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="731" timestamp="2017-10-30T16:09:10.559Z">
+  <user-story id="c08_f03_s001_getChatStatus" name="C08 f03 s001 get chat status" path="stories/c08_saw/c08_f03_chat/c08_f03_s001_getChatStatus.story"/>
+  <issues>
+    <issue>C08-F03-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f03 chat" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f03 chat/Api test   check create request" type="story"/>
+    <tag name="C08 f03 s001 get chat status" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="425">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then user can launch chat" result="SUCCESS">
+    <test-step result="SUCCESS" duration="165">
+      <description>Get chat status: g-EusB_YloEkKLX4I8fA8UNEBAMjt2V4pSIbnWjDjHMqeUssWVxDvDv5dzvfaaqJtmuGd9y8hfOsm8hjQMLzotKYxAWOPmUJwxT0mFYIJrUwJvVmSSJQskjbT4rTYcWiqUMVVETYpmbqoX8eVJyNpSfI5fT6KPcXzPfZOE8c8-ac4yyjGAV5shKDWcxbGZKWluz9ooe5aZxohiYh25GD_Nv1Nqw8pf0saLe2fodSjZS6SQBchqBNouwWknVn9vZPYIEI30yWNOmQhmqFBuUjbm8ta4MW8rQTKPIqGgQb2VGNepODInKEpg6lM4Kn7VGqR5q15gLMpLqbt7CNMEHCVN1CUbg9bS-zOxXijOTC0phrymvqutS_aZMlJeX4-PdAwEaFNBUpqvJd5Xebao2_MdVWgKoqbAtW4QX2gQcEdZo70yjNzB3hUDWmL7ObA8FkUffCRjcJ1lcUib7n8YxsuPfO9ewbRFbbRggexjWO5dRHjTRzB9VjUXLzfDJvCK6xmJicVmGR67vMZnhi2lp70z-rfVe8fYI8gLrsTw0T3m-2ut75I_7KG3XYbW21BtPFvOg0TFWRQ_0m-ZwH9dYTLmTPUpQ6M4qF-mCc9wz6dHhso7yhRxB-M7XFp8Mv4EjgRZEdU-bRdRV6OQOeepjyYsV6XPZIotwC-CGlUhH1bYn2we_vQowVDEzClBKH-7QPDcvrMgb3Q92gpoiJ_rcbhd0qE2o_HBQGDvw89GNC7YNgGlsuwSfnOr6QH2Qkks_-sKKfNdmHQ9qUBrfupiQK2d8VQMNvwL3rSauDgNGLO7HE4XPDHxZRiWXP4jm8C7BLg3vgBp46FghXM12iDShnOLEuzAq3deKUV5dFe_lwBM0fJ83u1cwG9ae7grqKa_MmaGK_258CWSB4bBLQwXiL6QLccZ_CHGXYBZM7SkXNTh2JnD5QHvz-PStnYnOebNGfBwaGq7slzV1B4uw8oA1v0sxrbf4aFEEsXO99gPuEdBmktVUCOB1HtUa_LnNrCHZ1xxizUwMpwYGw5Fj1UbHGOg56sL46LQs-SOKJm29264b3UfouEoCHc4611kagcU2ODYgpy5r9jyY8xyqNJzXBjFfc4lPL8NLAibN55O7DnzmY6hiG7m8qteVnMix9rLQV</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

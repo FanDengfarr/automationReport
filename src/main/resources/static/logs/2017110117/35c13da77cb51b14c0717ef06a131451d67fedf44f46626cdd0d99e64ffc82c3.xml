@@ -1,0 +1,2441 @@
+<acceptance-test-run title="C10-F03-S001-02 check configmap has detail value" name="C10-F03-S001-02 check configmap has detail value" steps="453" successful="453" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="18352" timestamp="2017-11-01T04:36:13.094Z">
+  <user-story id="c10_f03_s001_check_configmap" name="C10 f03 s001 check configmap" path="stories/c10_k8s/c10_f03_Kubernetes_configmap/c10_f03_s001_check_configmap.story"/>
+  <issues>
+    <issue>C10-F03-S001-02</issue>
+  </issues>
+  <tags>
+    <tag name="Kube-API" type="Test Type"/>
+    <tag name="C10 k8s" type="capability"/>
+    <tag name="C10 k8s/C10 f03 kubernetes configmap" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C10 f03 kubernetes configmap/C10 f03 s001 check configmap" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>configmap_name</header>
+      <header>key</header>
+      <header>value</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>idm-config</value>
+        <value>SessionTimeout</value>
+        <value>1800</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm-config</value>
+        <value>TokenExpirationPeriod</value>
+        <value>3600</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm-config</value>
+        <value>TokenGlobalTimeout</value>
+        <value>86400</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm-config</value>
+        <value>auth_url</value>
+        <value>http:\/\/auth-svc:8080\/sma-auth</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm-config</value>
+        <value>idm_data_upload_dir</value>
+        <value>idm/data/idmseeded</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm-config</value>
+        <value>idm_seeded_dir</value>
+        <value>/var/itsma/upload/seeded</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm-config</value>
+        <value>idm_token_signingkey</value>
+        <value>{&quot;itom-itsma-config&quot;:&quot;idm_token_signingkey_secret_key&quot;}</value>
+      </row>
+      <row result="SUCCESS">
+        <value>auth-config</value>
+        <value>idm_endpoint</value>
+        <value>https://idm-svc:8443/idm-service</value>
+      </row>
+      <row result="SUCCESS">
+        <value>chat-configmap</value>
+        <value>chat_log_level</value>
+        <value>INFO</value>
+      </row>
+      <row result="SUCCESS">
+        <value>chat-configmap</value>
+        <value>chat_openfire_domain</value>
+        <value>sm-chat</value>
+      </row>
+      <row result="SUCCESS">
+        <value>chat-configmap</value>
+        <value>chat_publish_admin_account</value>
+        <value>publishadmin</value>
+      </row>
+      <row result="SUCCESS">
+        <value>chat-configmap</value>
+        <value>chat_restkey</value>
+        <value>openfire_restkey_secret_key</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>sm_chat_db_port</value>
+        <value>5432</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>sm_chat_dba_password_key</value>
+        <value>{ &quot;itom-sm&quot;:&quot;postgres_password_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>idm_dba_password_key</value>
+        <value>{ &quot;itom-idm&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>propel_dba_password_key</value>
+        <value>{ &quot;itom-service-portal&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>propel_dba_username</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>sm_chat_db_password_key</value>
+        <value>{ &quot;itom-sm&quot;:&quot;itom_itsma_sm_postgres_secret_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>idm_db_name_svc</value>
+        <value>idm</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xservices_db_port</value>
+        <value>5432</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xservices_dba_password_key</value>
+        <value>{ &quot;itom-xservices-infra&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>idm_db_port</value>
+        <value>5432</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>idm_dba_username</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>propel_db_host</value>
+        <value>propel-postgresql-svc</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>propel_db_port</value>
+        <value>5432</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xruntime_db_type</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>sm_chat_db_host</value>
+        <value>sm-postgres-svc</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>sm_chat_db_name_svc</value>
+        <value>sm</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xservices_db_host</value>
+        <value>itom-xservices-postgres-svc</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>external_db</value>
+        <value>FALSE</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>idm_db_password_key</value>
+        <value>{ &quot;itom-idm&quot;:&quot;itom_itsma_db_password_secret_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>idm_db_username</value>
+        <value>idm</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xruntime_db_port</value>
+        <value>5432</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>idm_db_host</value>
+        <value>idm-postgresql-svc</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xruntime_dba_username</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>sm_chat_db_type</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xservices_db_type</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>propel_db_username</value>
+        <value>serviceportalbackend</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xruntime_dba_password_key</value>
+        <value>{ &quot;itom-xruntime-infra&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xruntime_db_password_key</value>
+        <value>{ &quot;itom-xruntime-infra&quot;:&quot;itom_itsma_db_password_secret_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>sm_chat_db_username</value>
+        <value>sm</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>propel_db_type</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xruntime_db_host</value>
+        <value>itom-xruntime-postgres-svc</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xservices_db_password_key</value>
+        <value>{ &quot;itom-xservices-infra&quot;:&quot;itom_itsma_db_password_secret_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>idm_db_type</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>propel_db_password_key</value>
+        <value>{ &quot;itom-service-portal&quot;:&quot;itom_itsma_db_password_secret_key&quot; }</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>sm_chat_dba_username</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+        <value>xservices_dba_username</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>aplms_domain_name</value>
+        <value>https://autopass-lm-svc:5814</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>log_max_file_size</value>
+        <value>5</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>itom_service_propel</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>itom_service_smartanalytics</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>IntegrationConnectionTimeout</value>
+        <value>300</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>itom_service_ucmdb</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>SessionTimeout</value>
+        <value>1800</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>TokenExpirationPeriod</value>
+        <value>3600</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>email_smtp_server_tls</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>itom_service_chat</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>IntegrationSessionTimeout</value>
+        <value>1800</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>IntegrationStatelessTimeout</value>
+        <value>15</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>email_smtp_server_ssl</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>itom_service_sm</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>log_max_backup_number</value>
+        <value>10</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>ConnectionTimeout</value>
+        <value>180</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>email_smtp_server_port</value>
+        <value></value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>TokenGlobalTimeout</value>
+        <value>86400</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+        <value>email_smtp_server_mail_from</value>
+        <value></value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_group</value>
+        <value>cn=itpeople,ou=groups,dc=itsma,dc=com</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_manager_id_value</value>
+        <value>dn</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_group_description</value>
+        <value>description</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_firstname</value>
+        <value>givenName</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_lastname</value>
+        <value>sn</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_group_class</value>
+        <value>groupOfUniqueNames</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_disp_name_attr</value>
+        <value>cn</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_bind_user</value>
+        <value>cn=admin,dc=itsma,dc=com</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_type</value>
+        <value>openLdap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_email</value>
+        <value>mail</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_phone</value>
+        <value>telephoneNumber</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>saml2_idp_metadata_url</value>
+        <value></value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>RECONFIG_LDAP</value>
+        <value>False</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_base_dn</value>
+        <value>dc=itsma,dc=com</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_filter</value>
+        <value>(objectclass=inetOrgPerson)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_validatecert</value>
+        <value>false</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_avatar</value>
+        <value>jpegPhoto</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>saml2_enable</value>
+        <value>FALSE</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_group_name_attr</value>
+        <value>cn</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_search_sub</value>
+        <value>TRUE</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_server_ip</value>
+        <value>openldap-svc</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_use_ssl</value>
+        <value>FALSE</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_base_dn</value>
+        <value>ou=people,dc=itsma,dc=com</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_group_base_dn</value>
+        <value>ou=groups,dc=itsma,dc=com</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_group_base_filter</value>
+        <value>(objectclass=groupOfUniqueNames)</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_lastmodified</value>
+        <value>modifyTimestamp</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_manager_id</value>
+        <value>manager</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_name_attr</value>
+        <value>uid</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_admin_group</value>
+        <value>cn=administrators,ou=groups,dc=itsma,dc=com</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_group_member_attr</value>
+        <value>uniqueMember</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_server_port</value>
+        <value>389</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+        <value>ldap_user_class</value>
+        <value>inetOrgPerson</value>
+      </row>
+      <row result="SUCCESS">
+        <value>nginx-load-balancer-conf</value>
+        <value>enable-vts-status</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>nginx-load-balancer-conf</value>
+        <value>max-worker-connections</value>
+        <value>4096</value>
+      </row>
+      <row result="SUCCESS">
+        <value>nginx-load-balancer-conf</value>
+        <value>proxy-connect-timeout</value>
+        <value>180</value>
+      </row>
+      <row result="SUCCESS">
+        <value>nginx-load-balancer-conf</value>
+        <value>proxy-read-timeout</value>
+        <value>180</value>
+      </row>
+      <row result="SUCCESS">
+        <value>nginx-load-balancer-conf</value>
+        <value>proxy-send-timeout</value>
+        <value>180</value>
+      </row>
+      <row result="SUCCESS">
+        <value>nginx-load-balancer-conf</value>
+        <value>server-name-hash-bucket-size</value>
+        <value>256</value>
+      </row>
+      <row result="SUCCESS">
+        <value>nginx-load-balancer-conf</value>
+        <value>worker-processes</value>
+        <value>128</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_webtier_loglevel_session_timeout</value>
+        <value>30</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>enable_webtier_debug</value>
+        <value>false</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_server_loglevel_number_of_log_files</value>
+        <value>10</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_server_loglevel_debug_db_query</value>
+        <value>5</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_server_loglevel_max_log_size</value>
+        <value>20</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_server_loglevel_conection_timeout</value>
+        <value>180000</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>WEB_disable_AntiCSRF</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_server_loglevel_smart_email_timeout</value>
+        <value>45000</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_webtier_loglevel_query_security</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_webtier_loglevel_js_debug</value>
+        <value>false</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>RECONFIG_LDAP</value>
+        <value>False</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_server_loglevel_cache_clean_interval</value>
+        <value>3600</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_server_loglevel_log_debug_level</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_server_loglevel_sqllimit</value>
+        <value>10</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_server_loglevel_webservices_session_timeout</value>
+        <value>1800</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+        <value>sm_webtier_loglevel_view_record_list</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_survey_enabled</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_chat_enabled</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_database_ip</value>
+        <value>sm-postgres-svc</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_config_ready</value>
+        <value>false</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_database_instance</value>
+        <value>sm</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_database_type</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_portal_enabled</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_process_designer</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_database_port</value>
+        <value>5432</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_database_user</value>
+        <value>sm</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_smarta_enabled</value>
+        <value>4</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_solr_enabled</value>
+        <value>0</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+        <value>sm_integration_username</value>
+        <value>intgAdmin</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_db_host</value>
+        <value>postgresql-ucmdb-svc</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_integration_password_vault_key</value>
+        <value>integration_password_secret_key</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>sm_integration_user_password_vault_key</value>
+        <value>sm_integration_password_secret_key</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_admin_password_vault_key</value>
+        <value>admin_password_secret_key</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_db_port</value>
+        <value>5432</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_probe_min_mem</value>
+        <value>512</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_server_max_memory</value>
+        <value>8192</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_db_type</value>
+        <value>postgres</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>cmdb_package_white_list_enabled</value>
+        <value>true</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_probe_pg_root_pwd_vault_key</value>
+        <value>ucmdb_probe_pg_root_pwd</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>cmdb_package_check_list</value>
+        <value>Microsoft_MQ,Citrix_NetScaler,CloudFoundry</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_probe_max_mem</value>
+        <value>8192</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_probe_pg_probe_pwd_vault_key</value>
+        <value>ucmdb_probe_pg_probe_pwd</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_sysadmin_password_vault_key</value>
+        <value>itom_itsma_sysadmin_password_secret_key</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_oracle_db_schemapwd_vault_key</value>
+        <value>itom_itsma_db_password_secret_key</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+        <value>ucmdb_ui_syspwd_vault_key</value>
+        <value>ucmdb_ui_syspwd</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {configmap_name=idm-config, key=SessionTimeout, value=1800, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="156">
+      <description>When I check the status of configmap {idm-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {SessionTimeout} equals {1800}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[2] {configmap_name=idm-config, key=TokenExpirationPeriod, value=3600, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="111">
+      <description>When I check the status of configmap {idm-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {TokenExpirationPeriod} equals {3600}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[3] {configmap_name=idm-config, key=TokenGlobalTimeout, value=86400, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="91">
+      <description>When I check the status of configmap {idm-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {TokenGlobalTimeout} equals {86400}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[4] {configmap_name=idm-config, key=auth_url, value=http:\/\/auth-svc:8080\/sma-auth, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="101">
+      <description>When I check the status of configmap {idm-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {auth_url} equals {http:\/\/auth-svc:8080\/sma-auth}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[5] {configmap_name=idm-config, key=idm_data_upload_dir, value=idm/data/idmseeded, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="146">
+      <description>When I check the status of configmap {idm-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_data_upload_dir} equals {idm/data/idmseeded}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[6] {configmap_name=idm-config, key=idm_seeded_dir, value=/var/itsma/upload/seeded, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="73">
+      <description>When I check the status of configmap {idm-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_seeded_dir} equals {/var/itsma/upload/seeded}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[7] {configmap_name=idm-config, key=idm_token_signingkey, value={&quot;itom-itsma-config&quot;:&quot;idm_token_signingkey_secret_key&quot;}, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="86">
+      <description>When I check the status of configmap {idm-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_token_signingkey} equals {{&quot;itom-itsma-config&quot;:&quot;idm_token_signingkey_secret_key&quot;}}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[8] {configmap_name=auth-config, key=idm_endpoint, value=https://idm-svc:8443/idm-service, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="126">
+      <description>When I check the status of configmap {auth-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_endpoint} equals {https://idm-svc:8443/idm-service}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[9] {configmap_name=chat-configmap, key=chat_log_level, value=INFO, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="140">
+      <description>When I check the status of configmap {chat-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {chat_log_level} equals {INFO}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[10] {configmap_name=chat-configmap, key=chat_openfire_domain, value=sm-chat, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="82">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="117">
+      <description>When I check the status of configmap {chat-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {chat_openfire_domain} equals {sm-chat}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[11] {configmap_name=chat-configmap, key=chat_publish_admin_account, value=publishadmin, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="196">
+      <description>When I check the status of configmap {chat-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {chat_publish_admin_account} equals {publishadmin}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[12] {configmap_name=chat-configmap, key=chat_restkey, value=openfire_restkey_secret_key, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="192">
+      <description>When I check the status of configmap {chat-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {chat_restkey} equals {openfire_restkey_secret_key}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[13] {configmap_name=database-configmap, key=sm_chat_db_port, value=5432, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="206">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_chat_db_port} equals {5432}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[14] {configmap_name=database-configmap, key=sm_chat_dba_password_key, value={ &quot;itom-sm&quot;:&quot;postgres_password_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="150">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_chat_dba_password_key} equals {{ &quot;itom-sm&quot;:&quot;postgres_password_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[15] {configmap_name=database-configmap, key=idm_dba_password_key, value={ &quot;itom-idm&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="114">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_dba_password_key} equals {{ &quot;itom-idm&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[16] {configmap_name=database-configmap, key=propel_dba_password_key, value={ &quot;itom-service-portal&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="76">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {propel_dba_password_key} equals {{ &quot;itom-service-portal&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[17] {configmap_name=database-configmap, key=propel_dba_username, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="72">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {propel_dba_username} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[18] {configmap_name=database-configmap, key=sm_chat_db_password_key, value={ &quot;itom-sm&quot;:&quot;itom_itsma_sm_postgres_secret_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="80">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_chat_db_password_key} equals {{ &quot;itom-sm&quot;:&quot;itom_itsma_sm_postgres_secret_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[19] {configmap_name=database-configmap, key=idm_db_name_svc, value=idm, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="85">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_db_name_svc} equals {idm}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[20] {configmap_name=database-configmap, key=xservices_db_port, value=5432, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="71">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {xservices_db_port} equals {5432}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[21] {configmap_name=database-configmap, key=xservices_dba_password_key, value={ &quot;itom-xservices-infra&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="100">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xservices_dba_password_key} equals {{ &quot;itom-xservices-infra&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[22] {configmap_name=database-configmap, key=idm_db_port, value=5432, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="85">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="115">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_db_port} equals {5432}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[23] {configmap_name=database-configmap, key=idm_dba_username, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="83">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="214">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {idm_dba_username} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[24] {configmap_name=database-configmap, key=propel_db_host, value=propel-postgresql-svc, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="94">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {propel_db_host} equals {propel-postgresql-svc}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[25] {configmap_name=database-configmap, key=propel_db_port, value=5432, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="191">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {propel_db_port} equals {5432}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[26] {configmap_name=database-configmap, key=xruntime_db_type, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="98">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xruntime_db_type} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[27] {configmap_name=database-configmap, key=sm_chat_db_host, value=sm-postgres-svc, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="68">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_chat_db_host} equals {sm-postgres-svc}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[28] {configmap_name=database-configmap, key=sm_chat_db_name_svc, value=sm, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="83">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_chat_db_name_svc} equals {sm}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[29] {configmap_name=database-configmap, key=xservices_db_host, value=itom-xservices-postgres-svc, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="72">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xservices_db_host} equals {itom-xservices-postgres-svc}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[30] {configmap_name=database-configmap, key=external_db, value=FALSE, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="82">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {external_db} equals {FALSE}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[31] {configmap_name=database-configmap, key=idm_db_password_key, value={ &quot;itom-idm&quot;:&quot;itom_itsma_db_password_secret_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="77">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_db_password_key} equals {{ &quot;itom-idm&quot;:&quot;itom_itsma_db_password_secret_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[32] {configmap_name=database-configmap, key=idm_db_username, value=idm, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="82">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_db_username} equals {idm}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[33] {configmap_name=database-configmap, key=xruntime_db_port, value=5432, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="152">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xruntime_db_port} equals {5432}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[34] {configmap_name=database-configmap, key=idm_db_host, value=idm-postgresql-svc, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="92">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_db_host} equals {idm-postgresql-svc}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[35] {configmap_name=database-configmap, key=xruntime_dba_username, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="77">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the {xruntime_dba_username} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[36] {configmap_name=database-configmap, key=sm_chat_db_type, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="86">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_chat_db_type} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[37] {configmap_name=database-configmap, key=xservices_db_type, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="151">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xservices_db_type} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[38] {configmap_name=database-configmap, key=propel_db_username, value=serviceportalbackend, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="109">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {propel_db_username} equals {serviceportalbackend}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[39] {configmap_name=database-configmap, key=xruntime_dba_password_key, value={ &quot;itom-xruntime-infra&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="104">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xruntime_dba_password_key} equals {{ &quot;itom-xruntime-infra&quot;:&quot;itom_itsma_dba_password_secret_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[40] {configmap_name=database-configmap, key=xruntime_db_password_key, value={ &quot;itom-xruntime-infra&quot;:&quot;itom_itsma_db_password_secret_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="140">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xruntime_db_password_key} equals {{ &quot;itom-xruntime-infra&quot;:&quot;itom_itsma_db_password_secret_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[41] {configmap_name=database-configmap, key=sm_chat_db_username, value=sm, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="100">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_chat_db_username} equals {sm}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[42] {configmap_name=database-configmap, key=propel_db_type, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="77">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {propel_db_type} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[43] {configmap_name=database-configmap, key=xruntime_db_host, value=itom-xruntime-postgres-svc, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="74">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xruntime_db_host} equals {itom-xruntime-postgres-svc}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[44] {configmap_name=database-configmap, key=xservices_db_password_key, value={ &quot;itom-xservices-infra&quot;:&quot;itom_itsma_db_password_secret_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="75">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xservices_db_password_key} equals {{ &quot;itom-xservices-infra&quot;:&quot;itom_itsma_db_password_secret_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[45] {configmap_name=database-configmap, key=idm_db_type, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="76">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {idm_db_type} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[46] {configmap_name=database-configmap, key=propel_db_password_key, value={ &quot;itom-service-portal&quot;:&quot;itom_itsma_db_password_secret_key&quot; }, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="83">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {propel_db_password_key} equals {{ &quot;itom-service-portal&quot;:&quot;itom_itsma_db_password_secret_key&quot; }}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[47] {configmap_name=database-configmap, key=sm_chat_dba_username, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="78">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_chat_dba_username} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[48] {configmap_name=database-configmap, key=xservices_dba_username, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="73">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {xservices_dba_username} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[49] {configmap_name=itsma-common-configmap, key=aplms_domain_name, value=https://autopass-lm-svc:5814, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="82">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4">
+      <description>Then I get the {aplms_domain_name} equals {https://autopass-lm-svc:5814}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[50] {configmap_name=itsma-common-configmap, key=log_max_file_size, value=5, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="93">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {log_max_file_size} equals {5}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[51] {configmap_name=itsma-common-configmap, key=itom_service_propel, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="71">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {itom_service_propel} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[52] {configmap_name=itsma-common-configmap, key=itom_service_smartanalytics, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="83">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {itom_service_smartanalytics} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[53] {configmap_name=itsma-common-configmap, key=IntegrationConnectionTimeout, value=300, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="68">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {IntegrationConnectionTimeout} equals {300}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[54] {configmap_name=itsma-common-configmap, key=itom_service_ucmdb, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="78">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {itom_service_ucmdb} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[55] {configmap_name=itsma-common-configmap, key=SessionTimeout, value=1800, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="72">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {SessionTimeout} equals {1800}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[56] {configmap_name=itsma-common-configmap, key=TokenExpirationPeriod, value=3600, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="101">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the {TokenExpirationPeriod} equals {3600}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[57] {configmap_name=itsma-common-configmap, key=email_smtp_server_tls, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="79">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {email_smtp_server_tls} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[58] {configmap_name=itsma-common-configmap, key=itom_service_chat, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="85">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {itom_service_chat} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[59] {configmap_name=itsma-common-configmap, key=IntegrationSessionTimeout, value=1800, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="70">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {IntegrationSessionTimeout} equals {1800}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[60] {configmap_name=itsma-common-configmap, key=IntegrationStatelessTimeout, value=15, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="69">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {IntegrationStatelessTimeout} equals {15}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[61] {configmap_name=itsma-common-configmap, key=email_smtp_server_ssl, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="78">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {email_smtp_server_ssl} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[62] {configmap_name=itsma-common-configmap, key=itom_service_sm, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="153">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {itom_service_sm} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[63] {configmap_name=itsma-common-configmap, key=log_max_backup_number, value=10, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="389">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {log_max_backup_number} equals {10}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[64] {configmap_name=itsma-common-configmap, key=ConnectionTimeout, value=180, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="121">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ConnectionTimeout} equals {180}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[65] {configmap_name=itsma-common-configmap, key=email_smtp_server_port, value=, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="90">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="81">
+      <description>Then I get the {email_smtp_server_port} equals {}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[66] {configmap_name=itsma-common-configmap, key=TokenGlobalTimeout, value=86400, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="113">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {TokenGlobalTimeout} equals {86400}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[67] {configmap_name=itsma-common-configmap, key=email_smtp_server_mail_from, value=, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="5">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="193">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {email_smtp_server_mail_from} equals {}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[68] {configmap_name=ldap-configmap, key=ldap_user_group, value=cn=itpeople,ou=groups,dc=itsma,dc=com, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="88">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ldap_user_group} equals {cn=itpeople,ou=groups,dc=itsma,dc=com}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[69] {configmap_name=ldap-configmap, key=ldap_user_manager_id_value, value=dn, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="105">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ldap_user_manager_id_value} equals {dn}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[70] {configmap_name=ldap-configmap, key=ldap_group_description, value=description, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="200">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_group_description} equals {description}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[71] {configmap_name=ldap-configmap, key=ldap_user_firstname, value=givenName, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="200">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_user_firstname} equals {givenName}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[72] {configmap_name=ldap-configmap, key=ldap_user_lastname, value=sn, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="81">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_user_lastname} equals {sn}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[73] {configmap_name=ldap-configmap, key=ldap_group_class, value=groupOfUniqueNames, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="84">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_group_class} equals {groupOfUniqueNames}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[74] {configmap_name=ldap-configmap, key=ldap_user_disp_name_attr, value=cn, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="77">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_user_disp_name_attr} equals {cn}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[75] {configmap_name=ldap-configmap, key=ldap_bind_user, value=cn=admin,dc=itsma,dc=com, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="85">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_bind_user} equals {cn=admin,dc=itsma,dc=com}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[76] {configmap_name=ldap-configmap, key=ldap_type, value=openLdap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="112">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_type} equals {openLdap}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[77] {configmap_name=ldap-configmap, key=ldap_user_email, value=mail, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="80">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_user_email} equals {mail}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[78] {configmap_name=ldap-configmap, key=ldap_user_phone, value=telephoneNumber, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="246">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the {ldap_user_phone} equals {telephoneNumber}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[79] {configmap_name=ldap-configmap, key=saml2_idp_metadata_url, value=, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="98">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {saml2_idp_metadata_url} equals {}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[80] {configmap_name=ldap-configmap, key=RECONFIG_LDAP, value=False, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="93">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {RECONFIG_LDAP} equals {False}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[81] {configmap_name=ldap-configmap, key=ldap_base_dn, value=dc=itsma,dc=com, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="185">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ldap_base_dn} equals {dc=itsma,dc=com}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[82] {configmap_name=ldap-configmap, key=ldap_user_filter, value=(objectclass=inetOrgPerson), ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="96">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_user_filter} equals {(objectclass=inetOrgPerson)}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[83] {configmap_name=ldap-configmap, key=ldap_validatecert, value=false, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="180">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the {ldap_validatecert} equals {false}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[84] {configmap_name=ldap-configmap, key=ldap_user_avatar, value=jpegPhoto, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="102">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ldap_user_avatar} equals {jpegPhoto}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[85] {configmap_name=ldap-configmap, key=saml2_enable, value=FALSE, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="194">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {saml2_enable} equals {FALSE}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[86] {configmap_name=ldap-configmap, key=ldap_group_name_attr, value=cn, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="288">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ldap_group_name_attr} equals {cn}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[87] {configmap_name=ldap-configmap, key=ldap_search_sub, value=TRUE, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="108">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_search_sub} equals {TRUE}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[88] {configmap_name=ldap-configmap, key=ldap_server_ip, value=openldap-svc, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="197">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ldap_server_ip} equals {openldap-svc}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[89] {configmap_name=ldap-configmap, key=ldap_use_ssl, value=FALSE, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="82">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="115">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_use_ssl} equals {FALSE}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[90] {configmap_name=ldap-configmap, key=ldap_user_base_dn, value=ou=people,dc=itsma,dc=com, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="197">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_user_base_dn} equals {ou=people,dc=itsma,dc=com}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[91] {configmap_name=ldap-configmap, key=ldap_group_base_dn, value=ou=groups,dc=itsma,dc=com, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="83">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="206">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_group_base_dn} equals {ou=groups,dc=itsma,dc=com}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[92] {configmap_name=ldap-configmap, key=ldap_group_base_filter, value=(objectclass=groupOfUniqueNames), ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="201">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ldap_group_base_filter} equals {(objectclass=groupOfUniqueNames)}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[93] {configmap_name=ldap-configmap, key=ldap_user_lastmodified, value=modifyTimestamp, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="84">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="120">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="78">
+      <description>Then I get the {ldap_user_lastmodified} equals {modifyTimestamp}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[94] {configmap_name=ldap-configmap, key=ldap_user_manager_id, value=manager, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="112">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_user_manager_id} equals {manager}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[95] {configmap_name=ldap-configmap, key=ldap_user_name_attr, value=uid, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="160">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_user_name_attr} equals {uid}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[96] {configmap_name=ldap-configmap, key=ldap_admin_group, value=cn=administrators,ou=groups,dc=itsma,dc=com, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="16">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="99">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_admin_group} equals {cn=administrators,ou=groups,dc=itsma,dc=com}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[97] {configmap_name=ldap-configmap, key=ldap_group_member_attr, value=uniqueMember, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="109">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ldap_group_member_attr} equals {uniqueMember}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[98] {configmap_name=ldap-configmap, key=ldap_server_port, value=389, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="73">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_server_port} equals {389}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[99] {configmap_name=ldap-configmap, key=ldap_user_class, value=inetOrgPerson, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="117">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ldap_user_class} equals {inetOrgPerson}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[100] {configmap_name=nginx-load-balancer-conf, key=enable-vts-status, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="99">
+      <description>When I check the status of configmap {nginx-load-balancer-conf} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {enable-vts-status} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[101] {configmap_name=nginx-load-balancer-conf, key=max-worker-connections, value=4096, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="86">
+      <description>When I check the status of configmap {nginx-load-balancer-conf} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {max-worker-connections} equals {4096}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[102] {configmap_name=nginx-load-balancer-conf, key=proxy-connect-timeout, value=180, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="75">
+      <description>When I check the status of configmap {nginx-load-balancer-conf} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {proxy-connect-timeout} equals {180}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[103] {configmap_name=nginx-load-balancer-conf, key=proxy-read-timeout, value=180, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="114">
+      <description>When I check the status of configmap {nginx-load-balancer-conf} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {proxy-read-timeout} equals {180}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[104] {configmap_name=nginx-load-balancer-conf, key=proxy-send-timeout, value=180, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="98">
+      <description>When I check the status of configmap {nginx-load-balancer-conf} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {proxy-send-timeout} equals {180}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[105] {configmap_name=nginx-load-balancer-conf, key=server-name-hash-bucket-size, value=256, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="191">
+      <description>When I check the status of configmap {nginx-load-balancer-conf} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {server-name-hash-bucket-size} equals {256}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[106] {configmap_name=nginx-load-balancer-conf, key=worker-processes, value=128, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="77">
+      <description>When I check the status of configmap {nginx-load-balancer-conf} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {worker-processes} equals {128}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[107] {configmap_name=sm-common-configmap, key=sm_webtier_loglevel_session_timeout, value=30, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="83">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_webtier_loglevel_session_timeout} equals {30}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[108] {configmap_name=sm-common-configmap, key=enable_webtier_debug, value=false, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="85">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {enable_webtier_debug} equals {false}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[109] {configmap_name=sm-common-configmap, key=sm_server_loglevel_number_of_log_files, value=10, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="75">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_server_loglevel_number_of_log_files} equals {10}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[110] {configmap_name=sm-common-configmap, key=sm_server_loglevel_debug_db_query, value=5, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="80">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_server_loglevel_debug_db_query} equals {5}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[111] {configmap_name=sm-common-configmap, key=sm_server_loglevel_max_log_size, value=20, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="76">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_server_loglevel_max_log_size} equals {20}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[112] {configmap_name=sm-common-configmap, key=sm_server_loglevel_conection_timeout, value=180000, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="73">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_server_loglevel_conection_timeout} equals {180000}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[113] {configmap_name=sm-common-configmap, key=WEB_disable_AntiCSRF, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="83">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {WEB_disable_AntiCSRF} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[114] {configmap_name=sm-common-configmap, key=sm_server_loglevel_smart_email_timeout, value=45000, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="80">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_server_loglevel_smart_email_timeout} equals {45000}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[115] {configmap_name=sm-common-configmap, key=sm_webtier_loglevel_query_security, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="75">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_webtier_loglevel_query_security} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[116] {configmap_name=sm-common-configmap, key=sm_webtier_loglevel_js_debug, value=false, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="75">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {sm_webtier_loglevel_js_debug} equals {false}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[117] {configmap_name=sm-common-configmap, key=RECONFIG_LDAP, value=False, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="73">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {RECONFIG_LDAP} equals {False}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[118] {configmap_name=sm-common-configmap, key=sm_server_loglevel_cache_clean_interval, value=3600, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="108">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_server_loglevel_cache_clean_interval} equals {3600}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[119] {configmap_name=sm-common-configmap, key=sm_server_loglevel_log_debug_level, value=1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="100">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_server_loglevel_log_debug_level} equals {1}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[120] {configmap_name=sm-common-configmap, key=sm_server_loglevel_sqllimit, value=10, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="197">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the {sm_server_loglevel_sqllimit} equals {10}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[121] {configmap_name=sm-common-configmap, key=sm_server_loglevel_webservices_session_timeout, value=1800, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="156">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_server_loglevel_webservices_session_timeout} equals {1800}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[122] {configmap_name=sm-common-configmap, key=sm_webtier_loglevel_view_record_list, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="91">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {sm_webtier_loglevel_view_record_list} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[123] {configmap_name=sm-rte-configmap, key=sm_survey_enabled, value=1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="72">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_survey_enabled} equals {1}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[124] {configmap_name=sm-rte-configmap, key=sm_chat_enabled, value=1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="70">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_chat_enabled} equals {1}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[125] {configmap_name=sm-rte-configmap, key=sm_database_ip, value=sm-postgres-svc, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="73">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_database_ip} equals {sm-postgres-svc}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[126] {configmap_name=sm-rte-configmap, key=sm_config_ready, value=false, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="100">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_config_ready} equals {false}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[127] {configmap_name=sm-rte-configmap, key=sm_database_instance, value=sm, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="88">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4">
+      <description>Then I get the {sm_database_instance} equals {sm}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[128] {configmap_name=sm-rte-configmap, key=sm_database_type, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="98">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the {sm_database_type} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[129] {configmap_name=sm-rte-configmap, key=sm_portal_enabled, value=1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="149">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_portal_enabled} equals {1}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[130] {configmap_name=sm-rte-configmap, key=sm_process_designer, value=1, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="137">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_process_designer} equals {1}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[131] {configmap_name=sm-rte-configmap, key=sm_database_port, value=5432, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="99">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_database_port} equals {5432}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[132] {configmap_name=sm-rte-configmap, key=sm_database_user, value=sm, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="144">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {sm_database_user} equals {sm}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[133] {configmap_name=sm-rte-configmap, key=sm_smarta_enabled, value=4, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="111">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_smarta_enabled} equals {4}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[134] {configmap_name=sm-rte-configmap, key=sm_solr_enabled, value=0, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="74">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_solr_enabled} equals {0}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[135] {configmap_name=sm-rte-configmap, key=sm_integration_username, value=intgAdmin, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="82">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {sm_integration_username} equals {intgAdmin}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[136] {configmap_name=ucmdb-configmap, key=ucmdb_db_host, value=postgresql-ucmdb-svc, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="83">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ucmdb_db_host} equals {postgresql-ucmdb-svc}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[137] {configmap_name=ucmdb-configmap, key=ucmdb_integration_password_vault_key, value=integration_password_secret_key, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="181">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ucmdb_integration_password_vault_key} equals {integration_password_secret_key}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[138] {configmap_name=ucmdb-configmap, key=sm_integration_user_password_vault_key, value=sm_integration_password_secret_key, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="92">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {sm_integration_user_password_vault_key} equals {sm_integration_password_secret_key}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[139] {configmap_name=ucmdb-configmap, key=ucmdb_admin_password_vault_key, value=admin_password_secret_key, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="76">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ucmdb_admin_password_vault_key} equals {admin_password_secret_key}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[140] {configmap_name=ucmdb-configmap, key=ucmdb_db_port, value=5432, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="78">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ucmdb_db_port} equals {5432}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[141] {configmap_name=ucmdb-configmap, key=ucmdb_probe_min_mem, value=512, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="81">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ucmdb_probe_min_mem} equals {512}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[142] {configmap_name=ucmdb-configmap, key=ucmdb_server_max_memory, value=8192, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="88">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ucmdb_server_max_memory} equals {8192}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[143] {configmap_name=ucmdb-configmap, key=ucmdb_db_type, value=postgres, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="151">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ucmdb_db_type} equals {postgres}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[144] {configmap_name=ucmdb-configmap, key=cmdb_package_white_list_enabled, value=true, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="100">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {cmdb_package_white_list_enabled} equals {true}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[145] {configmap_name=ucmdb-configmap, key=ucmdb_probe_pg_root_pwd_vault_key, value=ucmdb_probe_pg_root_pwd, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="91">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ucmdb_probe_pg_root_pwd_vault_key} equals {ucmdb_probe_pg_root_pwd}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[146] {configmap_name=ucmdb-configmap, key=cmdb_package_check_list, value=Microsoft_MQ,Citrix_NetScaler,CloudFoundry, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="100">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {cmdb_package_check_list} equals {Microsoft_MQ,Citrix_NetScaler,CloudFoundry}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[147] {configmap_name=ucmdb-configmap, key=ucmdb_probe_max_mem, value=8192, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="180">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ucmdb_probe_max_mem} equals {8192}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[148] {configmap_name=ucmdb-configmap, key=ucmdb_probe_pg_probe_pwd_vault_key, value=ucmdb_probe_pg_probe_pwd, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="97">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ucmdb_probe_pg_probe_pwd_vault_key} equals {ucmdb_probe_pg_probe_pwd}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[149] {configmap_name=ucmdb-configmap, key=ucmdb_sysadmin_password_vault_key, value=itom_itsma_sysadmin_password_secret_key, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="79">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ucmdb_sysadmin_password_vault_key} equals {itom_itsma_sysadmin_password_secret_key}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[150] {configmap_name=ucmdb-configmap, key=ucmdb_oracle_db_schemapwd_vault_key, value=itom_itsma_db_password_secret_key, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="75">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the {ucmdb_oracle_db_schemapwd_vault_key} equals {itom_itsma_db_password_secret_key}</description>
+    </test-step>
+  </test-group>
+  <test-group name="[151] {configmap_name=ucmdb-configmap, key=ucmdb_ui_syspwd_vault_key, value=ucmdb_ui_syspwd, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="81">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the {ucmdb_ui_syspwd_vault_key} equals {ucmdb_ui_syspwd}</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

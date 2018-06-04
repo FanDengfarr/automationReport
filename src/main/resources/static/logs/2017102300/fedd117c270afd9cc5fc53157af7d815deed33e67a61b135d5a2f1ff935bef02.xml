@@ -1,0 +1,26 @@
+<acceptance-test-run title="c02-F02-S001-33 Test LDAP connection  with  userFilter(no records under the groupclass)" name="c02-F02-S001-33 Test LDAP connection  with  userFilter(no records under the groupclass)" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="40381" timestamp="2017-10-22T15:06:59.893Z">
+  <user-story id="c02_f02_s001_test_connection_ldap" name="C02 f02 s001 test connection ldap" path="stories/c02_installer/c02_f02_s001_test_connection_ldap.story"/>
+  <issues>
+    <issue>F02-S001-33</issue>
+  </issues>
+  <tags>
+    <tag name="Installer-API" type="Test Type"/>
+    <tag name="C02 installer" type="capability"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C02 installer/C02 f02 s001 test connection ldap" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="5">
+    <description>Given a ldap server</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="3">
+    <description>When with groupClass=person</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="3">
+    <description>When with groupFilter=(objectclass=group)</description>
+  </test-step>
+  <test-group name="Then test connection should pass and return message=Test Success" result="SUCCESS">
+    <test-step result="SUCCESS" duration="40325">
+      <description>Do post: {&quot;ldap_server_ip&quot;:&quot;16.187.188.98&quot;,&quot;ldap_server_port&quot;:389,&quot;ldap_use_ssl&quot;:false,&quot;ldap_search_sub&quot;:true,&quot;ldap_base_dn&quot;:&quot;DC=smadfs,DC=com&quot;,&quot;ldap_bind_user&quot;:&quot;CN=itsmaadmin,CN=Users,DC=smadfs,DC=com&quot;,&quot;ldap_bind_user_password&quot;:&quot;!qaz2wsx3edc&quot;,&quot;ldap_user_base_dn&quot;:&quot;CN=Users,DC=smadfs,DC=com&quot;,&quot;ldap_user_class&quot;:&quot;person&quot;,&quot;ldap_user_filter&quot;:&quot;(&amp;(objectclass=person)(userPrincipalName=*))&quot;,&quot;ldap_user_disp_name_attr&quot;:&quot;sAMAccountName&quot;,&quot;ldap_user_name_attr&quot;:&quot;sAMAccountName&quot;,&quot;ldap_user_email&quot;:&quot;mail&quot;,&quot;ldap_user_avatar&quot;:&quot;&quot;,&quot;ldap_user_manager_id&quot;:&quot;&quot;,&quot;ldap_user_manager_id_value&quot;:&quot;&quot;,&quot;ldap_user_firstname&quot;:&quot;givenName&quot;,&quot;ldap_user_lastname&quot;:&quot;sn&quot;,&quot;ldap_user_phone&quot;:&quot;telephoneNumber&quot;,&quot;ldap_user_lastmodified&quot;:&quot;whenChanged&quot;,&quot;ldap_group_base_dn&quot;:&quot;CN=Users,DC=smadfs,DC=com&quot;,&quot;ldap_group_class&quot;:&quot;person&quot;,&quot;ldap_group_base_filter&quot;:&quot;(objectclass=group)&quot;,&quot;ldap_group_name_attr&quot;:&quot;cn&quot;,&quot;ldap_group_member_attr&quot;:&quot;member&quot;,&quot;ldap_user_group&quot;:&quot;CN=itpeople,CN=Users,DC=smadfs,DC=com&quot;,&quot;ldap_admin_group&quot;:&quot;CN=itadmins,CN=Users,DC=smadfs,DC=com&quot;,&quot;saml2_enable&quot;:false,&quot;saml2_idp_metadata_url&quot;:&quot;https://github.houston.softwaregrp.net/SMA-RnD&quot;,&quot;ldap_group_description&quot;:null}</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

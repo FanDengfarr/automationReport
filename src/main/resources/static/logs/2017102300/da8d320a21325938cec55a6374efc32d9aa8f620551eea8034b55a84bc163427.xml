@@ -1,0 +1,34 @@
+<acceptance-test-run title="C08-F01-S011-01 Test update item quantity in cart" name="C08-F01-S011-01 Test update item quantity in cart" steps="5" successful="2" failures="0" skipped="3" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="887" timestamp="2017-10-22T16:40:32.975Z">
+  <user-story id="c08_f01_s011_updateCartItemQuantity" name="C08 f01 s011 update cart item quantity" path="stories/c08_saw/c08_f01_catalog/c08_f01_s011_updateCartItemQuantity.story"/>
+  <issues>
+    <issue>C08-F01-S011-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f01 catalog" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f01 catalog/C08 f01 s011 update cart item quantity" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="596">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user select catalog ｟catalog.item｠" result="ERROR">
+    <test-group name="Get catalog id: Business and Department Services, e3uy4gCOh8pNAkunUiDtZhBrkL6Po6NtQNkFoBwlT25xsFMYIl9qUYNUjXjYg7kFhp_XjaD_2HWGroVxiHHGooXV_dPE7pWOKj7lEq3aOOZxNlnND7ZA_IZf9GmrZMgMxKOjLIIMIPghO2KB8GOCzGhQRLtI3SJYM_vGZ6es3SNJQ25FO_0vvvHYx8-QXv__CYf0y4ca5Jra9roZXjNwLswRlkhfpa2C5QSp3se1ydwrFwwF5Dxcd7czOiwho-4ckiQRPP6HLKtvthpB4HyCtXI2ffC1yMrHpZgCtLB-FuWm4-hogxA3_cpUIs79KkdjRhPO9iDrr-W-OpQ7mw4le3i6asPFmyRPUT9-peQPvClL2kVL6_1IRWJeCC_0rF4EwbzMuJr-o8JaQmb7NYhQznLR2iiTWAxITpIGESzD9ZIPYh5jMLRDdU_yqMwQxd6ep507UXDb-9pndFRuWZSaKbmDmZjuo3gMmTjBZUCQN4et-eQfXSspuWnsQwQS148ZMB2kXIeoBKKPX386VA7qqaKt2ut8RFK10Q8r3x8yti-Ek2pRxyQV0ESLPMvfrxHBbD2BYGzAYlo49MgPvcjPyQ-Yub0OiD_9AwfK1O98azFMRiP6q2I6_54cxYDhR1Yw-hpRMpgLI55gZ6wlONzI6_leVBE1c5sqTXB0GOee_umGF8j1hMUjoxzOsu1wDwvZxkR3-hmI8wEe0mFKmVKWcnVQKk1LIojfQ4EPSZ4kdvkvDdOJBeeXHkL0Iaj4uiqfHWQWHT6r30Xbs9j1pmEg6pQqgre0d93mGbXT8OJgIBu4sKEcV5XUC-iB84I7sWRlPIPmyobzzu3U7aIiiqt0zXiLdGl6XrC9h48B5E_m1dJtAXUzbVZVc9uB1TEHvelCbDvrXTH14wJoX3zmcsoxEy6G0oKozOsYOBJG88fS0AugMpiMBIpvulHYXAgGymRVXvpcBIDmh2ctwRzSHmXqpqXkHxRTpwCuMMyGEo9VTXjg0DliEwECYbsagG5XKEP6F9F2M69KTv_rvPEoPrQho_qWCqFthZGKBep0xLjx2odyuAtySGW5jci4OXVjkZuzfJn3vksjqFPhxF2ROTB7dQ75ONdt8tl3U7etBVu0s1a0LqzbD2cTofcIBZEDIuTU" result="ERROR">
+      <test-step result="SUCCESS" duration="196">
+        <description>Get catalogs: e3uy4gCOh8pNAkunUiDtZhBrkL6Po6NtQNkFoBwlT25xsFMYIl9qUYNUjXjYg7kFhp_XjaD_2HWGroVxiHHGooXV_dPE7pWOKj7lEq3aOOZxNlnND7ZA_IZf9GmrZMgMxKOjLIIMIPghO2KB8GOCzGhQRLtI3SJYM_vGZ6es3SNJQ25FO_0vvvHYx8-QXv__CYf0y4ca5Jra9roZXjNwLswRlkhfpa2C5QSp3se1ydwrFwwF5Dxcd7czOiwho-4ckiQRPP6HLKtvthpB4HyCtXI2ffC1yMrHpZgCtLB-FuWm4-hogxA3_cpUIs79KkdjRhPO9iDrr-W-OpQ7mw4le3i6asPFmyRPUT9-peQPvClL2kVL6_1IRWJeCC_0rF4EwbzMuJr-o8JaQmb7NYhQznLR2iiTWAxITpIGESzD9ZIPYh5jMLRDdU_yqMwQxd6ep507UXDb-9pndFRuWZSaKbmDmZjuo3gMmTjBZUCQN4et-eQfXSspuWnsQwQS148ZMB2kXIeoBKKPX386VA7qqaKt2ut8RFK10Q8r3x8yti-Ek2pRxyQV0ESLPMvfrxHBbD2BYGzAYlo49MgPvcjPyQ-Yub0OiD_9AwfK1O98azFMRiP6q2I6_54cxYDhR1Yw-hpRMpgLI55gZ6wlONzI6_leVBE1c5sqTXB0GOee_umGF8j1hMUjoxzOsu1wDwvZxkR3-hmI8wEe0mFKmVKWcnVQKk1LIojfQ4EPSZ4kdvkvDdOJBeeXHkL0Iaj4uiqfHWQWHT6r30Xbs9j1pmEg6pQqgre0d93mGbXT8OJgIBu4sKEcV5XUC-iB84I7sWRlPIPmyobzzu3U7aIiiqt0zXiLdGl6XrC9h48B5E_m1dJtAXUzbVZVc9uB1TEHvelCbDvrXTH14wJoX3zmcsoxEy6G0oKozOsYOBJG88fS0AugMpiMBIpvulHYXAgGymRVXvpcBIDmh2ctwRzSHmXqpqXkHxRTpwCuMMyGEo9VTXjg0DliEwECYbsagG5XKEP6F9F2M69KTv_rvPEoPrQho_qWCqFthZGKBep0xLjx2odyuAtySGW5jci4OXVjkZuzfJn3vksjqFPhxF2ROTB7dQ75ONdt8tl3U7etBVu0s1a0LqzbD2cTofcIBZEDIuTU</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-step result="SKIPPED" duration="0">
+    <description>When user select offering {service.offering.item}</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="1">
+    <description>Then user add offering item to cart</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="0">
+    <description>Then user update item quantity {service.offering.item.quantity}</description>
+  </test-step>
+</acceptance-test-run>

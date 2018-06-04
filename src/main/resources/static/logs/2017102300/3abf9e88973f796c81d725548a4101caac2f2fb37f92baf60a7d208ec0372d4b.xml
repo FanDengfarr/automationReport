@@ -1,0 +1,31 @@
+<acceptance-test-run title="C08-F02-S001-01 Test submit a order without form on service offering" name="C08-F02-S001-01 Test submit a order without form on service offering" steps="4" successful="2" failures="0" skipped="2" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="707" timestamp="2017-10-22T16:40:34.049Z">
+  <user-story id="c08_f02_s001_submitServiceRequest" name="C08 f02 s001 submit service request" path="stories/c08_saw/c08_f02_request/c08_f02_s001_submitServiceRequest.story"/>
+  <issues>
+    <issue>C08-F02-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f02 request" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f02 request/C08 f02 s001 submit service request" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="399">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user select catalog ｟catalog.item｠" result="ERROR">
+    <test-group name="Get catalog id: Business and Department Services, e3uy4gCOh8pNAkunUiDtZvQ6mFjV9NUHtwtjsZXBY4IVl0o1fExGeHJCK_UGlQ0xoTtq4qenItSPibogwRqB4DAjHzbNh_PjMcb7Kqp-qS6K7--NZSnGUaJxfMIzgOCVGAXG81K53OVejsV5kTpoqWQREEZ8wp3pKUDNEgbpv96n5APQJFU36fPmSX2cYrUxfk2JSCDtgHX3vQfvHOL7Rt00BOAQQoSVsUNpDqURXAhlyk5ZlMHPlswhseus0jGhugH7oXR07BF0hXAtkrXacR-M_WJC-SL_ULKZBSxU1aQp6K3DvGxApIz9kxaB7kP-0wcMvVGLDD0vOylJQPfnZ2eI5t0xvXVu0muNkBbYawqBM_hxD0RiOJqcJhBbAdpDGOW6rxxyVi2oegOzBmOB0Nw4B_NDt6oFFc5jiGA02o9Ct_Wh6IZKSgHUcglxsglodLTrHKT84rkuWoFVOGBqaIHyJe9E4BJGOJb9KacfYHOjgBJUALqW-MD44R9onUN-JDQbD5wo6SV8ZuOwnRiOf73mNDelzPZx5e4pWIsVNqRCw7VhPjafXbNYtTFUIYWLv1L751ddNRQld0GEJ0YpmQ8_simeYOPsFDHx9t6l1U91BA_jeEWRHqH5Yq9ibTPKc_xS8q54uK5UP6g-TFsvl-v2Kk4BOhhnYbul_jxzPcSCqX3T15AtXTxJCA4-GrXZw5gd6lHWzXDN-U-RcZ8DYDBj-APlPt8nmmpbSAMT8QSXf7W-LVcs2NYAtJsa-QOWpNrIHacg6T_uz_qjwRgYkXHTG7qQESEavCgu10EfJstnmpFzUBjHE6TvkNIX8jd_lqls4Bjei-_CW6i3NiJGZnlrl_mwdJe8n7yCtxYNfuG-8cEtnnP7x3EVYyEEeZC11BNl2KxwzPkT9ocPR-jsKPWC402RpOqnnZJvo2QpE4ixdPU3ZQRh1iINrYbxqqjJiXG3Cci5GtszjD57vwSElYNrLgHJRjveb3hghfzV2g0n3yw-a_49_LEg1ymWm8dr0QlBKRz_vWL2_2zrsA2LuRpuWFUY5uoN0HNsU9jodZKnvnZqXgWTHqvvv7mKzBSgBBiU9yWobrOx_LEhNFW6eWyZ52NtwK3IhobwHUsE6kCccCxg5sYdALDKSx4ZBGJI" result="ERROR">
+      <test-step result="SUCCESS" duration="191">
+        <description>Get catalogs: e3uy4gCOh8pNAkunUiDtZvQ6mFjV9NUHtwtjsZXBY4IVl0o1fExGeHJCK_UGlQ0xoTtq4qenItSPibogwRqB4DAjHzbNh_PjMcb7Kqp-qS6K7--NZSnGUaJxfMIzgOCVGAXG81K53OVejsV5kTpoqWQREEZ8wp3pKUDNEgbpv96n5APQJFU36fPmSX2cYrUxfk2JSCDtgHX3vQfvHOL7Rt00BOAQQoSVsUNpDqURXAhlyk5ZlMHPlswhseus0jGhugH7oXR07BF0hXAtkrXacR-M_WJC-SL_ULKZBSxU1aQp6K3DvGxApIz9kxaB7kP-0wcMvVGLDD0vOylJQPfnZ2eI5t0xvXVu0muNkBbYawqBM_hxD0RiOJqcJhBbAdpDGOW6rxxyVi2oegOzBmOB0Nw4B_NDt6oFFc5jiGA02o9Ct_Wh6IZKSgHUcglxsglodLTrHKT84rkuWoFVOGBqaIHyJe9E4BJGOJb9KacfYHOjgBJUALqW-MD44R9onUN-JDQbD5wo6SV8ZuOwnRiOf73mNDelzPZx5e4pWIsVNqRCw7VhPjafXbNYtTFUIYWLv1L751ddNRQld0GEJ0YpmQ8_simeYOPsFDHx9t6l1U91BA_jeEWRHqH5Yq9ibTPKc_xS8q54uK5UP6g-TFsvl-v2Kk4BOhhnYbul_jxzPcSCqX3T15AtXTxJCA4-GrXZw5gd6lHWzXDN-U-RcZ8DYDBj-APlPt8nmmpbSAMT8QSXf7W-LVcs2NYAtJsa-QOWpNrIHacg6T_uz_qjwRgYkXHTG7qQESEavCgu10EfJstnmpFzUBjHE6TvkNIX8jd_lqls4Bjei-_CW6i3NiJGZnlrl_mwdJe8n7yCtxYNfuG-8cEtnnP7x3EVYyEEeZC11BNl2KxwzPkT9ocPR-jsKPWC402RpOqnnZJvo2QpE4ixdPU3ZQRh1iINrYbxqqjJiXG3Cci5GtszjD57vwSElYNrLgHJRjveb3hghfzV2g0n3yw-a_49_LEg1ymWm8dr0QlBKRz_vWL2_2zrsA2LuRpuWFUY5uoN0HNsU9jodZKnvnZqXgWTHqvvv7mKzBSgBBiU9yWobrOx_LEhNFW6eWyZ52NtwK3IhobwHUsE6kCccCxg5sYdALDKSx4ZBGJI</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-step result="SKIPPED" duration="0">
+    <description>When user select offering {service.offering.item}</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="1">
+    <description>Then user can submit a service request</description>
+  </test-step>
+</acceptance-test-run>

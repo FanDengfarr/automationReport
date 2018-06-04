@@ -1,0 +1,38 @@
+<acceptance-test-run title="C01-F06-S001-01 Check Service Manager connection with correct value" name="C01-F06-S001-01 Check Service Manager connection with correct value" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="672" timestamp="2017-11-01T04:44:50.695Z">
+  <user-story id="c01_f06_s001_check_service_manager" name="C01 f06 s001 check service manager" path="stories/c01_configapp/c01_f06_connect_service_manager/c01_f06_s001_check_service_manager.story"/>
+  <issues>
+    <issue>C01-F06-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="ConfigAPP-API" type="Test Type"/>
+    <tag name="C01 configapp" type="capability"/>
+    <tag name="C01 configapp/C01 f06 connect service manager" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C01 f06 connect service manager/C01 f06 s001 check service manager" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>username</header>
+      <header>password</header>
+      <header>sm_url</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>falcon</value>
+        <value>!Qaz2wsx3edc</value>
+        <value>http://16.155.194.11:13080</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {username=falcon, password=!Qaz2wsx3edc, sm_url=http://16.155.194.11:13080, ACC=, config=, suite=, tags=relase:2017-07, Test Type: ConfigAPP-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="654">
+      <description>When send get request to &quot;/configuration/connServiceManager&quot; with sm body {falcon} {!Qaz2wsx3edc} {http://16.155.194.11:13080}</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15">
+      <description>Then I get the response &quot;errorCode&quot; = &quot;0&quot;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

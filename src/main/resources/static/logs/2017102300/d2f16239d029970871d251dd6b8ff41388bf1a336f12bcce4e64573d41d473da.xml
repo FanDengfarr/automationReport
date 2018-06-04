@@ -1,0 +1,33 @@
+<acceptance-test-run title="C07-F02-S003-01 Search with History" name="C07-F02-S003-01 Search with History" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="2312" timestamp="2017-10-22T16:30:49.646Z">
+  <user-story id="c07_f02_s003_search_with_history" name="C07 f02 s003 search with history" path="stories/c07_propel/c07_f02_integration_with_SMA/c07_f02_s003_search_with_history.story"/>
+  <issues>
+    <issue>C07-F02-S003-01</issue>
+  </issues>
+  <tags>
+    <tag name="Propel API" type="Test Type"/>
+    <tag name="C07 propel" type="capability"/>
+    <tag name="C07 propel/C07 f02 integration with sma" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C07 f02 integration with sma/C07 f02 s003 search with history" type="story"/>
+  </tags>
+  <test-group name="Given user login Propel as {user.provider.username} with {user.provider.password} using {user.proviuder.tenantName}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="393">
+      <description>Login: admin, propel, PROVIDER</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user import OOB search history result" result="SUCCESS">
+    <test-step result="SUCCESS" duration="398">
+      <description>Import OOB search history result: eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYzg5NTVmNDQ5ZmVlMDE1ZjQ0YTA1ZjI1MDEzNCIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwODY5MzQ1MCwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RjODk1NWY0NDlmZWUwMTVmNDRhMDNkNTMwMGE0IiwibmFtZSI6IlByb3ZpZGVyIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImFkbWluIiwiaWF0IjoxNTA4Njg5ODUwLCJqdGkiOiI4NzEwMjBlZS1mYTE1LTQxM2UtOGY4Yi05OTJmYTE4ZmZhMmIifQ.qpsm7tDazcXKXDiKOEsUZr2KWVHAC0_1rZRSXjqFqLg</description>
+    </test-step>
+  </test-group>
+  <test-group name="Given user login Propel as {user.username} with {user.password} using {itsma.tenantName}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="686">
+      <description>Login: falcon, 123456, ITSMA</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then user can search for suggestion entity type to get history" result="SUCCESS">
+    <test-step result="SUCCESS" duration="393">
+      <description>Search suggestion entity type: eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYzg5NTVmNDQ5ZmVlMDE1ZjQ0YTBhYWJiMDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwODY5MzQ1MSwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RjODk1NWY0NDlmZWUwMTVmNDRhMDNlYzgwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwODY4OTg1MSwianRpIjoiMTUyYjA1NWMtZjRkYy00ZjQ2LTgzNzAtZDgxOTJjMjkzM2NkIn0.qfzs5ISfhRnPi0hQMD769lr3ztPae_vV9Pw2ZJObHLI</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

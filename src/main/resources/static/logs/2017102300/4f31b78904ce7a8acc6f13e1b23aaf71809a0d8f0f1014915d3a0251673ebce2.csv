@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C02 f02 s001 test connection ldap","c02-F02-S001-01 Test LDAP connection via SSL","SUCCESS","2017-10-22T15:05:42.463Z","0.0","40.91"
+"C02 f02 s001 test connection ldap","c02-F02-S001-02 Test LDAP connection via non-SSL","SUCCESS","2017-10-22T15:06:23.373Z","0.0","36.52"
+"C02 f02 s001 test connection ldap","c02-F02-S001-33 Test LDAP connection  with  userFilter(no records under the groupclass)","SUCCESS","2017-10-22T15:06:59.893Z","0.0","40.38"

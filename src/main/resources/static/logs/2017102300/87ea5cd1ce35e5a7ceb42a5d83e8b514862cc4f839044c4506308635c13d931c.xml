@@ -1,0 +1,24 @@
+<acceptance-test-run title="C08-F04-S001-02 Test auto suggested search only service offering" name="C08-F04-S001-02 Test auto suggested search only service offering" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="453" timestamp="2017-10-22T16:14:29.563Z">
+  <user-story id="c08_f04_s001_autoSuggestedSearch" name="C08 f04 s001 auto suggested search" path="stories/c08_saw/c08_f04_search/c08_f04_s001_autoSuggestedSearch.story"/>
+  <issues>
+    <issue>C08-F04-S001-02</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f04 search" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f04 s001 auto suggested search" type="story"/>
+    <tag name="C08 f04 search/Api test   check auto search" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="383">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user input ｟auto.search.service.keyword｠ in search box, auto suggested search with service will display" result="FAILURE">
+    <test-step result="SUCCESS" duration="54">
+      <description>Get auto searched with config: Employee, dzT-C5ymeKYM_0ltIbVgqUO2MOpu43wnIhyVobUwcUJqXESfQJe1BU4vyDull8t6UofAiyLEVzS2S4oOee9v0OrG4oWQeJxWvpyeVSocZKWx-KNM-85TWYOq_1dbICP4OVG6SxAwY2FcENA7d3otmMxirVIesMF_16MH9mNVdDSAI0yMYIVx4QkgxqzKtlqU9tDr2oCY-CzC_hQKTIyOMKKTF9Ax0kKHbgjxnOctVZk3wxNUE9rmiQPp1SY8JL8GI_377c6MoI-3cR8JgoW9oI_l-4Dppt0XQDfjgD1H6ctz4ZBUTELY1q2iEKBbfZLtkhuSshpYRnf6jJ1KuRTEeu3UUKCewB803DIhFDJMA40nzMEvt1SgHyJIeVRkFeM2AK4rP509rpTb1EduO-WV3ABgszhNdQqLH9-spGtl_hgIUNtDMQmLUTIuYo27zRj4kxRqZj2NflQqjAuLhnV8ziPzOYFk4ghX-aY6Oql15fJDxqcYmCkE99iOvM3CzUV3gB_Hh16jQkCL2NZ1EUa_opR2O_Ae3YevwNiDNQqJRBkK6AuOA4VPyjJVfjZ94bQYj9d1RX6qS5iFGq4FQ6GsubL4MchKTVdj0pIhXim8RQAZx3axnIZ2SimBMupm5vdqkg3HYzftJlQ3umfsvEAcDXjhypFybx3cWXuz6NZbHnfgkmAbrENkuJUW9-gJB9RFl1kgLGWqIKMY9lRkwWpRIkzaEc0hwKLPcZfxG7CSqLjCn7HcX0DhqqNm7GsZ4N5VSzMjr4n_6GMF1qbi5yHgG4aeqO578dceCNwhapx4XZjrQTOP2dSUL_RASwYLkC_i2ZKFOa3f5GAjvnMbtFSI_gunJNA6fVDGCq5cx1eOhFK0f5KQBqXovEsF97gq4QZiS628qp9Sv-apQC3JEeX84PMFmzY3ei-MOUGTAYqh8dTROqKQeMHM3RH9CgVoQCHq2huZ_sfYKQfDs3ozDB5dcz_cm3J8KGjGSRvKKMJG9WdEcHl3BIP0v3mdRZFcJbe6qMs8OxtSNakk65VOWgaqSfzCK7kWOaCHYxfArrPHIt7OYu5ahExTf6LxzPhNRY-45tEy8Ilufg6u-XXdah46abV4p-nL-8CKKLnbfNXVBq5dLT_m7g9w85rVFF-YBkor</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

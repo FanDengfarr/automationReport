@@ -1,0 +1,24 @@
+<acceptance-test-run title="C08-F01-S001-01 Test get category list" name="C08-F01-S001-01 Test get category list" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="7888" timestamp="2017-10-22T16:14:12.156Z">
+  <user-story id="c08_f01_s001_getCatalogList" name="C08 f01 s001 get catalog list" path="stories/c08_saw/c08_f01_catalog/c08_f01_s001_getCatalogList.story"/>
+  <issues>
+    <issue>C08-F01-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f01 catalog" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f01 catalog/Api test   check get catalogs from propel" type="story"/>
+    <tag name="C08 f01 s001 get catalog list" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4920">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then user get catalog items" result="FAILURE">
+    <test-step result="SUCCESS" duration="2726">
+      <description>Get catalogs: dzT-C5ymeKYM_0ltIbVgqZ2xOWAs28v8n1Rl0qhy8NLDDAiXanwUCDMvaNcGob5r9zOnm3PdZJ_yLs8DXE_9i9k8O9TKT5WSR2LKT2XVbt55VdKXVhaeUzgTr8e6HVx6R13F_v04Ar665bbwo6TXwEfB97M0elv9g5GOSGH2RtbKGF7PeXTKYJ0ilfeglPtTsCa_IxW1zcd6RdUdU-IGgOXGfEs5g0nYmBwOeMpiPJBxnVMCCaNdyAIaToZG_Pm1-7cpO-aC90k4uUP1OU7tyJRpeMS6KsrYwPxwbQxrJl-Nkz5yHrGuNUCbaxINRevfGbLTM0A3qv4TEAYbJxDgbdVHpmPpEhU9C4zW-UP8xSobBPpQkc2pEx6dN61CiNMQmd7MshbgDtxWAeBrYB29Nu2RJsGqgU2Bz_WuXsT8eixgyapYiBnJLth71S2z2URKIXJeLbBGVjcKMV_wvUdz-OUWSaMr1mEcfuGQzTgG1vrBKL4W9jGk4GYfwWPlg4nxAOuEX2SvxCCYFDz5r5v2vHwE6G5Tc-gXftmXJTnGnHhYQRYbQR2HR-uTA7uJIURD87YaYpyi9K_fiEvPREtUFH5EmqCSyAB4wOB9XN0LTSyCrcTFXCz2cfLI5i6yVzStlXdtYdC6TrrZtQW-rn1wFXsMygXU1wgO4jGTALSc0wmZu5OVuxDYCCS9TVAgEnb0R60B9TGt8EoYXRFntiYAfRsLoJXyN2AI6oVMjuerET9VwKlWNizV3tfrCILXfSnSLXzWlnNm8SrHCJ9RbCQnec578rHAvfqatl8DArFcCCrTe3zMhG0VMiA9SE0cd-UH3piy_v3MKsjfijX1Xiu8QCoFk7xt7-FfcfXuPjYqUBQcRPgtXnMmQscIjxOGYtNTDrg3dLJIQAczeWUhc6Cq6A3KFTFm5nHdrQ3h2mbEAQQarz-ErPe5MQjgWKvxtS1mcL0DkXqyFyl9nmpEVPS8V2zm50vIa0fZk6dHqMVjaAOYLNohtfV7wp-1k3zFgT6pDdrDNj-23d8EJIttI3MoH1u8V3GyhmEYVzbHr7qyWvaBx_-Pcd2fm5LswnpAm5MCbXATNRo12L1w4qrtaE8idfMxAhKTr8c2HFMIspafVH3pu2vetz5PfKJsakHXC9NW</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

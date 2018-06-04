@@ -1,0 +1,28 @@
+<acceptance-test-run title="C08-F01-S007-01 Test get article" name="C08-F01-S007-01 Test get article" steps="3" successful="2" failures="0" skipped="1" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="710" timestamp="2017-10-22T16:40:29.450Z">
+  <user-story id="c08_f01_s007_getArticleList" name="C08 f01 s007 get article list" path="stories/c08_saw/c08_f01_catalog/c08_f01_s007_getArticleList.story"/>
+  <issues>
+    <issue>C08-F01-S007-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f01 catalog" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f01 catalog/C08 f01 s007 get article list" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="487">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user select catalog ｟search.catalog.item｠" result="ERROR">
+    <test-group name="Get catalog id: Security, e3uy4gCOh8pNAkunUiDtZvfUloJ_-_e8eQ4oa7PR2SypNY_OvrHsFrqITBib9H22thFIHMvucCJu8qNQ1x8jJL7SBeP76GP0XiVGIog4ZMy4L-7JLWfeFQQNeVHgatC8BVd0lWP6xYEEBhZRkQYqTS9pHg-6Fk-SDw8-x-8zBhYL2ibgsB_YWgh7xjgbG7fGLnYuaU8CqlSaEjEhlT8mYaMZQMDKG8hNwwKP9G3P3v7b3-SxyFRBnoLYrlG2NIJshtqNHeaspQo1fl3XfBEfEYKQ8vhBhChWTNPfXlSk0hdnddWfyKbuT9Sm58CC_elwI2XNzR5QjZrzy-gRYZymmmulloFUjvKGm4u1f4LUhBDihYndJmTHlwQQvhy6Tthh_gYHn3SVnpA16AQ901MD7isnmCCcRLGBTiHlgyALHwJ_VKcqxfGg2xeYNXNKzkvMvdU78k-gZc2-rvIYeWgxXM4P0kL_JsqGsSS0g-WR4edkkZORsR4gzixkQXRut6ZzCYWctAAIVb8Hj9exJaUtHlmFfG0XSEelXTFbG0TaTsJ5FIpzxmWOvXsmZabi3TlJq3Z3CF0eAGgeeYpDu8JyJ2ROspVVPB_rFeT7HurM_rzw1KWlA7-ctlR56x_tCbjRpgjxVH1oCerkZ2X8kFnIjWHVjApjICnXqmgf-3h_NzUOvzjb5YNiijuC9rYUCCE4_2ZDRJYcauxVvM0z1b69_tru8ZPlLMc0mtIzLal6GTUx3ldlNxO3kE3e6bHC6ZLE75vm8rg-mGZj_AZHq8qNLuVUgKg2HD9z-lGovGq_T4EeQILBeRTnHDHL_o1IhqZeC_a4U3ycC4CGpCxM4ATFWLekIf7Grn-MrwCP5rZZh1khXkUanMsrnZfP6IFhm88PCTnwgv9QzlpTxQrH6Ip3Z9x8tKvHDTVhR2JCj54Iv_IkgSZPA9Bn6ior_YkfvUw7Y1Uca2ZBYUsu56sS4aqgpnB4FRzPX7IRIJT8T1Jo-oK5qucymbjoHj9xR4zlX0L4seZZ5OUQsCQ5psMJYMKI9G5iQxS7KytVURpNidhrt5-Jwp2UZmXRumCLQxr0ATtpOq6LcACB_1MKt73ON3-Q_M6agGjEzWlbwCztu6txdWW6po9anyKp-gFn-BuxM9D7" result="ERROR">
+      <test-step result="SUCCESS" duration="195">
+        <description>Get catalogs: e3uy4gCOh8pNAkunUiDtZvfUloJ_-_e8eQ4oa7PR2SypNY_OvrHsFrqITBib9H22thFIHMvucCJu8qNQ1x8jJL7SBeP76GP0XiVGIog4ZMy4L-7JLWfeFQQNeVHgatC8BVd0lWP6xYEEBhZRkQYqTS9pHg-6Fk-SDw8-x-8zBhYL2ibgsB_YWgh7xjgbG7fGLnYuaU8CqlSaEjEhlT8mYaMZQMDKG8hNwwKP9G3P3v7b3-SxyFRBnoLYrlG2NIJshtqNHeaspQo1fl3XfBEfEYKQ8vhBhChWTNPfXlSk0hdnddWfyKbuT9Sm58CC_elwI2XNzR5QjZrzy-gRYZymmmulloFUjvKGm4u1f4LUhBDihYndJmTHlwQQvhy6Tthh_gYHn3SVnpA16AQ901MD7isnmCCcRLGBTiHlgyALHwJ_VKcqxfGg2xeYNXNKzkvMvdU78k-gZc2-rvIYeWgxXM4P0kL_JsqGsSS0g-WR4edkkZORsR4gzixkQXRut6ZzCYWctAAIVb8Hj9exJaUtHlmFfG0XSEelXTFbG0TaTsJ5FIpzxmWOvXsmZabi3TlJq3Z3CF0eAGgeeYpDu8JyJ2ROspVVPB_rFeT7HurM_rzw1KWlA7-ctlR56x_tCbjRpgjxVH1oCerkZ2X8kFnIjWHVjApjICnXqmgf-3h_NzUOvzjb5YNiijuC9rYUCCE4_2ZDRJYcauxVvM0z1b69_tru8ZPlLMc0mtIzLal6GTUx3ldlNxO3kE3e6bHC6ZLE75vm8rg-mGZj_AZHq8qNLuVUgKg2HD9z-lGovGq_T4EeQILBeRTnHDHL_o1IhqZeC_a4U3ycC4CGpCxM4ATFWLekIf7Grn-MrwCP5rZZh1khXkUanMsrnZfP6IFhm88PCTnwgv9QzlpTxQrH6Ip3Z9x8tKvHDTVhR2JCj54Iv_IkgSZPA9Bn6ior_YkfvUw7Y1Uca2ZBYUsu56sS4aqgpnB4FRzPX7IRIJT8T1Jo-oK5qucymbjoHj9xR4zlX0L4seZZ5OUQsCQ5psMJYMKI9G5iQxS7KytVURpNidhrt5-Jwp2UZmXRumCLQxr0ATtpOq6LcACB_1MKt73ON3-Q_M6agGjEzWlbwCztu6txdWW6po9anyKp-gFn-BuxM9D7</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-step result="SKIPPED" duration="0">
+    <description>Then user get article list</description>
+  </test-step>
+</acceptance-test-run>

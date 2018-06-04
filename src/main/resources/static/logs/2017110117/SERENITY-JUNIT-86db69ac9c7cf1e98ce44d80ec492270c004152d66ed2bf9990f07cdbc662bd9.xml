@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="C01 f01 s001 test connection ldap" skipped="0" tests="2" time="61.46" timestamp="2017-11-305 04:42:51"><testcase name="C01-F01-S001-01 Test LDAP connection via SSL"/><testcase name="C01-F01-S001-02 Test LDAP connection via non-SSL"/></testsuite>

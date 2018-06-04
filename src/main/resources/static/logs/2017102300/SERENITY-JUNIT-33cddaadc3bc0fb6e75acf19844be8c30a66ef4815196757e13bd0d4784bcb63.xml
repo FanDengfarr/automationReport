@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="C08 f04 s003 search view article" skipped="0" tests="1" time="0.37" timestamp="2017-10-295 04:14:30"><testcase name="C08-F04-S003-01 Test view article in search result"><failure message="Get auto search successfully expected:&lt;200&gt; but was:&lt;500&gt;" type="java.lang.AssertionError">Get auto search successfully expected:&lt;200&gt; but was:&lt;500&gt;</failure><system-err>Get auto search successfully expected:&lt;200&gt; but was:&lt;500&gt;
+com.hpe.itsma.stepdifinitions.saw.SearchStepDefinition.getSearchResult(SearchStepDefinition.java:79)
+</system-err></testcase></testsuite>

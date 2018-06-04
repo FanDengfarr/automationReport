@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C07 f02 s001 search with universal","C07-F02-S001-01 Search with Universal","SUCCESS","2017-10-30T16:28:34.388Z","0.0","34.2"
+"C07 f02 s002 search with knowledge service support item","C07-F02-S002-01 Search with Articel/Service/Support","SUCCESS","2017-10-30T16:29:09.382Z","0.0","5.21"
+"C07 f02 s003 search with history","C07-F02-S003-01 Search with History","SUCCESS","2017-10-30T16:29:14.686Z","0.0","1.91"
+"C07 f02 s004 search with typeahead","C07-F02-S004-01 Search with Typeahead","SUCCESS","2017-10-30T16:29:16.683Z","0.0","0.72"

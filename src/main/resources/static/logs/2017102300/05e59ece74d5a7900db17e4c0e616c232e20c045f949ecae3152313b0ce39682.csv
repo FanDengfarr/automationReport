@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C02 f02 s006 get install status","c02-F02-S006-01-get installation status by GET /itsma/install","SUCCESS","2017-10-22T15:07:55.861Z","0.0","0.69"
+"C02 f02 s006 get install status","c02-F02-S006-02-get cetain services' installation status by GET /itsma/itsma_services/{itsmaServiceName}","SUCCESS","2017-10-22T15:07:56.558Z","0.0","1.1"

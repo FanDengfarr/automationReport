@@ -1,0 +1,19 @@
+<acceptance-test-run title="C10-F01-S001-01 check API version" name="C10-F01-S001-01 check API version" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="97" timestamp="2017-10-30T16:10:08.208Z">
+  <user-story id="c10_f01_s001_check_k8s_version" name="C10 f01 s001 check k8s version" path="stories/c10_k8s/c10_f01_Kubernetes_baseinfo/c10_f01_s001_check_k8s_version.story"/>
+  <issues>
+    <issue>C10-F01-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="Kube-API" type="Test Type"/>
+    <tag name="C10 k8s" type="capability"/>
+    <tag name="C10 k8s/C10 f01 kubernetes baseinfo" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C10 f01 kubernetes baseinfo/C10 f01 s001 check k8s version" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="91">
+    <description>When a CD system is up</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>Then I get the Kubernetes API version is &quot;v1&quot;</description>
+  </test-step>
+</acceptance-test-run>

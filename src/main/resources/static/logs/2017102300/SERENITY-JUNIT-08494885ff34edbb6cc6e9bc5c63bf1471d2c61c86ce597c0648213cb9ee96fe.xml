@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="C08 f01 s001 get catalog list" skipped="0" tests="1" time="7.89" timestamp="2017-10-295 04:14:12"><testcase name="C08-F01-S001-01 Test get category list"><failure message="Get categories successfully expected:&lt;200&gt; but was:&lt;500&gt;" type="java.lang.AssertionError">Get categories successfully expected:&lt;200&gt; but was:&lt;500&gt;</failure><system-err>Get categories successfully expected:&lt;200&gt; but was:&lt;500&gt;
+com.hpe.itsma.stepdifinitions.saw.CatalogStepDefinition.getCatalogItems(CatalogStepDefinition.java:41)
+</system-err></testcase></testsuite>

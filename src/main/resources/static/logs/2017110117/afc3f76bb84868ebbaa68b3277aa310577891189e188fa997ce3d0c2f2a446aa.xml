@@ -1,0 +1,51 @@
+<acceptance-test-run title="c02-F02-S003-01-get services&apos; status" name="c02-F02-S003-01-get services&apos; status" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5252" timestamp="2017-11-01T03:27:44.766Z">
+  <user-story id="c02_f02_s003_get_service_status" name="C02 f02 s003 get service status" path="stories/c02_installer/c02_f02_s003_get_service_status.story"/>
+  <issues>
+    <issue>F02-S003-01</issue>
+  </issues>
+  <tags>
+    <tag name="Installer-API" type="Test Type"/>
+    <tag name="C02 installer" type="capability"/>
+    <tag name="2017-10" type="relase"/>
+    <tag name="C02 installer/C02 f02 s003 get service status" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>service_name</header>
+      <header>status</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>auth-svc</value>
+        <value>Running</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm-svc-test</value>
+        <value>Pending</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {service_name=auth-svc, status=Running, INSTAlL_ACC=, installer=, suite=, tags=relase:2017-10, Test Type: Installer-API}" result="SUCCESS">
+    <test-group name="When I sent get status&apos; request to &quot;itsma/kube_services/{auth-svc}&quot;" result="SUCCESS">
+      <test-step result="SUCCESS" duration="539">
+        <description>Do get request: itsma/kube_services/auth-svc</description>
+      </test-step>
+    </test-group>
+    <test-step result="SUCCESS" duration="3471">
+      <description>Then I get the response contains the service and status in  list &quot;{Running}&quot;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[2] {service_name=idm-svc-test, status=Pending, INSTAlL_ACC=, installer=, suite=, tags=relase:2017-10, Test Type: Installer-API}" result="SUCCESS">
+    <test-group name="When I sent get status&apos; request to &quot;itsma/kube_services/{idm-svc-test}&quot;" result="SUCCESS">
+      <test-step result="SUCCESS" duration="671">
+        <description>Do get request: itsma/kube_services/idm-svc-test</description>
+      </test-step>
+    </test-group>
+    <test-step result="SUCCESS" duration="132">
+      <description>Then I get the response contains the service and status in  list &quot;{Pending}&quot;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

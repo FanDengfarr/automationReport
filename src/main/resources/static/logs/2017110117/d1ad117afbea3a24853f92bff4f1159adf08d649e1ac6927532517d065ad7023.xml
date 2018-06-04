@@ -1,0 +1,22 @@
+<acceptance-test-run title="C10-F02-S003-01 check all pod status" name="C10-F02-S003-01 check all pod status" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="339" timestamp="2017-11-01T04:36:10.113Z">
+  <user-story id="c10_f02_s003_check_all_pod_status" name="C10 f02 s003 check all pod status" path="stories/c10_k8s/c10_f02_Kubernetes_pod_status/c10_f02_s003_check_all_pod_status.story"/>
+  <issues>
+    <issue>C10-F02-S003-01</issue>
+  </issues>
+  <tags>
+    <tag name="Kube-API" type="Test Type"/>
+    <tag name="C10 k8s" type="capability"/>
+    <tag name="C10 k8s/C10 f02 kubernetes pod status" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C10 f02 kubernetes pod status/C10 f02 s003 check all pod status" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="93">
+    <description>Given a CD system is up</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="242">
+    <description>When I get podList under namespace &quot;itsma1&quot;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>Then I get the all pod status is &quot;Succeeded&quot; or &quot;Running&quot;</description>
+  </test-step>
+</acceptance-test-run>

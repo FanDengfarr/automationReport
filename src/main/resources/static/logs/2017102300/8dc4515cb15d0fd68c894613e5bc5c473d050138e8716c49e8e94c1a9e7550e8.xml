@@ -1,0 +1,19 @@
+<acceptance-test-run title="C01-F03-S001-01 get sm ret pod status" name="C01-F03-S001-01 get sm ret pod status" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="1107" timestamp="2017-10-22T16:24:11.961Z">
+  <user-story id="c01_f03_s001_get_sm_rte_pod_status" name="C01 f03 s001 get sm rte pod status" path="stories/c01_configapp/c01_f03_check_pod_status/c01_f03_s001_get_sm_rte_pod_status.story"/>
+  <issues>
+    <issue>C01-F03-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="ConfigAPP-API" type="Test Type"/>
+    <tag name="C01 configapp" type="capability"/>
+    <tag name="C01 configapp/C01 f03 check pod status" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C01 f03 check pod status/C01 f03 s001 get sm rte pod status" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="1103">
+    <description>When send get request to &quot;/configuration/smrtepodip&quot;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>Then I get the response contains &quot;list of the pods of sm-rte-svc successfully.&quot;</description>
+  </test-step>
+</acceptance-test-run>

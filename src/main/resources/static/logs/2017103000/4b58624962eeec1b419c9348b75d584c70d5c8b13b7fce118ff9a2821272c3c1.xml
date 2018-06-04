@@ -1,0 +1,21 @@
+<acceptance-test-run title="c02-F02-S005-01-create kube resources for service itom-smartanalytics" name="c02-F02-S005-01-create kube resources for service itom-smartanalytics" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="3607" timestamp="2017-10-30T02:03:14.959Z">
+  <user-story id="c02_f02_s005_create_kube_resources" name="C02 f02 s005 create kube resources" path="stories/c02_installer/c02_f02_s005_create_kube_resources.story"/>
+  <issues>
+    <issue>F02-S005-01</issue>
+  </issues>
+  <tags>
+    <tag name="Installer-API" type="Test Type"/>
+    <tag name="C02 installer" type="capability"/>
+    <tag name="2017-10" type="relase"/>
+    <tag name="C02 f02 s005 create kube resources" type="story"/>
+    <tag name="C02 installer/Post  /itsma/itsma services/{itsma service name}/kube resources" type="story"/>
+  </tags>
+  <test-group name="When services &quot;itom-smartanalytics&quot; send request to create resource=&quot;itom-smartanalytics&quot; with setting in file &quot;c02_f02_s005_01_kubeResourceFile.txt&quot;" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3299">
+      <description>Do post: itsma/itsma_services/itom-smartanalytics/kube_resources, ./src/test/resources/stories/c02_installer/c02_f02_s005_01_kubeResourceFile.txt, itom-smartanalytics</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="3">
+    <description>Then Kube resource created  in env with statusCode {201}</description>
+  </test-step>
+</acceptance-test-run>

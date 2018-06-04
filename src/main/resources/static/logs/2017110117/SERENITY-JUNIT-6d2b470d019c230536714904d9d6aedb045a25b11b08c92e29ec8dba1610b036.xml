@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="C08 f01 s007 get article list" skipped="0" tests="1" time="1.69" timestamp="2017-11-305 05:01:33"><testcase name="C08-F01-S007-01 Test get article"><failure message="Get article total count:" type="java.lang.AssertionError">Get article total count:</failure><system-err>Get article total count:
+com.hpe.itsma.stepdifinitions.saw.CatalogStepDefinition.getArticleList(CatalogStepDefinition.java:107)
+</system-err></testcase></testsuite>

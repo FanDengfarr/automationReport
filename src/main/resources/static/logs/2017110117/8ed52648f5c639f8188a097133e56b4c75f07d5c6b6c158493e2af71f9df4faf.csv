@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C04 f00 s01 authentication internal user","C04-F00-S01-01 internal oldap user with valid login credential should get valid LWSSO_COOKIE_KEY","SUCCESS","2017-11-01T04:32:30.007Z","0.0","1.1"
+"C04 f00 s01 authentication internal user","C04-F00-S01-03 internal sysadmin with valid login credential should get valid LWSSO_COOKIE_KEY","SUCCESS","2017-11-01T04:32:31.110Z","0.0","0.79"
+"C04 f00 s01 authentication internal user","C04-F00-S01-05 internal oldap user with valid credential can access idm service","SUCCESS","2017-11-01T04:32:31.898Z","0.0","1.7"

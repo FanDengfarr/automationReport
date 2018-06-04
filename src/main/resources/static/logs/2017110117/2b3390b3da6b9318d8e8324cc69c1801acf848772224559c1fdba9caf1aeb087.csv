@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C10 f01 s001 check k8s version","C10-F01-S001-01 check API version","SUCCESS","2017-11-01T04:35:12.899Z","0.0","0.04"
+"C10 f01 s001 check k8s version","C10-F01-S001-02 check TLS version","SUCCESS","2017-11-01T04:35:12.938Z","0.0","0.06"

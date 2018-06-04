@@ -1,0 +1,34 @@
+<acceptance-test-run title="C07-F04-S002-01 Category Admin Operations" name="C07-F04-S002-01 Category Admin Operations" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="1323" timestamp="2017-10-22T16:18:50.172Z">
+  <user-story id="c07_f04_s002_category_admin_operations" name="C07 f04 s002 category admin operations" path="stories/c07_propel/c07_f04_propel_admin_operations/c07_f04_s002_category_admin_operations.story"/>
+  <issues>
+    <issue>C07-F04-S002-01</issue>
+  </issues>
+  <tags>
+    <tag name="Propel API" type="Test Type"/>
+    <tag name="C07 propel" type="capability"/>
+    <tag name="C07 propel/C07 f04 propel admin operations" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C07 f04 propel admin operations/C07 f04 s002 category admin operations" type="story"/>
+  </tags>
+  <test-group name="Given user login Propel as {user.username} with {user.password} using {itsma.tenantName}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="669">
+      <description>Login: falcon, 123456, ITSMA</description>
+    </test-step>
+  </test-group>
+  <test-group name="When add one category {category.name}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="204">
+      <description>Get categoty ID: Root, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYzg5NTVmNDQ5ZmVlMDE1ZjQ0YTBhYWJiMDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwODY5MjczMCwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RjODk1NWY0NDlmZWUwMTVmNDRhMDNlYzgwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwODY4OTEzMCwianRpIjoiNjNiMmI0NWMtOGVmYi00Nzg1LWI2NDctNDRlMjNkNmFmMGY0In0.5sw9aCgCS30rknk5kKcLv_Ay70wDmu8a2D28sABG1J8</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="118">
+      <description>Create category: test, efb7baa0-61ea-4e16-9e30-429ba6151f6e, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYzg5NTVmNDQ5ZmVlMDE1ZjQ0YTBhYWJiMDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwODY5MjczMCwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RjODk1NWY0NDlmZWUwMTVmNDRhMDNlYzgwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwODY4OTEzMCwianRpIjoiNjNiMmI0NWMtOGVmYi00Nzg1LWI2NDctNDRlMjNkNmFmMGY0In0.5sw9aCgCS30rknk5kKcLv_Ay70wDmu8a2D28sABG1J8</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then delete one category {category.name}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="21">
+      <description>Get categoty ID: test, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYzg5NTVmNDQ5ZmVlMDE1ZjQ0YTBhYWJiMDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwODY5MjczMCwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RjODk1NWY0NDlmZWUwMTVmNDRhMDNlYzgwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwODY4OTEzMCwianRpIjoiNjNiMmI0NWMtOGVmYi00Nzg1LWI2NDctNDRlMjNkNmFmMGY0In0.5sw9aCgCS30rknk5kKcLv_Ay70wDmu8a2D28sABG1J8</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="275">
+      <description>Delete category: 3fac115d-8465-4172-8d91-e1f720bf1f42, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYzg5NTVmNDQ5ZmVlMDE1ZjQ0YTBhYWJiMDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwODY5MjczMCwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RjODk1NWY0NDlmZWUwMTVmNDRhMDNlYzgwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwODY4OTEzMCwianRpIjoiNjNiMmI0NWMtOGVmYi00Nzg1LWI2NDctNDRlMjNkNmFmMGY0In0.5sw9aCgCS30rknk5kKcLv_Ay70wDmu8a2D28sABG1J8</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

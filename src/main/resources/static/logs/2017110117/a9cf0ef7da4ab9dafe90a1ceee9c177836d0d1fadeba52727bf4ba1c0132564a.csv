@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"C10 f03 s001 check configmap","C10-F03-S001-01 check configmap is created","SUCCESS","2017-11-01T04:36:10.494Z","0.0","2.59"
+"C10 f03 s001 check configmap","C10-F03-S001-02 check configmap has detail value","SUCCESS","2017-11-01T04:36:13.094Z","0.0","18.35"

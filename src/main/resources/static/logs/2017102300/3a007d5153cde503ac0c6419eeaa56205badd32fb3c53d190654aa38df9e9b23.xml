@@ -1,0 +1,22 @@
+<acceptance-test-run title="C01-F01-S003-01 Connect Smtpserver with default settings" name="C01-F01-S003-01 Connect Smtpserver with default settings" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="6741" timestamp="2017-10-22T16:23:19.135Z">
+  <user-story id="c01_f01_s003_test_connection_smtpserver" name="C01 f01 s003 test connection smtpserver" path="stories/c01_configapp/c01_f01_test_connection/c01_f01_s003_test_connection_smtpserver.story"/>
+  <issues>
+    <issue>C01-F01-S003-01</issue>
+  </issues>
+  <tags>
+    <tag name="ConfigAPP-API" type="Test Type"/>
+    <tag name="C01 configapp" type="capability"/>
+    <tag name="C01 configapp/C01 f01 test connection" type="feature"/>
+    <tag name="2017-04" type="relase"/>
+    <tag name="C01 f01 test connection/C01 f01 s003 test connection smtpserver" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="7">
+    <description>Given a Smtp Server</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="6729">
+    <description>When I connect Smtp with default settings</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="1">
+    <description>Then test connection should return {200}</description>
+  </test-step>
+</acceptance-test-run>

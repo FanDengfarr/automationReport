@@ -1,0 +1,275 @@
+<acceptance-test-run title="C10-F03-S001-01 check configmap is created" name="C10-F03-S001-01 check configmap is created" steps="54" successful="54" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="2372" timestamp="2017-10-22T16:16:12.752Z">
+  <user-story id="c10_f03_s001_check_configmap" name="C10 f03 s001 check configmap" path="stories/c10_k8s/c10_f03_Kubernetes_configmap/c10_f03_s001_check_configmap.story"/>
+  <issues>
+    <issue>C10-F03-S001-01</issue>
+  </issues>
+  <tags>
+    <tag name="Kube-API" type="Test Type"/>
+    <tag name="C10 k8s" type="capability"/>
+    <tag name="C10 k8s/C10 f03 kubernetes configmap" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C10 f03 kubernetes configmap/C10 f03 s001 check configmap" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>configmap_name</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>auth-config</value>
+      </row>
+      <row result="SUCCESS">
+        <value>chat-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>database-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>external-lb-config</value>
+      </row>
+      <row result="SUCCESS">
+        <value>idm-config</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-itsma-config-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-sma-smarta-configuration</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itom-xservices-infra-config</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-common-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>itsma-integration-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ldap-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>lwsso-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>nginx-load-balancer-conf</value>
+      </row>
+      <row result="SUCCESS">
+        <value>propel-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-common-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>sm-rte-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>smtp-configmap</value>
+      </row>
+      <row result="SUCCESS">
+        <value>ucmdb-configmap</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {configmap_name=auth-config, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="209">
+      <description>When I check the status of configmap {auth-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {auth-config} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[2] {configmap_name=chat-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="182">
+      <description>When I check the status of configmap {chat-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {chat-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[3] {configmap_name=database-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="193">
+      <description>When I check the status of configmap {database-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the configmap {database-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[4] {configmap_name=external-lb-config, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="200">
+      <description>When I check the status of configmap {external-lb-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {external-lb-config} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[5] {configmap_name=idm-config, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="101">
+      <description>When I check the status of configmap {idm-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {idm-config} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[6] {configmap_name=itom-itsma-config-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="190">
+      <description>When I check the status of configmap {itom-itsma-config-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {itom-itsma-config-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[7] {configmap_name=itom-sma-smarta-configuration, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="82">
+      <description>When I check the status of configmap {itom-sma-smarta-configuration} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {itom-sma-smarta-configuration} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[8] {configmap_name=itom-xservices-infra-config, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="75">
+      <description>When I check the status of configmap {itom-xservices-infra-config} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {itom-xservices-infra-config} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[9] {configmap_name=itsma-common-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="17">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="88">
+      <description>When I check the status of configmap {itsma-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {itsma-common-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[10] {configmap_name=itsma-integration-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="80">
+      <description>When I check the status of configmap {itsma-integration-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the configmap {itsma-integration-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[11] {configmap_name=ldap-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="86">
+      <description>When I check the status of configmap {ldap-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {ldap-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[12] {configmap_name=lwsso-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="79">
+      <description>When I check the status of configmap {lwsso-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the configmap {lwsso-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[13] {configmap_name=nginx-load-balancer-conf, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="109">
+      <description>When I check the status of configmap {nginx-load-balancer-conf} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {nginx-load-balancer-conf} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[14] {configmap_name=propel-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="130">
+      <description>When I check the status of configmap {propel-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the configmap {propel-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[15] {configmap_name=sm-common-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="94">
+      <description>When I check the status of configmap {sm-common-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then I get the configmap {sm-common-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[16] {configmap_name=sm-rte-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="112">
+      <description>When I check the status of configmap {sm-rte-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="81">
+      <description>Then I get the configmap {sm-rte-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[17] {configmap_name=smtp-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="73">
+      <description>When I check the status of configmap {smtp-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>Then I get the configmap {smtp-configmap} exists</description>
+    </test-step>
+  </test-group>
+  <test-group name="[18] {configmap_name=ucmdb-configmap, ACC=, k8s=, suite=, tags=relase:2017-07, Test Type: Kube-API}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
+      <description>Given a CD system is up</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="94">
+      <description>When I check the status of configmap {ucmdb-configmap} under namespace &quot;itsma1&quot;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then I get the configmap {ucmdb-configmap} exists</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

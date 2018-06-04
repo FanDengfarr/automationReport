@@ -1,0 +1,29 @@
+<acceptance-test-run title="C08-F04-S003-01 Test view article in search result" name="C08-F04-S003-01 Test view article in search result" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="3951" timestamp="2017-10-30T03:10:51.901Z">
+  <user-story id="c08_f04_s003_searchViewArticle" name="C08 f04 s003 search view article" path="stories/c08_saw/c08_f04_search/c08_f04_s003_searchViewArticle.story"/>
+  <issues>
+    <issue>C08-F04-S003-01</issue>
+  </issues>
+  <tags>
+    <tag name="XSP API" type="Test Type"/>
+    <tag name="C08 saw" type="capability"/>
+    <tag name="C08 saw/C08 f04 search" type="feature"/>
+    <tag name="2017-10" type="release"/>
+    <tag name="C08 f04 s003 search view article" type="story"/>
+    <tag name="C08 f04 search/Api test   check search and view article" type="story"/>
+  </tags>
+  <test-group name="Given user login SAW as {user.username} with {user.password} using itsma.tenantName" result="SUCCESS">
+    <test-step result="SUCCESS" duration="538">
+      <description>Login: falcon, 123456</description>
+    </test-step>
+  </test-group>
+  <test-group name="When user search {article.name} in search box" result="SUCCESS">
+    <test-step result="SUCCESS" duration="374">
+      <description>Get search: article, d1uFeyMMURd0bkWAdK-1xrQGv4zaZRnnKwWDkgzXnJvs6pbn6vHIKKyjxhFpJpO271Y_X7b11WY5hlCp3A76FGr-oYx3sjaAOFn8Ln9l7TuqP_sMAmfgngclgmNATctdWb-Uf4sKy04j0I6dtjG90PjHiuLf_cc_UBBOLwtaIZjIx6Y6YhTYbRgS46V4oFBLClgWbaqTC7mv8Pi3iIka16YOS-C3rSsdTAYY_zZLJZxxXOKl354GZTLWNkUCb_qQZK5KZyvzLKQwghM54NFeDqSrtrX4omyx8FDuv3_ulKUbhUUMBEm4-KSmRNZ2MacmiEb72rLwDcOgEJq43imF3kEbb-mC-s16UX1ibOkMYBEy5inbqez6PxXBfRIlkMXxTwwZfKFb0J08nBanQRZeuAA8BlTAmISt12acSVC5EPfXu0uQBYxOeSmcYJUM9ITKf6ajhA-635q0W_jW90QHNAAhnxOrpgMS_jPfAWIXeHhdieRmq9WwUj0GlbEuJYHMiV7HbmeKcpYx5b2VJ2mzn9J0YBsWeRz9xhbl_FyNxdVakQ3u8YkiRTCYD8wodo7irJokaIxu29y5gViWZI3-ygbpXr9XA3zwdjtc-AzsmWWGkgvkhvTaF23yaquqPhTyWaWD0HFvyJT1hTokI6rToQIvMYMn0mm4FnpTZMXy1CATaISaLpWtZ9ONJykIp1njQKXfKY60B3A1jVMyNJ3i-lZXP7sNx2-Ri6NDeT7TWaRT90gTwA-sdNxMcpQaxVvhUm2lgyzhj54VEiXnPfKsyZ7Gn1EThk97ZGOwKgVa0k7UG0x9ioN_FRV-4vAvOuNxjf2q_YlQRc5-WqIoBMVZuV8kQwfpQKD0DFd-OuVmdl1SXvHW4uOvd_WsmTE7PLuSAw2xmk-XIOTC-QraWFnH8b-421Sg3b5Mq8WD9cHymUREr4GgY6FKQ8abiAa0XPHJf6ebB4JXlaRPOzJI8ppdJ9PE9r7Bz6g4H0Pdy0OK0hhUaSnvbzWOljCQmPQTNJsr9gK_dwxT3dcrfDXOna3GcjXMjnxyu1bk8408FJflfoIm206IbFVec7dmhYh5ctwMVZufkn-iKHbrcB97rDDnFLJd089na_d_ri1ciYA1mrDJekwZkS3L9qJIZxr1V60E</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then user can view article" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2605">
+      <description>Get article by id: KM0598, d1uFeyMMURd0bkWAdK-1xrQGv4zaZRnnKwWDkgzXnJvs6pbn6vHIKKyjxhFpJpO271Y_X7b11WY5hlCp3A76FGr-oYx3sjaAOFn8Ln9l7TuqP_sMAmfgngclgmNATctdWb-Uf4sKy04j0I6dtjG90PjHiuLf_cc_UBBOLwtaIZjIx6Y6YhTYbRgS46V4oFBLClgWbaqTC7mv8Pi3iIka16YOS-C3rSsdTAYY_zZLJZxxXOKl354GZTLWNkUCb_qQZK5KZyvzLKQwghM54NFeDqSrtrX4omyx8FDuv3_ulKUbhUUMBEm4-KSmRNZ2MacmiEb72rLwDcOgEJq43imF3kEbb-mC-s16UX1ibOkMYBEy5inbqez6PxXBfRIlkMXxTwwZfKFb0J08nBanQRZeuAA8BlTAmISt12acSVC5EPfXu0uQBYxOeSmcYJUM9ITKf6ajhA-635q0W_jW90QHNAAhnxOrpgMS_jPfAWIXeHhdieRmq9WwUj0GlbEuJYHMiV7HbmeKcpYx5b2VJ2mzn9J0YBsWeRz9xhbl_FyNxdVakQ3u8YkiRTCYD8wodo7irJokaIxu29y5gViWZI3-ygbpXr9XA3zwdjtc-AzsmWWGkgvkhvTaF23yaquqPhTyWaWD0HFvyJT1hTokI6rToQIvMYMn0mm4FnpTZMXy1CATaISaLpWtZ9ONJykIp1njQKXfKY60B3A1jVMyNJ3i-lZXP7sNx2-Ri6NDeT7TWaRT90gTwA-sdNxMcpQaxVvhUm2lgyzhj54VEiXnPfKsyZ7Gn1EThk97ZGOwKgVa0k7UG0x9ioN_FRV-4vAvOuNxjf2q_YlQRc5-WqIoBMVZuV8kQwfpQKD0DFd-OuVmdl1SXvHW4uOvd_WsmTE7PLuSAw2xmk-XIOTC-QraWFnH8b-421Sg3b5Mq8WD9cHymUREr4GgY6FKQ8abiAa0XPHJf6ebB4JXlaRPOzJI8ppdJ9PE9r7Bz6g4H0Pdy0OK0hhUaSnvbzWOljCQmPQTNJsr9gK_dwxT3dcrfDXOna3GcjXMjnxyu1bk8408FJflfoIm206IbFVec7dmhYh5ctwMVZufkn-iKHbrcB97rDDnFLJd089na_d_ri1ciYA1mrDJekwZkS3L9qJIZxr1V60E</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

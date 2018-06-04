@@ -1,0 +1,58 @@
+<acceptance-test-run title="C07-F01-S002-01 Request Service Catalog Item and Approve it" name="C07-F01-S002-01 Request Service Catalog Item and Approve it" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="34084" timestamp="2017-10-30T16:12:07.395Z">
+  <user-story id="c07_f01_s002_request_service_catalog_item" name="C07 f01 s002 request service catalog item" path="stories/c07_propel/c07_f01_integration_with_SM/c07_f01_s002_request_service_catalog_item.story"/>
+  <issues>
+    <issue>C07-F01-S002-01</issue>
+  </issues>
+  <tags>
+    <tag name="Propel API" type="Test Type"/>
+    <tag name="C07 propel" type="capability"/>
+    <tag name="C07 propel/C07 f01 integration with sm" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C07 f01 integration with sm/C07 f01 s002 request service catalog item" type="story"/>
+  </tags>
+  <test-group name="Given user login Propel as {user.username} with {user.password} using {itsma.tenantName}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="489">
+      <description>Login: falcon, 123456, ITSMA</description>
+    </test-step>
+  </test-group>
+  <test-group name="When Order {service.catalog.item} and submit a service request" result="SUCCESS">
+    <test-group name="Create order: Web Server Certificates, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUyNywiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkyNywianRpIjoiYTg3NzcyMTctZGYxYi00M2Y1LWFhOTItMDBhZjBkYzA4MThlIn0.AilyK5JUjExRvK8ptXseCMrSJA6n1ewoUDXIdGZM5Fw" result="SUCCESS">
+      <test-step result="SUCCESS" duration="305">
+        <description>Get catalog item ID: Web Server Certificates, service, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUyNywiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkyNywianRpIjoiYTg3NzcyMTctZGYxYi00M2Y1LWFhOTItMDBhZjBkYzA4MThlIn0.AilyK5JUjExRvK8ptXseCMrSJA6n1ewoUDXIdGZM5Fw</description>
+      </test-step>
+      <test-group name="Get supplier ID: eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUyNywiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkyNywianRpIjoiYTg3NzcyMTctZGYxYi00M2Y1LWFhOTItMDBhZjBkYzA4MThlIn0.AilyK5JUjExRvK8ptXseCMrSJA6n1ewoUDXIdGZM5Fw" result="SUCCESS">
+        <test-step result="SUCCESS" duration="1082">
+          <description>Get supplier health: eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUyNywiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkyNywianRpIjoiYTg3NzcyMTctZGYxYi00M2Y1LWFhOTItMDBhZjBkYzA4MThlIn0.AilyK5JUjExRvK8ptXseCMrSJA6n1ewoUDXIdGZM5Fw</description>
+        </test-step>
+      </test-group>
+    </test-group>
+    <test-step result="SUCCESS" duration="54">
+      <description>Get request ID: 4aaaf43f-2536-44b9-a2f4-57c69327f2af, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUyNywiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkyNywianRpIjoiYTg3NzcyMTctZGYxYi00M2Y1LWFhOTItMDBhZjBkYzA4MThlIn0.AilyK5JUjExRvK8ptXseCMrSJA6n1ewoUDXIdGZM5Fw</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then Check the service request has SM ID and moves to Pending Approval" result="SUCCESS">
+    <test-step result="SUCCESS" duration="39">
+      <description>Get request detail: 90c84de9-280a-4b7f-b0d4-82590f4749b1, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzUyNywiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTkyNywianRpIjoiYTg3NzcyMTctZGYxYi00M2Y1LWFhOTItMDBhZjBkYzA4MThlIn0.AilyK5JUjExRvK8ptXseCMrSJA6n1ewoUDXIdGZM5Fw</description>
+    </test-step>
+  </test-group>
+  <test-group name="Given user login Propel as {user.approver.username} with {user.approver.password} using {itsma.tenantName}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="538">
+      <description>Login: sdapprover, 123456, ITSMA</description>
+    </test-step>
+  </test-group>
+  <test-group name="When approver approve the request" result="SUCCESS">
+    <test-step result="SUCCESS" duration="288">
+      <description>Approve request: 90c84de9-280a-4b7f-b0d4-82590f4749b1, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzNWYzMDE2OCIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzU0NSwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6InNkYXBwcm92ZXIiLCJpYXQiOjE1MDkzNzk5NDUsImp0aSI6ImE1YTI3ZmJmLTZlMWQtNDdhMi04OTVmLTQyNjgxMWUzNTI4ZSJ9.Fe0qalVgvkaIu8iKBWKwVkGCiSHY9vnlsmh-5gCqQIk</description>
+    </test-step>
+  </test-group>
+  <test-group name="Given user login Propel as {user.username} with {user.password} using {itsma.tenantName}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="351">
+      <description>Login: falcon, 123456, ITSMA</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then Check the service request moves to Pending Fulfillment" result="SUCCESS">
+    <test-step result="SUCCESS" duration="151">
+      <description>Get request detail: 90c84de9-280a-4b7f-b0d4-82590f4749b1, eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYWM4NTVmNmRjZjdjMDE1ZjZkZDAzY2Y0MDE3MSIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTM4MzU0NiwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RhYzg1NWY2ZGNmN2MwMTVmNmRjZmNjOTkwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTM3OTk0NiwianRpIjoiOTVjZWI0NzctMjliOC00NGM2LTlkZjQtYzg1Y2ViYTYwMWM4In0.hbM44h5zSli3zwzkZBYI5nQBzeS-nFDbApmEqeOzPzw</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,23 @@
+<acceptance-test-run title="C07-F02-S004-01 Search with Typeahead" name="C07-F02-S004-01 Search with Typeahead" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="769" timestamp="2017-10-30T03:32:38.986Z">
+  <user-story id="c07_f02_s004_search_with_typeahead" name="C07 f02 s004 search with typeahead" path="stories/c07_propel/c07_f02_integration_with_SMA/c07_f02_s004_search_with_typeahead.story"/>
+  <issues>
+    <issue>C07-F02-S004-01</issue>
+  </issues>
+  <tags>
+    <tag name="Propel API" type="Test Type"/>
+    <tag name="C07 propel" type="capability"/>
+    <tag name="C07 propel/C07 f02 integration with sma" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C07 f02 integration with sma/C07 f02 s004 search with typeahead" type="story"/>
+  </tags>
+  <test-group name="Given user login Propel as {user.username} with {user.password} using {itsma.tenantName}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="363">
+      <description>Login: falcon, 123456, ITSMA</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then user can search for typeahead entity type to get suggestions" result="SUCCESS">
+    <test-step result="SUCCESS" duration="211">
+      <description>Search typeahead entity type: eyJ0eXAiOiJKV1MiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyY2NkYjQ4NTVmNmIwM2YwMDE1ZjZiMDRkNDVlMDE3MiIsImlzcyI6IklkTSAxLjE4LjAtYnVpbGQuMTAyOCIsImNvbS5ocGUuaWRtOnRydXN0b3IiOm51bGwsImV4cCI6MTUwOTMzNzk1OSwiY29tLmhwLmNsb3VkOnRlbmFudCI6eyJpZCI6IjJjY2RiNDg1NWY2YjAzZjAwMTVmNmIwNDU4OWIwMGJjIiwibmFtZSI6IklUU01BIiwiZW5hYmxlZCI6dHJ1ZX0sInBybiI6ImZhbGNvbiIsImlhdCI6MTUwOTMzNDM1OSwianRpIjoiYWYyMjQyYzktZTQ5OC00OWNlLTg3ZGEtZjBjNjJlYWQ3ZTFhIn0.RwkA5DPVqi2dLqvTta8LeTL8-ODmYtDpUE14L86PdBA</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,22 @@
+<acceptance-test-run title="C04-F00-CR22722-02 check authentication with idmUsr2" name="C04-F00-CR22722-02 check authentication with idmUsr2" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="1191" timestamp="2017-10-22T16:12:34.758Z">
+  <user-story id="c04_f00_cr22722_back_slash_cannot_be_handled_correctly_in_IDM_startup_shell" name="C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell" path="stories/c04_idm/c04_f00_authentication/c04_f00_cr22722_back_slash_cannot_be_handled_correctly_in_IDM_startup_shell.story"/>
+  <issues>
+    <issue>C04-F00-CR22722-02</issue>
+  </issues>
+  <tags>
+    <tag name="IDM" type="Test Type"/>
+    <tag name="C04 idm" type="capability"/>
+    <tag name="C04 idm/C04 f00 authentication" type="feature"/>
+    <tag name="2017-07" type="relase"/>
+    <tag name="C04 f00 authentication/C04 f00 cr22722 back slash cannot be handled correctly in idm startup shell" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="1005">
+    <description>Given post request to login with: idmUsr2\/*uto@lab.org, {password}</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>Then response status = {200}</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="93">
+    <description>And response should get {LWSSO_COOKIE_KEY}</description>
+  </test-step>
+</acceptance-test-run>
